@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'BugisA';
-    src: url('/mabaca/fonts/BugisA.eot');
-    src: url('/mabaca/fonts/BugisA.eot?#iefix') format('embedded-opentype'),
-        url('/mabaca/fonts/BugisA.woff2') format('woff2'),
-        url('/mabaca/fonts/BugisA.woff') format('woff'),
-        url('/mabaca/fonts/BugisA.ttf') format('truetype'),
-        url('/mabaca/fonts/BugisA.svg#BugisA') format('svg');
+    src: url('/connect/mabaca/fonts/BugisA.eot');
+    src: url('/connect/mabaca/fonts/BugisA.eot?#iefix') format('embedded-opentype'),
+        url('/connect/mabaca/fonts/BugisA.woff2') format('woff2'),
+        url('/connect/mabaca/fonts/BugisA.woff') format('woff'),
+        url('/connect/mabaca/fonts/BugisA.ttf') format('truetype'),
+        url('/connect/mabaca/fonts/BugisA.svg#BugisA') format('svg');
     font-weight: normal;
     font-style: normal;
 }
