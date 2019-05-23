@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" style="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+</head>
+
+<div align="center" class="page_wrap">
+<body bgcolor= #191919 scroll="no" style="overflow: hidden" onload="start()">
+	<div id="box2" class="box"></div>
+	<div id="box1" class="box"></div>
+	<p><div class="dots">. . . . . . . . . .</div></p>
+	<h1 id="welcome">welcome</h1>
+	<p id="text1">enter - password - to - continue</p>
+	<form>
+	<input type="password" id="password" value="" placeholder="password" />
+	<br>
+	<input type="button" onclick="myFunction()" onkeydown="myFunction()" value="START" id="start_button" />
+	</form>
+	<p><div class="dots">. . . . . . . . . .</div></p>
+</div>
+
+<ul id="dnt">
+	<li id="time"></li>
+	<li id="day"></li>
+</ul>
+
+<audio id="nyaa">
+  <source src="nyaa.mp3" type="audio/mp3">
+</audio>
+
+<img src="/connect/images/waifu03.png" class="waifu" onclick="document.getElementById('nyaa').play();" />
+
+	<script>
+		
+function startTime() {
+  var dn = new Date();
+  var hr = dn.getHours();
+  var mn = dn.getMinutes();
+  var sc = dn.getSeconds();
+  
+  document.getElementById('time').innerHTML =
+  hr + ":" + mn + ":" + sc;
+  var t = setTimeout(startTime, 500);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
+}
+
+function startDays() {
+  var dn = new Date();
+  var dt = dn.getDate();
+  var mth = dn.getMonth() + 1;
+  var yr = dn.getFullYear();
+    
+  var weekday = new Array(7);
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
+
+  var n = weekday[dn.getDay()];
+  document.getElementById("day").innerHTML = n + "," + dt + "/" + mth + "/" + yr;
+}
+
+function start(){
+	startTime();
+    startDays();
+}
+
+function myFunction() {
+  var x;
+  
+  x = document.getElementById("password").value;
+  
+  if (event.keyCode === 13) {
+  document.getElementById("start_button").click();
+  }
+
+  if (x == "mabaca") {
+    location.replace("/connect/mabaca")
+  } else if (x == "gallery") {
+    location.replace("/connect/gallery")
+  } else {
+    location.replace("#")
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+	</script>
+	
+</body>
+</html>
+
+
