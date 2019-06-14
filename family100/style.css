@@ -1,0 +1,57 @@
+/*
+html, body{
+	overflow: hidden;
+}
+*/
+#tema {
+	font-family: "Courier New";
+	color: white;
+	text-align: center;
+	font-size: 56px;
+	text-shadow: 0px 2px 10px #a0948a;
+}
+
+#list>li {
+	list-style-type: none;
+	font-family: "Courier New";
+	text-align: center;
+	color: #191919;
+	margin: auto;
+	width: 50%;
+	border-style: solid;
+	box-sizing: border-box;
+	padding: 10px;
+	margin-bottom : 30px;
+	border-color: white;
+	box-shadow: 0px 0px 20px #a0948a;	
+	border-radius: 5px;
+}
+
+#list>li:hover {
+	cursor: pointer;
+	border-color: #a0948a;
+	background-color: white;
+	box-shadow: 0px 0px 20px #a0948a;	
+}
+
+.list_on {
+	cursor: pointer;
+	border-color: #a0948a;
+	background-color: white;
+	box-shadow: 0px 0px 20px #a0948a;	
+}
+
+#silang1, #silang2, #silang3 {
+	margin-top: 20px;
+	width: 130px;
+	height: 130px;
+	margin-left: 40px;
+}
+
+#silang1, #silang2, #silang3:hover {
+	cursor: pointer;
+}
+
+.silang_on{
+	filter: drop-shadow(5px 5px 5px #ff6161);
+}
