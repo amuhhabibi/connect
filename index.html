@@ -75,13 +75,12 @@ function start(){
     startDays();
 }
 
-  
-window.addEventListener("keydown", checkKeyPress, false);
-function checkKeyPress(key){
-	if (event.keyCode === 13) {
-	  myFunction();
-	}
-}
+document.getElementById("password").addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   myFunction();
+  }
+});
 		
 function myFunction() {
   var x;
