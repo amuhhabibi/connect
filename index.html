@@ -75,15 +75,18 @@ function start(){
     startDays();
 }
 
+  
+window.addEventListener("keydown", checkKeyPress, false);
+function checkKeyPress(key){
+	if (event.keyCode === 13) {
+	  myFunction();
+	}
+}
+		
 function myFunction() {
   var x;
   
   x = document.getElementById("password").value;
-  
-  if (event.keyCode === 13) {
-  event.preventDefault();
-  document.getElementById("start_button").click();
-  }
 
   if (x == "mabaca") {
     location.replace("/connect/" + x)
