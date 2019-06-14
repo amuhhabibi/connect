@@ -21,7 +21,7 @@ html, body{
 	border-style: solid;
 	box-sizing: border-box;
 	padding: 10px;
-	margin-bottom : 30px;
+	margin-bottom : 23px;
 	border-color: white;
 	box-shadow: 0px 0px 20px #a0948a;	
 	border-radius: 5px;
@@ -42,10 +42,10 @@ html, body{
 }
 
 #silang1, #silang2, #silang3 {
-	margin-top: 20px;
-	width: 130px;
-	height: 130px;
-	margin-left: 40px;
+	margin-top: 10px;
+	width: 170px;
+	height: 170px;
+	margin-left: 60px;
 }
 
 #silang1, #silang2, #silang3:hover {
@@ -53,7 +53,7 @@ html, body{
 }
 
 .silang_on{
-	filter: drop-shadow(5px 5px 5px #ff6161);
+	filter: drop-shadow(5px 5px 5px #ff5252);
 }
 
 #quesmark{
@@ -92,47 +92,32 @@ html, body{
   border: 1px solid #888;
   width: 50%;
   border-radius: 5px;
-  -webkit-animation-name: animatetop;
+  -webkit-animation-name: animateopen;
   -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.5s
+  animation-name: animateopen;
+  animation-duration: 0.4s;
 }
 
-#opsis{
+#help{
   -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
   -moz-column-count: 2; /* Old Firefox */
   column-count: 2;
 }
 
-#opsis>li{
+#help>li{
 	padding: 3px;
 	list-style-type: none;
 }
 
 /* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
+@-webkit-keyframes animateopen {
+  from {top:0; opacity:0} 
   to {top:0; opacity:1}
 }
 
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
+@keyframes animateopen {
+  from {top:0; opacity:0}
   to {top:0; opacity:1}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 .modal-header {
   padding: 2px 16px;
@@ -143,5 +128,5 @@ html, body{
 .modal-footer {
   padding: 2px 16px;
   background-color: #5cb85c;
-  color: white;
+  color: red;
 }
