@@ -1,8 +1,8 @@
-/*
 html, body{
 	overflow: hidden;
+	font-family: "Courier New";
 }
-*/
+
 #tema {
 	font-family: "Courier New";
 	color: white;
@@ -11,12 +11,12 @@ html, body{
 	text-shadow: 0px 2px 10px #a0948a;
 }
 
+
 #list>li {
 	list-style-type: none;
 	font-family: "Courier New";
 	text-align: center;
 	color: #191919;
-	margin: auto;
 	width: 50%;
 	border-style: solid;
 	box-sizing: border-box;
@@ -54,4 +54,94 @@ html, body{
 
 .silang_on{
 	filter: drop-shadow(5px 5px 5px #ff6161);
+}
+
+#quesmark{
+	bottom: 10px;
+	right: 10px;
+	width: 30px;
+	height: 37px;
+	position: absolute;
+}
+
+#quesmark:hover{
+	cursor: pointer;
+	filter: drop-shadow(0px 0px 5px #a0948a);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 5px;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.5s
+}
+
+#opsis{
+  -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
+  -moz-column-count: 2; /* Old Firefox */
+  column-count: 2;
+}
+
+#opsis>li{
+	padding: 3px;
+	list-style-type: none;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
 }
