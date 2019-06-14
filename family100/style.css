@@ -57,16 +57,16 @@ html, body{
 }
 
 #quesmark{
-	bottom: 10px;
-	right: 10px;
-	width: 30px;
-	height: 37px;
+	bottom: 20px;
+	right: 20px;
+	width: 36px;
+	height: 43px;
 	position: absolute;
 }
 
 #quesmark:hover{
 	cursor: pointer;
-	filter: drop-shadow(0px 0px 5px #a0948a);
+	filter: drop-shadow(0px 0px 5px #618eff);
 }
 
 /* The Modal (background) */
