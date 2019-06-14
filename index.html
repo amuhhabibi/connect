@@ -35,6 +35,12 @@
 
 	<script>
 		
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("start_button").click();
+  }
+		
 function startTime() {
   var dn = new Date();
   var hr = dn.getHours();
