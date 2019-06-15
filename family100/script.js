@@ -9,7 +9,36 @@ var op6 = document.getElementById('op6');
 var silang1 = document.getElementById('silang1');
 var silang2 = document.getElementById('silang2');
 var silang3 = document.getElementById('silang3');
+var nilai_a = document.getElementById("nilai_a");
+var nilai_b = document.getElementById("nilai_b");
+var f = 0; //team a
+var g = 0; //team b
 
+function nolf(){
+	if (f == 0) {
+		document.getElementById("nilai_a").innerHTML = "00";
+	}else if (f == -10) {
+		f += 10;
+	}
+}
+function seratusf(){
+	if (f == 90) {
+		f -= 10;
+	}
+}
+
+function nolg(){
+	if (g == 0) {
+		document.getElementById("nilai_b").innerHTML = "00";
+	}else if (g == -10) {
+		g += 10;
+	}
+}
+function seratusg(){
+	if (g == 90) {
+		g -= 10;
+	}
+}
 
 function tambah_silang(){
 	if (x <= -1){
@@ -38,24 +67,72 @@ function tambah_silang(){
 function pertanyaan(){
 	if (y <= 0){
 		++y;
-	}else if (y >= 3){
+	}else if (y >= 8){
 		--y;
 	}else if (y == 1) {
 		document.getElementById('tema').innerHTML = "Bagian tubuh yang bergerak saat tertawa :";
-		op1.innerHTML = "(43) Mulut";
-		op2.innerHTML = "(18) Pipi";
-		op3.innerHTML = "(13) Perut";
-		op4.innerHTML = "(9) Bahu";
-		op5.innerHTML = "(4) Dada";
-		op6.innerHTML = "(3) Dagu";
+		op1.innerHTML = "Mulut".bold();
+		op2.innerHTML = "Pipi".bold();
+		op3.innerHTML = "Perut".bold();
+		op4.innerHTML = "Bahu".bold();
+		op5.innerHTML = "Dada".bold();
+		op6.innerHTML = "Dagu".bold();
 	}else if (y == 2) {
-		document.getElementById('tema').innerHTML = "Jenis binatang berbisa :";
-		op1.innerHTML = "(36) Ular";
-		op2.innerHTML = "(21) Kelabang";
-		op3.innerHTML = "(17) Laba-laba";
-		op4.innerHTML = "(14) Tawon";
-		op5.innerHTML = "(8) Lebah";
-		op6.innerHTML = "(4) Kalajengking";
+		document.getElementById('tema').innerHTML = "Jenis binatang yang berbisa :";
+		op1.innerHTML = "Ular".bold();
+		op2.innerHTML = "Kelabang".bold();
+		op3.innerHTML = "Laba-laba".bold();
+		op4.innerHTML = "Tawon".bold();
+		op5.innerHTML = "Lebah".bold();
+		op6.innerHTML = "Kalajengking".bold();
+	}else if (y == 3) {
+		document.getElementById('tema').innerHTML = "Tempat untuk bersandar :";
+		op1.innerHTML = "Tiang listrik".bold();
+		op2.innerHTML = "Mobil".bold();
+		op3.innerHTML = "Kursi".bold();
+		op4.innerHTML = "Pintu".bold();
+		op5.innerHTML = "Tembok".bold();
+		op6.innerHTML = "Punggung orang".bold();
+	}else if (y == 4) {
+		document.getElementById('tema').innerHTML = "Tempat yang sering disebut mistik:";
+		op1.innerHTML = "Kuburan".bold();
+		op2.innerHTML = "Goa".bold();
+		op3.innerHTML = "Gunung".bold();
+		op4.innerHTML = "Hutan".bold();
+		op5.innerHTML = "Rumah tua".bold();
+		op6.innerHTML = "Laut".bold();
+	}else if (y == 5) {
+		document.getElementById('tema').innerHTML = "Hal yang dilakukan saat menunggu antrian :";
+		op1.innerHTML = "Main HP".bold();
+		op2.innerHTML = "Melihat-lihat".bold();
+		op3.innerHTML = "Ngobrol".bold();
+		op4.innerHTML = "Cek uang".bold();
+		op5.innerHTML = "Cek belanjaan".bold();
+		op6.innerHTML = "Bengong".bold();
+	}else if (y == 6) {
+		document.getElementById('tema').innerHTML = "Hewan dengan wajah yang seram :";
+		op1.innerHTML = "Harimau".bold();
+		op2.innerHTML = "Gorilla".bold();
+		op3.innerHTML = "Monyet".bold();
+		op4.innerHTML = "Iguana".bold();
+		op5.innerHTML = "Buaya".bold();
+		op6.innerHTML = "Serigala".bold();
+	}else if (y == 7) {
+		document.getElementById('tema').innerHTML = "Pujian orang tua pada anaknya yang baru cukur :";
+		op1.innerHTML = "Ganteng".bold();
+		op2.innerHTML = "Bersih".bold();
+		op3.innerHTML = "Rapi".bold();
+		op4.innerHTML = "Macho".bold();
+		op5.innerHTML = "Bagus".bold();
+		op6.innerHTML = "Keren".bold();
+	}else if (y == p) {
+		document.getElementById('tema').innerHTML = "";
+		op1.innerHTML = "".bold();
+		op2.innerHTML = "".bold();
+		op3.innerHTML = "".bold();
+		op4.innerHTML = "".bold();
+		op5.innerHTML = "".bold();
+		op6.innerHTML = "".bold();
 	}
 }
 
@@ -108,6 +185,28 @@ function checkKeyPress(key){
 		modal.style.display = "none";
 	}else if(key.keyCode == "72"){
 		modal.style.display = "block";
+	}else if (key.keyCode == "79") {
+		nilai_a.innerHTML = f += 10;
+		nolf();
+		nolf();
+		seratusf()
+		seratusf()
+	}else if (key.keyCode == "73") {
+		nilai_a.innerHTML = f -= 10;
+		nolf();
+		nolf();
+		seratusf()
+		seratusf()
+	}else if (key.keyCode == "76") {
+		nilai_b.innerHTML = g += 10;
+		nolg();
+		nolg();
+		seratusg()
+	}else if (key.keyCode == "75") {
+		nilai_b.innerHTML = g -= 10;
+		nolg();
+		nolg();
+		seratusg()
 	}
 }
 

@@ -6,64 +6,70 @@
 </head>
 <body bgcolor= #191919>
 	<iframe src="nc174607.mp3" allow="autoplay" style="display:none" id="sfx1"></iframe>
-
 	<div id="page_wrap">
-		<img src="questionmark.png" id="quesmark">
-		<div id="quesmark_isi"></div>
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close"></span>
-   	<div class="modal-header">
-   		<h1>Buttons :</h1>
-   	</div>
-    <ul id="help">
-	    <li><b>1</b> = Toggle Option 1</li>
-	    <li><b>2</b> = Toggle Option 2</li>
-	    <li><b>3</b> = Toggle Option 3</li>
-	    <li><b>4</b> = Toggle Option 4</li>
-	    <li><b>5</b> = Toggle Option 5</li>
-	    <li><b>6</b> = Toggle Option 6</li>
-	    <li><b>Z</b> = Remove Cross</li>
-	    <li><b>C</b> = Add Cross</li>
-	    <li><b>A</b> = Previous Round</li>
-	    <li><b>S</b> = Next Round</li>
-	    <li><b>I</b> = A Team -10 point</li>
-	    <li><b>O</b> = A Team +10 point</li>
-	    <li><b>K</b> = B Team -10 point</li>
-	    <li><b>L</b> = B Team +10 point</li>
-	    <li><b>H</b> = Help</li>
-    </ul>
-    <div class="modal-footer">
-      <h3>Disclaimer! Still work in progress, so expect nothing.</h3>
-    </div>
-  </div>
-
-</div>
-
-		
-
-		<h2 id="tema">Bagian tubuh yang bergerak saat tertawa :</h2>
-		<ul id="list">
-			<li id="op1" onclick="turnon1()">(43) Mulut</li>
-			<li id="op2" onclick="turnon2()">(18) Pipi</li>
-			<li id="op3" onclick="turnon3()">(13) Perut</li>
-			<li id="op4" onclick="turnon4()">(9) Bahu</li>
-			<li id="op5" onclick="turnon5()">(4) Dada</li>
-			<li id="op6" onclick="turnon6()">(3) Dagu</li>
-		</ul>
-
-		<p id="tulisan"></p>
-
-		<div id="nilai"></div>
-
-		<div id="silangs" onclick="tambah_silang()">
-			<img src="silang_white.png" id="silang1">
-			<img src="silang_white.png" id="silang2">
-			<img src="silang_white.png" id="silang3">
+			<img src="questionmark.png" id="quesmark">
+			<div id="quesmark_isi"></div>
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+			    <span class="close"></span>
+			   	<div class="modal-header">
+			   		<h1>Buttons :</h1>
+			   	</div>
+			    <ul id="help">
+				    <li><b>1</b> = Toggle Option 1</li>
+				    <li><b>2</b> = Toggle Option 2</li>
+				    <li><b>3</b> = Toggle Option 3</li>
+				    <li><b>4</b> = Toggle Option 4</li>
+				    <li><b>5</b> = Toggle Option 5</li>
+				    <li><b>6</b> = Toggle Option 6</li>
+				    <li><b>Z</b> = Remove Cross</li>
+				    <li><b>C</b> = Add Cross</li>
+				    <li><b>A</b> = Previous Round</li>
+				    <li><b>S</b> = Next Round</li>
+				    <li><b>I</b> = A Team -10 point</li>
+				    <li><b>O</b> = A Team +10 point</li>
+				    <li><b>K</b> = B Team -10 point</li>
+				    <li><b>L</b> = B Team +10 point</li>
+				    <li><b>H</b> = Help</li>
+			    </ul>
+			    <div class="modal-footer">
+			    	<h3>Disclaimer! Still work in progress, so expect nothing.</h3>
+			    </div>
+			</div>
+		</div>
+		<div id="grid">
+			<div class="griditem1">
+				<h2 id="tema">Bagian tubuh yang bergerak saat tertawa :</h2>
+			</div>
+			<div class="griditem2">
+				<ul id="list"><br><br><br><br>
+					<li id="op1"><b>Mulut</b></li>
+					<li id="op2"><b>Pipi</b></li>
+					<li id="op3"><b>Perut</b></li>
+					<li id="op4"><b>Bahu</b></li>
+					<li id="op5"><b>Dada</b></li>
+					<li id="op6"><b>Dagu</b></li>
+				</ul>
+			</div>
+			<div class="griditem3">
+				<div class="grid-container">
+					<ul id="nilai"><br><br><br><br>
+						<input type="text" value="A TEAM" class="gridnilai1">
+						<input type="text" value="B TEAM" class="gridnilai2">
+						<a id="nilai_a" class="gridnilai3">00</a>
+						<a id="nilai_b" class="gridnilai4">00</a>
+					</ul>
+				</div>
+			</div>
+			<div class="griditem4">
+				<div id="silangs" onclick="tambah_silang()">
+					<img src="silang_white.png" id="silang1">
+					<img src="silang_white.png" id="silang2">
+					<img src="silang_white.png" id="silang3">
+				</div>
+			</div>
 		</div>
 	</div>
-
 	<script src="script.js"></script>
-
 </body>
 </html>
