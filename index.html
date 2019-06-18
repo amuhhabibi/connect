@@ -1,96 +1,95 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-	<title>by Andi Muhammad Habibi</title>
-	<link rel="stylesheet" style="text/css" href="style.css"/>	<link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
+	<title>Login</title>
+	<link rel="stylesheet" style="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
 </head>
 
-<audio id="sfx_pressed">
-  <source src="nc174607.mp3" type="audio/mpeg">
+<div align="center" class="page_wrap">
+<body bgcolor= #191919 scroll="no" style="overflow: hidden" onload="start()">
+	<div id="box2" class="box"></div>
+	<div id="box1" class="box"></div>
+	<p><div class="dots">. . . . . . . . . .</div></p>
+	<h1 id="welcome">welcome</h1>
+	<p id="text1">enter - password - to - continue</p>
+	<form>
+	<input type="password" id="password" value="" placeholder="password" />
+	<br>
+	<input type="button" onclick="myFunction()" onkeydown="myFunction()" value="START" id="start_button" />
+	</form>
+	<p><div class="dots">. . . . . . . . . .</div></p>
+</div>
+
+<ul id="dnt">
+	<li id="time"></li>
+	<li id="day"></li>
+</ul>
+
+<audio id="nyaa">
+  <source src="nyaa.mp3" type="audio/mp3">
 </audio>
 
-<audio id="sfx_right">
-  <source src="nc191718.mp3" type="audio/mpeg">
-</audio>
+<img src="/connect/images/waifu03.png" class="waifu" onclick="document.getElementById('nyaa').play();" />
 
-<audio id="sfx_drumroll">
-  <source src="nc174740.mp3" type="audio/mpeg">
-</audio>
-
-<audio id="sfx_wrong">
-  <source src="Quiz-Wrong_Buzzer02-mp3/Quiz-Wrong_Buzzer02-3.mp3" type="audio/mpeg">
-</audio>
-
-<audio id="sfx_wrong_max">
-  <source src="Quiz-Wrong_Buzzer02-mp3/Quiz-Wrong_Buzzer02-4.mp3" type="audio/mpeg">
-</audio>
-
-<body>
-	<div id="page_wrap">
-			<img src="questionmark.png" id="quesmark">
-			<div id="quesmark_isi"></div>
-		<div id="myModal" class="modal">
-			<div class="modal-content">
-			    <span class="close"></span>
-			   	<div class="modal-header">
-			   		<h1>Buttons :</h1>
-			   	</div>
-			    <ul id="help">
-				    <li><b>1</b> = Toggle Option 1</li>
-				    <li><b>2</b> = Toggle Option 2</li>
-				    <li><b>3</b> = Toggle Option 3</li>
-				    <li><b>4</b> = Toggle Option 4</li>
-				    <li><b>5</b> = Toggle Option 5</li>
-				    <li><b>6</b> = Toggle Option 6</li>
-				    <li><b>Z</b> = Remove Cross</li>
-				    <li><b>X</b> = Add Cross</li>
-				    <li><b>A</b> = Previous Question</li>
-				    <li><b>S</b> = Next Question</li>
-				    <li><b>N</b> = Drumroll</li>
-				    <li><b>I</b> = A Team -10 point</li>
-				    <li><b>O</b> = A Team +10 point</li>
-				    <li><b>K</b> = B Team -10 point</li>
-				    <li><b>L</b> = B Team +10 point</li>
-				    <li><b>H</b> = Help</li>
-			    </ul>
-			    <div class="modal-footer">
-			    	<h3>Disclaimer! Still work in progress, so expect nothing.</h3>
-			    </div>
-			</div>
-		</div>
-		<div class="grid1">
-			<div class="griditem1">
-				<h2 id="tema">Bagian tubuh yang bergerak saat tertawa :</h2>
-			</div>
-			<div class="griditem2">
-				<ul id="list"><br><br><br><br>
-					<li id="op1"><b>Mulut</b></li>
-					<li id="op2"><b>Pipi</b></li>
-					<li id="op3"><b>Perut</b></li>
-					<li id="op4"><b>Bahu</b></li>
-					<li id="op5"><b>Dada</b></li>
-					<li id="op6"><b>Dagu</b></li>
-				</ul>
-			</div>
-			<div class="griditem3">
-					<ul id="nilai"><br><br><br><br>
-						<div class="grid2">
-							<input type="text" value="TEAM A" class="gridnilai1">
-							<input type="text" value="TEAM B" class="gridnilai2">
-							<a id="nilai_a" class="gridnilai3">000</a>
-							<a id="nilai_b" class="gridnilai4">000</a>
-						</div>
-					</ul>
-			</div>
-			<div class="griditem4">
-				<div id="silangs">
-					<img src="silang_white.png" id="silang1">
-					<img src="silang_white.png" id="silang2">
-					<img src="silang_white.png" id="silang3">
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="script.js"></script>
+	<script>
+		
+function startTime() {
+  var dn = new Date();
+  var hr = dn.getHours();
+  var mn = dn.getMinutes();
+  var sc = dn.getSeconds();
+  
+  document.getElementById('time').innerHTML =
+  hr + ":" + mn + ":" + sc;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
+}
+function startDays() {
+  var dn = new Date();
+  var dt = dn.getDate();
+  var mth = dn.getMonth() + 1;
+  var yr = dn.getFullYear();
+    
+  var weekday = new Array(7);
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
+  var n = weekday[dn.getDay()];
+  document.getElementById("day").innerHTML = n + "," + dt + "/" + mth + "/" + yr;
+}
+function start(){
+	startTime();
+    startDays();
+}
+document.getElementById("password").addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("start_button").click();
+  }
+});
+		
+function myFunction() {
+  var x;
+  
+  x = document.getElementById("password").value;
+  if (x == "mabaca") {
+    location.replace("/connect/" + x)
+  } else {
+    location.replace("/connect/" + x)
+  }
+	
+  document.getElementById("demo").innerHTML = text;
+}
+	</script>
+	
 </body>
 </html>
