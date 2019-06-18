@@ -95,7 +95,7 @@ function tambah_silang(){
 function pertanyaan(){
 	if (y <= 0){
 		++y;
-	}else if (y >= 8){
+	}else if (y >= 13){
 		--y;
 	}else if (y == 1) {
 		document.getElementById('tema').innerHTML = "Bagian tubuh yang bergerak saat tertawa :";
@@ -153,14 +153,62 @@ function pertanyaan(){
 		op4.innerHTML = "Macho".bold();
 		op5.innerHTML = "Bagus".bold();
 		op6.innerHTML = "Keren".bold();
+	}else if (y == 8) {
+		document.getElementById('tema').innerHTML = "Tempat guru mempersiapkan materi pelajaran :";
+		op1.innerHTML = "a".bold();
+		op2.innerHTML = "a".bold();
+		op3.innerHTML = "a".bold();
+		op4.innerHTML = "a".bold();
+		op5.innerHTML = "a".bold();
+		op6.innerHTML = "a".bold();
+	}else if (y == 9) {
+		document.getElementById('tema').innerHTML = "Pujian Guru saat muridnya mendapat nilai sempurna :";
+		op1.innerHTML = "a".bold();
+		op2.innerHTML = "a".bold();
+		op3.innerHTML = "a".bold();
+		op4.innerHTML = "a".bold();
+		op5.innerHTML = "a".bold();
+		op6.innerHTML = "a".bold();
+	}else if (y == 10) {
+		document.getElementById('tema').innerHTML = "Siswa paling sering terlambat :";
+		op1.innerHTML = "a".bold();
+		op2.innerHTML = "a".bold();
+		op3.innerHTML = "a".bold();
+		op4.innerHTML = "a".bold();
+		op5.innerHTML = "a".bold();
+		op6.innerHTML = "a".bold();
+	}else if (y == 11) {
+		document.getElementById('tema').innerHTML = "Alasan Siswa terlambat :";
+		op1.innerHTML = "a".bold();
+		op2.innerHTML = "a".bold();
+		op3.innerHTML = "a".bold();
+		op4.innerHTML = "a".bold();
+		op5.innerHTML = "a".bold();
+		op6.innerHTML = "a".bold();
+	}else if (y == 12) {
+		document.getElementById('tema').innerHTML = "Jika siswa terlambat, hal yang perlu dilakukan padanya :";
+		op1.innerHTML = "a".bold();
+		op2.innerHTML = "a".bold();
+		op3.innerHTML = "a".bold();
+		op4.innerHTML = "a".bold();
+		op5.innerHTML = "a".bold();
+		op6.innerHTML = "a".bold();
+	}else if (y == 13) {
+		document.getElementById('tema').innerHTML = "Kegiatan yang dilakukan Guru pada weekend :";
+		op1.innerHTML = "a".bold();
+		op2.innerHTML = "a".bold();
+		op3.innerHTML = "a".bold();
+		op4.innerHTML = "a".bold();
+		op5.innerHTML = "a".bold();
+		op6.innerHTML = "a".bold();
 	}else if (y == p) {
 		document.getElementById('tema').innerHTML = "";
-		op1.innerHTML = "".bold();
-		op2.innerHTML = "".bold();
-		op3.innerHTML = "".bold();
-		op4.innerHTML = "".bold();
-		op5.innerHTML = "".bold();
-		op6.innerHTML = "".bold();
+		op1.innerHTML = "a".bold();
+		op2.innerHTML = "a".bold();
+		op3.innerHTML = "a".bold();
+		op4.innerHTML = "a".bold();
+		op5.innerHTML = "a".bold();
+		op6.innerHTML = "a".bold();
 	}
 }
 
