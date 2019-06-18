@@ -14,28 +14,34 @@ var nilai_b = document.getElementById("nilai_b");
 var f = 0; //team a
 var g = 0; //team b
 
+function pad(number) {
+   
+     return (number < 100 ? '0' : '') + number
+   
+}
+
 function nolf(){
 	if (f == 0) {
-		document.getElementById("nilai_a").innerHTML = "00";
+		document.getElementById("nilai_a").innerHTML = "000";
 	}else if (f == -10) {
 		f += 10;
 	}
 }
 function seratusf(){
-	if (f == 90) {
+	if (f == 990) {
 		f -= 10;
 	}
 }
 
 function nolg(){
 	if (g == 0) {
-		document.getElementById("nilai_b").innerHTML = "00";
+		document.getElementById("nilai_b").innerHTML = "000";
 	}else if (g == -10) {
 		g += 10;
 	}
 }
 function seratusg(){
-	if (g == 90) {
+	if (g == 990) {
 		g -= 10;
 	}
 }
@@ -186,24 +192,24 @@ function checkKeyPress(key){
 	}else if(key.keyCode == "72"){
 		modal.style.display = "block";
 	}else if (key.keyCode == "79") {
-		nilai_a.innerHTML = f += 10;
+		nilai_a.innerHTML = pad(f += 10);
 		nolf();
 		nolf();
 		seratusf()
 		seratusf()
 	}else if (key.keyCode == "73") {
-		nilai_a.innerHTML = f -= 10;
+		nilai_a.innerHTML = pad(f -= 10);
 		nolf();
 		nolf();
 		seratusf()
 		seratusf()
 	}else if (key.keyCode == "76") {
-		nilai_b.innerHTML = g += 10;
+		nilai_b.innerHTML = pad(g += 10);
 		nolg();
 		nolg();
 		seratusg()
 	}else if (key.keyCode == "75") {
-		nilai_b.innerHTML = g -= 10;
+		nilai_b.innerHTML = pad(g -= 10);
 		nolg();
 		nolg();
 		seratusg()

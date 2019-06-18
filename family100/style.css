@@ -1,6 +1,8 @@
 html, body{
 	overflow: hidden;
 	font-family: "Courier New";
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -13,17 +15,17 @@ html, body{
 }
 
 #list{
-	padding-left: 20%;
 }
 
 #list>li {
+	margin: auto;
 	align-content: center;
 	width: 70%;
 	list-style-type: none;
 	font-family: "Courier New";
 	text-align: center;
 	color: #191919;
-	font-size: 20px;
+	font-size: 30px;
 	border-style: solid;
 	padding: 10px;
 	margin-bottom : 23px;
@@ -148,7 +150,7 @@ html, body{
 	list-style-type: none;
 }
 
-#grid {
+.grid1 {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(4, 100px);
@@ -184,41 +186,45 @@ html, body{
 }
 
 [class^="gridnilai"] {
-	font-size: 35px;
 	font-family: "Courier New";
+	align-items: center;
 	text-align: center;
 	border-style: none;
-	background-color: #191919;
-	color: #fefefe;
+	background-color: #fefefe;
+	color: #191919;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px #a0948a;	
 }
 
-.grid-container {
+.grid2 {
+	margin-left: auto;
+	margin-right: auto;
 	display: grid;
-	grid-template-columns: auto auto;
-	grid-template-areas:"satu dua""tiga empat";
+	margin: auto;
+	padding: 0;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:"satu dua "
+						"tiga empat ";
 	grid-gap: 10px;
+	grid-auto-flow: dense;
+	width: 90%;
 }
 
 .gridnilai1{
+	margin: auto;
+	width: 100%;
 	grid-area: satu;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	font-size: 60px;
 }.gridnilai2{
-	padding-top: 10px;
-	padding-bottom: 10px;
+	margin: auto;
+	width: 100%;
 	grid-area: dua;
+	font-size: 60px;
 }.gridnilai3{
 	grid-area: tiga;
+	font-size: 120px;
 }.gridnilai4{
 	grid-area: empat;
-}
-
-#nilai_a{
-	margin: auto;
-	float: left;
-	font-size: 100px;
-}#nilai_b{
-	float: right;
-	margin: auto;
-	font-size: 100px;
+	font-size: 120px;
 }
