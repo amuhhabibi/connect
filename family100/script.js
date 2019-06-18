@@ -18,6 +18,7 @@ var ab = document.getElementById("sfx_right");
 var ac = document.getElementById("sfx_drumroll"); 
 var ad = document.getElementById("sfx_wrong"); 
 var ae = document.getElementById("sfx_wrong_max"); 
+var temaa = document.getElementById("tema");
 
 function playSfxPressed() {
 	aa.volume = 0.5;
@@ -299,6 +300,8 @@ function checkKeyPress(key){
 		seratusg();
 	}else if (key.keyCode == "78") {
 		playSfxDrumroll();
+	}else if (key.keyCode == "66") { 
+		temaa.classList.toggle("tema_on");
 	}
 }
 

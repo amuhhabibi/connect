@@ -11,10 +11,11 @@ html, body{
 	color: #fefefe;
 	text-align: center;
 	font-size: 56px;
-	text-shadow: 0px 2px 10px #a0948a;
+	text-shadow: 0px 2px 10px #6b778d;
 }
-
-#list{
+.tema_on {
+	color: #17223b;
+	text-shadow: 0px 2px 10px #000000;
 }
 
 #list>li {
@@ -24,28 +25,28 @@ html, body{
 	list-style-type: none;
 	font-family: "Courier New";
 	text-align: center;
-	color: #191919;
+	color: #212121;
 	font-size: 30px;
 	border-style: solid;
 	padding: 10px;
 	margin-bottom : 23px;
 	border-color: #fefefe;
-	box-shadow: 0px 0px 20px #a0948a;	
+	box-shadow: 0px 0px 20px #6b778d;	
 	border-radius: 5px;
 }
 
 #list>li:hover {
-	cursor: pointer;
-	/*border-color: #a0948a;
+	cursor: default;
+	/*border-color: #6b778d;
 	background-color: #fefefe;
-	box-shadow: 0px 0px 20px #a0948a;*/	
+	box-shadow: 0px 0px 20px #6b778d;*/	
 }
 
 .list_on {
 	cursor: pointer;
-	border-color: #a0948a;
+	border-color: #6b778d;
 	background-color: #fefefe;
-	box-shadow: 0px 0px 20px #a0948a;	
+	box-shadow: 0px 0px 20px #6b778d;	
 }
 
 /*
@@ -56,18 +57,15 @@ html, body{
 */
 
 #silang1, #silang2, #silang3 {
+	margin-top: 10px;
 	min-width: 170px;
 	min-height: 170px;
 	width: 15%;
 	height: 15%;
 }
 
-#silang1, #silang2, #silang3:hover {
-	cursor: pointer;
-}
-
 .silang_on{
-	filter: drop-shadow(6px 6px 10px #ff5252);
+	filter: drop-shadow(6px 6px 10px #ff6768);
 }
 
 #quesmark{
@@ -117,7 +115,7 @@ html, body{
 }
 
 #help>li{
-	color: #191919;
+	color: #17223b;
 	padding: 3px;
 	list-style-type: none;
 }
@@ -136,14 +134,14 @@ html, body{
 .modal-header {
 	padding: 2px 16px;
 	background-color: #fefefe;
-	color: #191919;
+	color: #17223b;
 }
 
 .modal-footer {
 	border-radius: 5px;
 	padding: 2px 16px;
 	background-color: #fefefe;
-	color: #191919;
+	color: #17223b;
 }
 
 #nilai>li{
@@ -153,8 +151,8 @@ html, body{
 
 .grid1 {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(4, 100px);
+	grid-template-columns: 25% 25%;
+	grid-template-rows: auto auto auto;
 	grid-template-areas:"header header header header"
                     	"kiri kiri kanan kanan"
                        	"kiri kiri kanan kanan"
@@ -162,12 +160,15 @@ html, body{
                        	"kiri kiri kanan kanan"
                     	"footer footer footer footer";
 	grid-auto-flow: dense;
-	grid-gap: 10px;
+	grid-gap: 13px;
 	height: 100vh;
+	background-color: #ff7a8a;
 }
 
 [class^="griditem"] {
 	text-align: center;
+	background-color: #212121;
+	box-shadow: inset 0px 0px 10px #ff8c99;	
 }
 
 .griditem1 {
@@ -175,10 +176,12 @@ html, body{
 }
 
 .griditem2 {
+	border-radius: 0px 10px 10px 0px;
 	grid-area: kiri;
 }
 
 .griditem3 {
+	border-radius: 10px 0px 0px 10px;
 	grid-area: kanan;
 }
 
@@ -192,9 +195,9 @@ html, body{
 	text-align: center;
 	border-style: none;
 	background-color: #fefefe;
-	color: #191919;
+	color: #17223b;
 	border-radius: 5px;
-	box-shadow: 0px 0px 20px #a0948a;	
+	box-shadow: 0px 0px 20px #6b778d;	
 }
 
 .grid2 {
@@ -228,4 +231,8 @@ html, body{
 }.gridnilai4{
 	grid-area: empat;
 	font-size: 120px;
+}
+
+.gridnilai3, .gridnilai4:hover{
+	cursor: default;
 }
