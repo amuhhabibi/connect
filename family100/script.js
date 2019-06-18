@@ -17,6 +17,7 @@ var aa = document.getElementById("sfx_pressed");
 var ab = document.getElementById("sfx_right"); 
 var ac = document.getElementById("sfx_drumroll"); 
 var ad = document.getElementById("sfx_wrong"); 
+var ae = document.getElementById("sfx_wrong_max"); 
 
 function playSfxPressed() {
 	aa.volume = 0.5;
@@ -34,6 +35,10 @@ function playSfxDrumroll() {
 function playSfxWrong() {
 	ad.load();     
 	ad.play();
+}
+function playSfxWrongMax() {
+	ae.load();     
+	ae.play();
 }
 
 function pad(number) {
@@ -260,8 +265,8 @@ function checkKeyPress(key){
 		pertanyaan();
 		tambah_silang();
 	}else if (key.keyCode == "88"){ 
-		playSfxWrong();
 		++x;
+		playSfxWrong();
 		tambah_silang();
 	}else if(key.keyCode == "90"){ 
 		--x;
