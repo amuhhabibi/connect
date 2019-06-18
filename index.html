@@ -75,25 +75,18 @@ function start(){
     startDays();
 }
 
-document.getElementById("password").addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
+document.getElementById("password").addEventListener("keydown", checkKeyPress, false);
+function checkKeyPress(key){
+	if (key.keyCode == "13") { 
    event.preventDefault();
    document.getElementById("start_button").click();
-  }
+	}		
 });
 		
 function myFunction() {
-  var x;
-  
-  x = document.getElementById("password").value;
-
-  if (x == "mabaca") {
-    location.replace("/connect/" + x)
-  } else {
-    location.replace("/connect/" + x)
+  var x = document.getElementById("password").value;
+  location.replace("/connect/" + x)
   }
-	
-  document.getElementById("demo").innerHTML = text;
 }
 	</script>
 	
