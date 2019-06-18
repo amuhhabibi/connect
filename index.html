@@ -45,10 +45,12 @@ function startTime() {
   hr + ":" + mn + ":" + sc;
   var t = setTimeout(startTime, 500);
 }
+
 function checkTime(i) {
   if (i < 10) {i = "0" + i};
   return i;
 }
+
 function startDays() {
   var dn = new Date();
   var dt = dn.getDate();
@@ -63,13 +65,16 @@ function startDays() {
   weekday[4] = "Thursday";
   weekday[5] = "Friday";
   weekday[6] = "Saturday";
+
   var n = weekday[dn.getDay()];
   document.getElementById("day").innerHTML = n + "," + dt + "/" + mth + "/" + yr;
 }
+
 function start(){
 	startTime();
     startDays();
 }
+
 document.getElementById("password").addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
    event.preventDefault();
@@ -81,6 +86,7 @@ function myFunction() {
   var x;
   
   x = document.getElementById("password").value;
+
   if (x == "mabaca") {
     location.replace("/connect/" + x)
   } else {
@@ -93,3 +99,5 @@ function myFunction() {
 	
 </body>
 </html>
+
+

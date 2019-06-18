@@ -1,238 +1,186 @@
-html, body{
-	overflow: hidden;
-	font-family: "Courier New";
-	margin: 0;
-	padding: 0;
+@font-face {
+	font-family: "alexana";
+	src: url('fonts/alexana.eot');
+	src: url('fonts/alexana.eot?#iefix') format('embedded-opentype'),
+     	url('fonts/alexana.woff2') format('woff2'),
+     	url('fonts/alexana.woff') format('woff'),
+     	url('fonts/alexana.ttf') format('truetype'),
+     	url('fonts/alexana.svg#alexanaregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
-
-#tema {
-	font-family: "Courier New";
-	color: #fefefe;
-	text-align: center;
-	font-size: 56px;
-	text-shadow: 0px 2px 10px #6b778d;
-}
-.tema_on {
-	color: #17223b;
-	text-shadow: 0px 2px 10px #000000;
+.box {
+position: fixed;
+height: 500px;
+width: 488px;
+z-index: -2;
+box-shadow: 0px 0px 20px;
+	
 }
 
-#list>li {
-	margin: auto;
-	align-content: center;
-	width: 70%;
-	list-style-type: none;
-	font-family: "Courier New";
-	text-align: center;
-	color: #212121;
-	font-size: 30px;
-	border-style: solid;
-	padding: 10px;
-	margin-bottom : 23px;
-	border-color: #fefefe;
-	box-shadow: 0px 0px 20px #6b778d;	
-	border-radius: 5px;
+#box1 {
+	margin-top: -40px;
+	margin-left: 14px;
+	border: 8px solid white;
 }
 
-#list>li:hover {
-	cursor: default;
-	/*border-color: #6b778d;
-	background-color: #fefefe;
-	box-shadow: 0px 0px 20px #6b778d;*/	
+#box2 {
+	margin-top: -74px;
+	margin-left: -15px;
+	border: 8px solid #a0948a;
 }
 
-.list_on {
-	cursor: pointer;
-	border-color: #6b778d;
-	background-color: #fefefe;
-	box-shadow: 0px 0px 20px #6b778d;	
-}
-
-/*
-#silangs{
-	position: absolute;
-	bottom: 20px;
-}
-*/
-
-#silang1, #silang2, #silang3 {
-	margin-top: 10px;
-	min-width: 170px;
-	min-height: 170px;
-	width: 15%;
-	height: 15%;
-}
-
-.silang_on{
-	filter: drop-shadow(6px 6px 10px #ff6768);
-}
-
-#quesmark{
-	bottom: 20px;
-	right: 20px;
-	width: 36px;
-	height: 43px;
-	position: absolute;
-}
-
-#quesmark:hover{
-	cursor: pointer;
-	filter: drop-shadow(0px 0px 5px #618eff);
-}
-
-.modal {
-	display: none;
-	position: fixed;
-	z-index: 1;
-	padding-top: 100px;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0,0.4);
-}
-
-.modal-content {
-	background-color: #fefefe;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 50%;
-	border-radius: 5px;
-	font-size: 24px;
-	-webkit-animation-name: animateopen;
-	-webkit-animation-duration: 0.4s;
-	animation-name: animateopen;
-	animation-duration: 0.4s;
-}
-
-#help{
-	-webkit-column-count: 2; /* Old Chrome, Safari and Opera */
-	-moz-column-count: 2; /* Old Firefox */
-	column-count: 2;
-}
-
-#help>li{
-	color: #17223b;
-	padding: 3px;
-	list-style-type: none;
-}
-
-/* Add Animation */
-@-webkit-keyframes animateopen {
-	from {top:0; opacity:0} 
-	to {top:0; opacity:1}
-}
-
-@keyframes animateopen {
-	from {top:0; opacity:0}
-	to {top:0; opacity:1}
-}
-
-.modal-header {
-	padding: 2px 16px;
-	background-color: #fefefe;
-	color: #17223b;
-}
-
-.modal-footer {
-	border-radius: 5px;
-	padding: 2px 16px;
-	background-color: #fefefe;
-	color: #17223b;
-}
-
-#nilai>li{
-	color: #fefefe;
-	list-style-type: none;
-}
-
-.grid1 {
-	display: grid;
-	grid-template-columns: 25% 25%;
-	grid-template-rows: auto auto auto;
-	grid-template-areas:"header header header header"
-                    	"kiri kiri kanan kanan"
-                       	"kiri kiri kanan kanan"
-                    	"kiri kiri kanan kanan"
-                       	"kiri kiri kanan kanan"
-                    	"footer footer footer footer";
-	grid-auto-flow: dense;
-	grid-gap: 13px;
-	height: 100vh;
-	background-color: #ff7a8a;
-}
-
-[class^="griditem"] {
-	text-align: center;
-	background-color: #212121;
-	box-shadow: inset 0px 0px 10px #ff8c99;	
-}
-
-.griditem1 {
-	grid-area: header;
-}
-
-.griditem2 {
-	border-radius: 0px 10px 10px 0px;
-	grid-area: kiri;
-}
-
-.griditem3 {
-	border-radius: 10px 0px 0px 10px;
-	grid-area: kanan;
-}
-
-.griditem4 {
-	grid-area: footer;
-}
-
-[class^="gridnilai"] {
-	font-family: "Courier New";
-	align-items: center;
-	text-align: center;
-	border-style: none;
-	background-color: #fefefe;
-	color: #17223b;
-	border-radius: 5px;
-	box-shadow: 0px 0px 20px #6b778d;	
-}
-
-.grid2 {
+.page_wrap {
+	margin-top: 15%;
+	width: 500px;
+	min-width: 400px;
+	height: 500px;
+	min-height: 400px;
 	margin-left: auto;
 	margin-right: auto;
-	display: grid;
-	margin: auto;
-	padding: 0;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-template-areas:"satu dua "
-						"tiga empat ";
-	grid-gap: 10px;
-	grid-auto-flow: dense;
-	width: 90%;
+	text-shadow: 0px 5px 10px #a0948a;
 }
 
-.gridnilai1{
-	margin: auto;
-	width: 100%;
-	grid-area: satu;
-	font-size: 60px;
-}.gridnilai2{
-	margin: auto;
-	width: 100%;
-	grid-area: dua;
-	font-size: 60px;
-}.gridnilai3{
-	grid-area: tiga;
-	font-size: 120px;
-}.gridnilai4{
-	grid-area: empat;
-	font-size: 120px;
+#welcome {
+    color: white;
+	font-family: alexana;
+	font-size: 320%;
 }
 
-.gridnilai3, .gridnilai4:hover{
-	cursor: default;
+#text1 {
+	color: white;
+	font-family: alexana;
 }
+
+#start_button {
+	color: black;
+	border: 3px solid #191919;
+	margin-top: 30px;
+	font-family: alexana;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	line-height: 200%;
+	width: 120px;
+	height: 40px;
+	background: white;
+	text-decoration: none;
+	box-shadow: 0px 5px 10px #a0948a;
+}
+
+#start_button:hover {
+	color: white;
+	border: 3px solid #ffffff;
+	font-family: alexana;
+	text-align: center;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	width: 120px;
+	background: #191919;
+	cursor: pointer;
+}
+
+.dots {
+	color: white;
+	font-family: alexana;
+	font-size: 50px;
+}
+
+#password {
+	height: 20px;
+	width: 150px;
+	border: 0px solid #191919;
+	padding: 5px ;
+	font-family: alexana;
+	text-align: center;
+	border-radius: 7px;
+	box-shadow: 0px 5px 10px #a0948a;
+}
+
+#day {
+	font-size: 25px;
+	min-width: 200px;
+	margin: auto;
+	
+}
+
+#dnt {
+	list-style: none;
+	margin: auto;
+	position: fixed;
+	font-family: "Courier New";
+	color: white;
+	font-size: 60px;
+	right: 100px;
+	bottom: 5%;
+	display: block;
+	width: 20%;
+	min-width: 200px;
+	z-index: 3;
+	text-shadow: 0px 1px 15px #a0948a;
+	text-align: right;
+}
+
+.waifu {
+	position: fixed;
+	bottom: -80px;
+	width: 30%;
+	min-width: 200px;
+	display: block;
+	-moz-transition: all 0.3s;
+	 -webkit-transition: all 0.3s;
+	 transition: all 0.3s;
+}
+
+.waifu:hover {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
