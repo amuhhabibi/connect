@@ -95,7 +95,7 @@ function tambah_silang(){
 function pertanyaan(){
 	if (y <= 0){
 		++y;
-	}else if (y >= 13){
+	}else if (y >= 14){
 		--y;
 	}else if (y == 1) {
 		document.getElementById('tema').innerHTML = "Bagian tubuh yang bergerak saat tertawa :";
@@ -155,51 +155,51 @@ function pertanyaan(){
 		op6.innerHTML = "Keren".bold();
 	}else if (y == 8) {
 		document.getElementById('tema').innerHTML = "Tempat guru mempersiapkan materi pelajaran :";
-		op1.innerHTML = "a".bold();
-		op2.innerHTML = "a".bold();
-		op3.innerHTML = "a".bold();
-		op4.innerHTML = "a".bold();
+		op1.innerHTML = "Rumah".bold();
+		op2.innerHTML = "Café".bold();
+		op3.innerHTML = "Sekolah".bold();
+		op4.innerHTML = "Kampus".bold();
 		op5.innerHTML = "a".bold();
 		op6.innerHTML = "a".bold();
 	}else if (y == 9) {
 		document.getElementById('tema').innerHTML = "Pujian Guru saat muridnya mendapat nilai sempurna :";
-		op1.innerHTML = "a".bold();
-		op2.innerHTML = "a".bold();
-		op3.innerHTML = "a".bold();
+		op1.innerHTML = "Mantap".bold();
+		op2.innerHTML = "Bagus".bold();
+		op3.innerHTML = "Pertahankan".bold();
 		op4.innerHTML = "a".bold();
 		op5.innerHTML = "a".bold();
 		op6.innerHTML = "a".bold();
 	}else if (y == 10) {
 		document.getElementById('tema').innerHTML = "Siswa paling sering terlambat :";
-		op1.innerHTML = "a".bold();
-		op2.innerHTML = "a".bold();
-		op3.innerHTML = "a".bold();
-		op4.innerHTML = "a".bold();
+		op1.innerHTML = "Dika".bold();
+		op2.innerHTML = "Ade".bold();
+		op3.innerHTML = "Lyvia".bold();
+		op4.innerHTML = "Tita".bold();
 		op5.innerHTML = "a".bold();
 		op6.innerHTML = "a".bold();
 	}else if (y == 11) {
 		document.getElementById('tema').innerHTML = "Alasan Siswa terlambat :";
-		op1.innerHTML = "a".bold();
-		op2.innerHTML = "a".bold();
-		op3.innerHTML = "a".bold();
-		op4.innerHTML = "a".bold();
-		op5.innerHTML = "a".bold();
+		op1.innerHTML = "Terlambat bangun".bold();
+		op2.innerHTML = "Macet".bold();
+		op3.innerHTML = "Mogok".bold();
+		op4.innerHTML = "Kurang enak badan".bold();
+		op5.innerHTML = "Seragam belum kering".bold();
 		op6.innerHTML = "a".bold();
 	}else if (y == 12) {
 		document.getElementById('tema').innerHTML = "Jika siswa terlambat, hal yang perlu dilakukan padanya :";
-		op1.innerHTML = "a".bold();
-		op2.innerHTML = "a".bold();
-		op3.innerHTML = "a".bold();
+		op1.innerHTML = "Dikeluarkan".bold();
+		op2.innerHTML = "Hukum bersihkan WC".bold();
+		op3.innerHTML = "Biarkan".bold();
 		op4.innerHTML = "a".bold();
 		op5.innerHTML = "a".bold();
 		op6.innerHTML = "a".bold();
 	}else if (y == 13) {
 		document.getElementById('tema').innerHTML = "Kegiatan yang dilakukan Guru pada weekend :";
-		op1.innerHTML = "a".bold();
-		op2.innerHTML = "a".bold();
-		op3.innerHTML = "a".bold();
-		op4.innerHTML = "a".bold();
-		op5.innerHTML = "a".bold();
+		op1.innerHTML = "Tidur".bold();
+		op2.innerHTML = "Olahraga".bold();
+		op3.innerHTML = "Cari Duit".bold();
+		op4.innerHTML = "Kumpul sama keluarga".bold();
+		op5.innerHTML = "Membersihkan".bold();
 		op6.innerHTML = "a".bold();
 	}else if (y == p) {
 		document.getElementById('tema').innerHTML = "";
