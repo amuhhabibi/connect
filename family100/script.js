@@ -13,6 +13,28 @@ var nilai_a = document.getElementById("nilai_a");
 var nilai_b = document.getElementById("nilai_b");
 var f = 0; //team a
 var g = 0; //team b
+var aa = document.getElementById("sfx_pressed"); 
+var ab = document.getElementById("sfx_right"); 
+var ac = document.getElementById("sfx_drumroll"); 
+var ad = document.getElementById("sfx_wrong"); 
+
+function playSfxPressed() {
+	aa.volume = 0.5;
+	aa.load();     
+	aa.play();
+}
+function playSfxRight() {
+	ab.load();     
+	ab.play();
+}
+function playSfxDrumroll() {
+	ac.load();     
+	ac.play();
+}
+function playSfxWrong() {
+	ad.load();     
+	ad.play();
+}
 
 function pad(number) {
    
@@ -144,19 +166,26 @@ function pertanyaan(){
 
 window.addEventListener("keydown", checkKeyPress, false);
 function checkKeyPress(key){
-	if (key.keyCode == "49") {
-		document.getElementById("op1").classList.toggle("list_on");
-	}else if (key.keyCode == "50") {
+	if (key.keyCode == "49") { 
+		playSfxRight();
+		op1.classList.toggle("list_on");
+	}else if (key.keyCode == "50") { 
+		playSfxRight();
 		op2.classList.toggle("list_on");
-	}else if (key.keyCode == "51") {
+	}else if (key.keyCode == "51") { 
+		playSfxRight();
 		op3.classList.toggle("list_on");
-	}else if (key.keyCode == "52") {
+	}else if (key.keyCode == "52") { 
+		playSfxRight();
 		op4.classList.toggle("list_on");
-	}else if (key.keyCode == "53") {
+	}else if (key.keyCode == "53") { 
+		playSfxRight();
 		op5.classList.toggle("list_on");
-	}else if (key.keyCode == "54") {
+	}else if (key.keyCode == "54") { 
+		playSfxRight();
 		op6.classList.toggle("list_on");
-	}else if (key.keyCode == "83") {
+	}else if (key.keyCode == "83") { 
+		playSfxPressed();
 		++y;
 		x = 0;
 	    silang1.removeAttribute("class", "silang_on");
@@ -170,7 +199,8 @@ function checkKeyPress(key){
 		op6.removeAttribute("class", "list_on");
 		pertanyaan();
 		tambah_silang();
-	}else if (key.keyCode == "65") {
+	}else if (key.keyCode == "65") { 
+		playSfxPressed();
 		--y;
 		x = 0;
 	    op1.removeAttribute("class", "list_on");
@@ -180,39 +210,42 @@ function checkKeyPress(key){
 		op5.removeAttribute("class", "list_on");
 		op6.removeAttribute("class", "list_on");
 		pertanyaan();
-		tambah_silang()
-	}else if (key.keyCode == "88") {
+		tambah_silang();
+	}else if (key.keyCode == "88"){ 
+		playSfxWrong();
 		++x;
 		tambah_silang();
-	}else if(key.keyCode == "90"){
+	}else if(key.keyCode == "90"){ 
 		--x;
-		tambah_silang()
-	}else if(key.keyCode == "27"){
+		tambah_silang();
+	}else if(key.keyCode == "27"){ 
 		modal.style.display = "none";
-	}else if(key.keyCode == "72"){
+	}else if(key.keyCode == "72"){ 
 		modal.style.display = "block";
-	}else if (key.keyCode == "79") {
+	}else if (key.keyCode == "79"){ 
 		nilai_a.innerHTML = pad(f += 10);
 		nolf();
 		nolf();
-		seratusf()
-		seratusf()
-	}else if (key.keyCode == "73") {
+		seratusf();
+		seratusf();
+	}else if (key.keyCode == "73"){ 
 		nilai_a.innerHTML = pad(f -= 10);
 		nolf();
 		nolf();
-		seratusf()
-		seratusf()
-	}else if (key.keyCode == "76") {
+		seratusf();
+		seratusf();
+	}else if (key.keyCode == "76"){ 
 		nilai_b.innerHTML = pad(g += 10);
 		nolg();
 		nolg();
-		seratusg()
-	}else if (key.keyCode == "75") {
+		seratusg();
+	}else if (key.keyCode == "75"){ 
 		nilai_b.innerHTML = pad(g -= 10);
 		nolg();
 		nolg();
-		seratusg()
+		seratusg();
+	}else if (key.keyCode == "78") {
+		playSfxDrumroll();
 	}
 }
 
