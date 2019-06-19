@@ -5,37 +5,8 @@
 	<title>Login</title>
 	<link rel="stylesheet" style="text/css" href="style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
-</head>
-
-<div align="center" class="page_wrap">
-<body bgcolor= #191919 scroll="no" style="overflow: hidden" onload="start()">
-	<div id="box2" class="box"></div>
-	<div id="box1" class="box"></div>
-	<p><div class="dots">. . . . . . . . . .</div></p>
-	<h1 id="welcome">welcome</h1>
-	<p id="text1">enter - password - to - continue</p>
-	<form>
-	<input type="password" id="password" value="" placeholder="password" />
-	<br>
-	<input type="button" onclick="myFunction()" onkeydown="myFunction()" value="START" id="start_button" />
-	</form>
-	<p><div class="dots">. . . . . . . . . .</div></p>
-</div>
-
-<ul id="dnt">
-	<li id="time"></li>
-	<li id="day"></li>
-</ul>
-
-<audio id="nyaa">
-  <source src="nyaa.mp3" type="audio/mp3">
-</audio>
-
-<img src="/connect/images/waifu03.png" class="waifu" onclick="document.getElementById('nyaa').play();" />
-
 	<script>
-		
-function startTime() {
+	function startTime() {
   var dn = new Date();
   var hr = dn.getHours();
   var mn = dn.getMinutes();
@@ -75,6 +46,37 @@ function start(){
     startDays();
 }
 
+
+	</script>
+</head>
+
+<body bgcolor= #191919 scroll="no" style="overflow: hidden" onload="start()">
+<div align="center" class="page_wrap">
+	<div id="box2" class="box"></div>
+	<div id="box1" class="box"></div>
+	<p><div class="dots">. . . . . . . . . .</div></p>
+	<h1 id="welcome">welcome</h1>
+	<p id="text1">enter - password - to - continue</p>
+	<form>
+	<input type="password" id="password" value="" placeholder="password" />
+	<br>
+	<input type="button" onclick="myFunction()" onkeydown="myFunction()" value="START" id="start_button" />
+	</form>
+	<p><div class="dots">. . . . . . . . . .</div></p>
+</div>
+
+<ul id="dnt">
+	<li id="time"></li>
+	<li id="day"></li>
+</ul>
+
+<audio id="nyaa">
+  <source src="nyaa.mp3" type="audio/mp3">
+</audio>
+
+<img src="/connect/images/waifu03.png" class="waifu" onclick="document.getElementById('nyaa').play();" />
+
+<script>
 document.getElementById("password").addEventListener("keydown", checkKeyPress, false);
 function checkKeyPress(key){
 	if (key.keyCode == "13") {
@@ -85,9 +87,8 @@ function checkKeyPress(key){
 var x = document.getElementById("password").value;		
 function myFunction() {
   location.replace("/connect/" + x)
-  }
 }
-	</script>
+</script>
 	
 </body>
 </html>
