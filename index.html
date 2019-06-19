@@ -60,7 +60,7 @@ function start(){
 	<form>
 	<input type="password" id="password" value="mabaca" placeholder="password" />
 	<br>
-	<input type="button" onclick="myFunction()" value="START" id="start_button" />
+		<button type="button" onclick="myFunction()" value="START" id="start_button"></button>
 	</form>
 	<p><div class="dots">. . . . . . . . . .</div></p>
 </div>
@@ -79,7 +79,7 @@ function start(){
 <script>
 
 function myFunction() {
-	location.replace("https://amuhhabibi.github.io/connect/" + document.getElementById("password").value);
+	location.replace("/connect/" + document.getElementById("password").value);
 }
 
 document.getElementById("password").addEventListener("keydown", checkKeyPress);
