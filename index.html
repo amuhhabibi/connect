@@ -80,7 +80,7 @@ function start(){
 
 function myFunction(){
 	var x = document.getElementById("password").value;
-	location.replace("/connect/" + document.getElementById("password").value);
+	location.replace("/connect/" + x);
 }
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
