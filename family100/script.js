@@ -105,7 +105,7 @@ function pertanyaan(){
 		--y;
 	}else if (y == 1) {
 		document.getElementById('tema').innerHTML = "Bagian tubuh yang bergerak saat tertawa :";
-		op1.innerHTML = "Mulut".bold();
+		op1.innerHTML = "(30) Mulut".bold();
 		op2.innerHTML = "Pipi".bold();
 		op3.innerHTML = "Perut".bold();
 		op4.innerHTML = "Bahu".bold();
@@ -113,112 +113,112 @@ function pertanyaan(){
 		op6.innerHTML = "Dagu".bold();
 	}else if (y == 2) {
 		document.getElementById('tema').innerHTML = "Jenis binatang yang berbisa :";
-		op1.innerHTML = "Ular".bold();
-		op2.innerHTML = "Kelabang".bold();
-		op3.innerHTML = "Laba-laba".bold();
-		op4.innerHTML = "Tawon".bold();
-		op5.innerHTML = "Lebah".bold();
-		op6.innerHTML = "Kalajengking".bold();
+		op1.innerHTML = "(30) Ular".bold();
+		op2.innerHTML = "(20) Kelabang".bold();
+		op3.innerHTML = "(15) Laba-laba".bold();
+		op4.innerHTML = "(10) Tawon".bold();
+		op5.innerHTML = "(7) Lebah".bold();
+		op6.innerHTML = "(5) Kalajengking".bold();
 	}else if (y == 3) {
 		document.getElementById('tema').innerHTML = "Tempat untuk bersandar :";
-		op1.innerHTML = "Tiang listrik".bold();
-		op2.innerHTML = "Mobil".bold();
-		op3.innerHTML = "Kursi".bold();
-		op4.innerHTML = "Pintu".bold();
-		op5.innerHTML = "Tembok".bold();
-		op6.innerHTML = "Punggung orang".bold();
+		op1.innerHTML = "(30) Tiang listrik".bold();
+		op2.innerHTML = "(20) Mobil".bold();
+		op3.innerHTML = "(15) Kursi".bold();
+		op4.innerHTML = "(10) Pintu".bold();
+		op5.innerHTML = "(7) Tembok".bold();
+		op6.innerHTML = "(5) Punggung orang".bold();
 	}else if (y == 4) {
 		document.getElementById('tema').innerHTML = "Tempat yang sering disebut mistik:";
-		op1.innerHTML = "Kuburan".bold();
-		op2.innerHTML = "Goa".bold();
-		op3.innerHTML = "Gunung".bold();
-		op4.innerHTML = "Hutan".bold();
-		op5.innerHTML = "Rumah tua".bold();
-		op6.innerHTML = "Laut".bold();
+		op1.innerHTML = "(30) Kuburan".bold();
+		op2.innerHTML = "(20) Goa".bold();
+		op3.innerHTML = "(15) Gunung".bold();
+		op4.innerHTML = "(10) Hutan".bold();
+		op5.innerHTML = "(7) Rumah tua".bold();
+		op6.innerHTML = "(5) Laut".bold();
 	}else if (y == 5) {
 		document.getElementById('tema').innerHTML = "Hal yang dilakukan saat menunggu antrian :";
-		op1.innerHTML = "Main HP".bold();
-		op2.innerHTML = "Melihat-lihat".bold();
-		op3.innerHTML = "Ngobrol".bold();
-		op4.innerHTML = "Cek uang".bold();
-		op5.innerHTML = "Cek belanjaan".bold();
-		op6.innerHTML = "Bengong".bold();
+		op1.innerHTML = "(30) Main HP".bold();
+		op2.innerHTML = "(20) Melihat-lihat".bold();
+		op3.innerHTML = "(15) Ngobrol".bold();
+		op4.innerHTML = "(10) Cek uang".bold();
+		op5.innerHTML = "(7) Cek belanjaan".bold();
+		op6.innerHTML = "(5) Bengong".bold();
 	}else if (y == 6) {
 		document.getElementById('tema').innerHTML = "Hewan dengan wajah yang seram :";
-		op1.innerHTML = "Harimau".bold();
-		op2.innerHTML = "Gorilla".bold();
-		op3.innerHTML = "Monyet".bold();
-		op4.innerHTML = "Iguana".bold();
-		op5.innerHTML = "Buaya".bold();
-		op6.innerHTML = "Serigala".bold();
+		op1.innerHTML = "(30) Harimau".bold();
+		op2.innerHTML = "(20) Gorilla".bold();
+		op3.innerHTML = "(15) Monyet".bold();
+		op4.innerHTML = "(10) Iguana".bold();
+		op5.innerHTML = "(7) Buaya".bold();
+		op6.innerHTML = "(5) Serigala".bold();
 	}else if (y == 7) {
 		document.getElementById('tema').innerHTML = "Pujian orang tua pada anaknya yang baru cukur :";
-		op1.innerHTML = "Ganteng".bold();
-		op2.innerHTML = "Bersih".bold();
-		op3.innerHTML = "Rapi".bold();
-		op4.innerHTML = "Macho".bold();
-		op5.innerHTML = "Bagus".bold();
-		op6.innerHTML = "Keren".bold();
+		op1.innerHTML = "(30) Ganteng".bold();
+		op2.innerHTML = "(20) Bersih".bold();
+		op3.innerHTML = "(15) Rapi".bold();
+		op4.innerHTML = "(10) Macho".bold();
+		op5.innerHTML = "(7) Bagus".bold();
+		op6.innerHTML = "(5) Keren".bold();
 	}else if (y == 8) {
 		document.getElementById('tema').innerHTML = "Tempat guru mempersiapkan materi pelajaran :";
-		op1.innerHTML = "Rumah".bold();
-		op2.innerHTML = "Café".bold();
-		op3.innerHTML = "Sekolah".bold();
-		op4.innerHTML = "Kampus".bold();
-		op5.innerHTML = "a".bold();
-		op6.innerHTML = "a".bold();
+		op1.innerHTML = "(30) Rumah".bold();
+		op2.innerHTML = "(20) Café".bold();
+		op3.innerHTML = "(15) Sekolah".bold();
+		op4.innerHTML = "(10) Kampus".bold();
+		op5.innerHTML = "(7) a".bold();
+		op6.innerHTML = "(5) a".bold();
 	}else if (y == 9) {
 		document.getElementById('tema').innerHTML = "Pujian Guru saat muridnya mendapat nilai sempurna :";
-		op1.innerHTML = "Mantap".bold();
-		op2.innerHTML = "Bagus".bold();
-		op3.innerHTML = "Pertahankan".bold();
-		op4.innerHTML = "a".bold();
-		op5.innerHTML = "a".bold();
-		op6.innerHTML = "a".bold();
+		op1.innerHTML = "(30) Mantap".bold();
+		op2.innerHTML = "(20) Bagus".bold();
+		op3.innerHTML = "(15) Pertahankan".bold();
+		op4.innerHTML = "(10) a".bold();
+		op5.innerHTML = "(7) a".bold();
+		op6.innerHTML = "(5) a".bold();
 	}else if (y == 10) {
 		document.getElementById('tema').innerHTML = "Siswa paling sering terlambat :";
-		op1.innerHTML = "Dika".bold();
-		op2.innerHTML = "Ade".bold();
-		op3.innerHTML = "Lyvia".bold();
-		op4.innerHTML = "Tita".bold();
-		op5.innerHTML = "a".bold();
-		op6.innerHTML = "a".bold();
+		op1.innerHTML = "(30) Dika".bold();
+		op2.innerHTML = "(20) Ade".bold();
+		op3.innerHTML = "(15) Lyvia".bold();
+		op4.innerHTML = "(10) Tita".bold();
+		op5.innerHTML = "(7) a".bold();
+		op6.innerHTML = "(5) a".bold();
 	}else if (y == 11) {
 		document.getElementById('tema').innerHTML = "Alasan Siswa terlambat :";
-		op1.innerHTML = "Terlambat bangun".bold();
-		op2.innerHTML = "Macet".bold();
-		op3.innerHTML = "Mogok".bold();
-		op4.innerHTML = "Kurang enak badan".bold();
-		op5.innerHTML = "Seragam belum kering".bold();
-		op6.innerHTML = "a".bold();
+		op1.innerHTML = "(30) Terlambat bangun".bold();
+		op2.innerHTML = "(20) Macet".bold();
+		op3.innerHTML = "(15) Mogok".bold();
+		op4.innerHTML = "(10) Kurang enak badan".bold();
+		op5.innerHTML = "(7) Seragam belum kering".bold();
+		op6.innerHTML = "(5) a".bold();
 	}else if (y == 12) {
 		document.getElementById('tema').innerHTML = "Jika siswa terlambat, hal yang perlu dilakukan padanya :";
-		op1.innerHTML = "Dikeluarkan".bold();
-		op2.innerHTML = "Hukum bersihkan WC".bold();
-		op3.innerHTML = "Biarkan".bold();
-		op4.innerHTML = "a".bold();
-		op5.innerHTML = "a".bold();
-		op6.innerHTML = "a".bold();
+		op1.innerHTML = "(30) Dikeluarkan".bold();
+		op2.innerHTML = "(20) Hukum bersihkan WC".bold();
+		op3.innerHTML = "(15) Biarkan".bold();
+		op4.innerHTML = "(10) a".bold();
+		op5.innerHTML = "(7) a".bold();
+		op6.innerHTML = "(5) a".bold();
 	}else if (y == 13) {
 		document.getElementById('tema').innerHTML = "Kegiatan yang dilakukan Guru pada weekend :";
-		op1.innerHTML = "Tidur".bold();
-		op2.innerHTML = "Olahraga".bold();
-		op3.innerHTML = "Cari Duit".bold();
-		op4.innerHTML = "Kumpul sama keluarga".bold();
-		op5.innerHTML = "Membersihkan".bold();
-		op6.innerHTML = "a".bold();
+		op1.innerHTML = "(30) Tidur".bold();
+		op2.innerHTML = "(20) Olahraga".bold();
+		op3.innerHTML = "(15) Cari Duit".bold();
+		op4.innerHTML = "(10) Kumpul sama keluarga".bold();
+		op5.innerHTML = "(7) Membersihkan".bold();
+		op6.innerHTML = "(5) a".bold();
 	}else if (y == p) {
 		document.getElementById('tema').innerHTML = "";
-		op1.innerHTML = "a".bold();
-		op2.innerHTML = "a".bold();
-		op3.innerHTML = "a".bold();
-		op4.innerHTML = "a".bold();
-		op5.innerHTML = "a".bold();
-		op6.innerHTML = "a".bold();
+		op1.innerHTML = "(30) a".bold();
+		op2.innerHTML = "(20) a".bold();
+		op3.innerHTML = "(15) a".bold();
+		op4.innerHTML = "(10) a".bold();
+		op5.innerHTML = "(7) a".bold();
+		op6.innerHTML = "(5) a".bold();
 	}
 }
 
-window.addEventListener("keydown", checkKeyPress, false);
+window.addEventListener("keydown", checkKeyPress);
 function checkKeyPress(key){
 	if (key.keyCode == "49") { 
 		playSfxRight();
@@ -274,29 +274,103 @@ function checkKeyPress(key){
 		tambah_silang();
 	}else if(key.keyCode == "27"){ 
 		modal.style.display = "none";
-	}else if(key.keyCode == "72"){ 
+	}else if(key.keyCode == "77"){ 
 		modal.style.display = "block";
-	}else if (key.keyCode == "79"){ 
+	}else if (key.keyCode == "82"){ 
+		nilai_a.innerHTML = pad(f += 30);
+		nolf();
+		nolf();
+		seratusf();
+		seratusf();
+	}else if (key.keyCode == "84"){ 
+		nilai_a.innerHTML = pad(f += 20);
+		nolf();
+		nolf();
+		seratusf();
+		seratusf();
+	}else if (key.keyCode == "89"){ 
+		nilai_a.innerHTML = pad(f += 15);
+		nolf();
+		nolf();
+		seratusf();
+		seratusf();
+	}else if (key.keyCode == "85"){ 
 		nilai_a.innerHTML = pad(f += 10);
 		nolf();
 		nolf();
 		seratusf();
 		seratusf();
 	}else if (key.keyCode == "73"){ 
-		nilai_a.innerHTML = pad(f -= 10);
+		nilai_a.innerHTML = pad(f += 7);
 		nolf();
 		nolf();
 		seratusf();
 		seratusf();
-	}else if (key.keyCode == "76"){ 
+	}else if (key.keyCode == "79"){ 
+		nilai_a.innerHTML = pad(f += 5);
+		nolf();
+		nolf();
+		seratusf();
+		seratusf();
+	}else if (key.keyCode == "80"){ 
+		nilai_a.innerHTML = pad(f -= 7);
+		nolf();
+		nolf();
+		seratusf();
+		seratusf();
+	}else if (key.keyCode == "219"){ 
+		nilai_a.innerHTML = pad(f -= 5);
+		nolf();
+		nolf();
+		seratusf();
+		seratusf();
+	}else if (key.keyCode == "70"){ 
+		nilai_b.innerHTML = pad(g += 30);
+		nolg();
+		nolg();
+		seratusg();
+		seratusg();
+	}else if (key.keyCode == "71"){ 
+		nilai_b.innerHTML = pad(g += 20);
+		nolg();
+		nolg();
+		seratusg();
+		seratusg();
+	}else if (key.keyCode == "72"){ 
+		nilai_b.innerHTML = pad(g += 15);
+		nolg();
+		nolg();
+		seratusg();
+		seratusg();
+	}else if (key.keyCode == "74"){ 
 		nilai_b.innerHTML = pad(g += 10);
 		nolg();
 		nolg();
 		seratusg();
+		seratusg();
 	}else if (key.keyCode == "75"){ 
-		nilai_b.innerHTML = pad(g -= 10);
+		nilai_b.innerHTML = pad(g += 7);
 		nolg();
 		nolg();
+		seratusg();
+		seratusg();
+	}else if (key.keyCode == "76"){ 
+		nilai_b.innerHTML = pad(g += 5);
+		nolg();
+		nolg();
+		seratusg();
+		seratusg();
+	}else if (key.keyCode == "186"){ 
+		nilai_b.innerHTML = pad(g -= 7);
+		nolg();
+		nolg();
+		seratusg();
+		seratusg();
+	}else if (key.keyCode == "222"){ 
+		nilai_b.innerHTML = pad(g -= 5);
+		nolg();
+		nolg();
+		seratusg();
 		seratusg();
 	}else if (key.keyCode == "78") {
 		playSfxDrumroll();

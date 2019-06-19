@@ -81,8 +81,8 @@ html, body{
 #quesmark{
 	bottom: 20px;
 	right: 20px;
-	width: 36px;
-	height: 43px;
+	width: 75px;
+	height: 95px;
 	position: absolute;
 }
 
@@ -110,7 +110,7 @@ html, body{
 	border: 1px solid #888;
 	width: 50%;
 	border-radius: 5px;
-	font-size: 24px;
+	font-size: 22px;
 	-webkit-animation-name: animateopen;
 	-webkit-animation-duration: 0.4s;
 	animation-name: animateopen;
