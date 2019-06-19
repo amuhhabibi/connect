@@ -78,15 +78,15 @@ function start(){
 
 <script>
 
-function myFunction() {
-	location.replace("/connect/" + document.getElementById("password").value);
-}
-
 document.getElementById("password").addEventListener("keydown", checkKeyPress);
 function checkKeyPress(key){
 	if (key.keyCode == "13") {
 		myFunction();
 	}	
+}
+	
+function myFunction() {
+	location.replace("/connect/" + document.getElementById("password").value);
 }
 	
 </script>
