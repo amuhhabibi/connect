@@ -78,17 +78,16 @@ function start(){
 
 <script>
 
-var input = document.getElementById("password");
+function myFunction(){
+	var x = document.getElementById("password").value;
+	location.replace("/connect/" + document.getElementById("password").value);
+}
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
    event.preventDefault();
-   document.getElementById("start_button").click();
+   myFunction();
   }
 });
-	
-function myFunction() {
-	location.replace("/connect/" + document.getElementById("password").value);
-}
 	
 </script>
 	
