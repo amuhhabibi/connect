@@ -77,18 +77,17 @@ function start(){
 <img src="/connect/images/waifu03.png" class="waifu" onclick="document.getElementById('nyaa').play();" />
 
 <script>
-
-function myFunction(){
-	var x = document.getElementById("password").value;
+function aku(){
+var x = document.getElementById("password").value;
 	location.replace("/connect/" + x);
 }
+var input = document.getElementById("password");
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
-  event.preventDefault();
-  var x = document.getElementById("password").value;
-  location.replace("/connect/" + x);
+   event.preventDefault();
+   aku();
   }
-});
+});	
 	
 </script>
 	
