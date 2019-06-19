@@ -77,14 +77,13 @@ function start(){
 
 document.getElementById("password").addEventListener("keydown", checkKeyPress, false);
 function checkKeyPress(key){
-	if (key.keyCode == "13") { 
-   event.preventDefault();
+	if (key.keyCode == "13") {
    document.getElementById("start_button").click();
 	}		
 }
 		
+var x = document.getElementById("password").value;		
 function myFunction() {
-  var x = document.getElementById("password").value;
   location.replace("/connect/" + x)
   }
 }
