@@ -84,8 +84,9 @@ function myFunction(){
 }
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
-   event.preventDefault();
-   myFunction();
+  event.preventDefault();
+  var x = document.getElementById("password").value;
+  location.replace("/connect/" + x);
   }
 });
 	
