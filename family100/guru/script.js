@@ -163,7 +163,7 @@ function tambah_silang(){
 function pertanyaan(){
 	if (y <= 0){
 		++y;
-	}else if (y >= 14){
+	}else if (y >= 9){
 		--y;
 	}else if (y == 1) {
 		document.getElementById('tema').innerHTML = "Tempat guru mempersiapkan materi pelajaran :";
