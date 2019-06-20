@@ -79,13 +79,13 @@ function start(){
 <script>
 function aku(){
 var x = document.getElementById("password").value;
-	location.replace("/connect/" + x);
+	location.replace("/" + x);
 }
 var input = document.getElementById("password");
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
    var x = document.getElementById("password").value;
-   location.replace("/connect/" + x);
+   location.replace("/" + x);
    event.preventDefault();
    aku();
   }
