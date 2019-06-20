@@ -43,7 +43,7 @@ function playSfxWrongMax() {
 }
 
 function pad(number) {
-   
+     return (number < 10 ? '0' : '') + number
      return (number < 100 ? '0' : '') + number
    
 }
