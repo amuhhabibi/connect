@@ -6,20 +6,26 @@
 	<link rel="stylesheet" style="text/css" href="style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
 	<script>
+
 	function startTime() {
   var dn = new Date();
   var hr = dn.getHours();
   var mn = dn.getMinutes();
   var sc = dn.getSeconds();
   
-  document.getElementById('time').innerHTML =
-  hr + ":" + mn + ":" + sc;
-  var t = setTimeout(startTime, 500);
+function pad(number) {
+  if(number<10){
+    return (number ? '0' : '') + number;
+  }else if(number==0){
+    return (number ? '00' : '');
+  }else if(number=>10){
+    return (number ? '' : '') + number;
+  }
 }
 
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};
-  return i;
+  document.getElementById('time').innerHTML =
+ pad(hr) + ":" + pad(mn) + ":" + pad(sc);
+  var t = setTimeout(startTime, 500);
 }
 
 function startDays() {
