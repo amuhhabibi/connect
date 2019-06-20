@@ -43,9 +43,13 @@ function playSfxWrongMax() {
 }
 
 function pad(number) {
-     return (number < 10 ? '0' : '') + number
-     return (number < 100 ? '0' : '') + number
-   
+	if(number<10){
+		return (number ? '00' : '') + number;
+	}else if(number<100){
+		return (number ? '0' : '') + number;
+	}else if (number=> 100){
+		return number;
+	}
 }
 
 function nolf(){
