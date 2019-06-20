@@ -163,32 +163,72 @@ function tambah_silang(){
 function pertanyaan(){
 	if (y <= 0){
 		++y;
-	}else if (y >= 4){
+	}else if (y >= 14){
 		--y;
 	}else if (y == 1) {
-		document.getElementById('tema').innerHTML = "Alasan Siswa terlambat :";
-		op1.innerHTML = "(30) Terlambat bangun".bold();
-		op2.innerHTML = "(20) Macet".bold();
-		op3.innerHTML = "(15) Mogok".bold();
-		op4.innerHTML = "(10) Kurang enak badan".bold();
-		op5.innerHTML = "(7) Seragam belum kering".bold();
-		op6.innerHTML = "(5) Antar Keluarga".bold();
+		document.getElementById('tema').innerHTML = "Tempat guru mempersiapkan materi pelajaran :";
+		op1.innerHTML = "(30) Rumah".bold();
+		op2.innerHTML = "(20) Cafe".bold();
+		op3.innerHTML = "(15) Kantor".bold();
+		op4.innerHTML = "(10) Kampus".bold();
+		op5.innerHTML = "(7) Kost-kostan".bold();
+		op6.innerHTML = "(5) Kelas".bold();
 	}else if (y == 2) {
-		document.getElementById('tema').innerHTML = "Bagian tubuh yang bergerak saat tertawa :";
-		op1.innerHTML = "(30) Mulut".bold();
-		op2.innerHTML = "Pipi".bold();
-		op3.innerHTML = "Perut".bold();
-		op4.innerHTML = "Bahu".bold();
-		op5.innerHTML = "Dada".bold();
-		op6.innerHTML = "Dagu".bold();
+		document.getElementById('tema').innerHTML = "Pujian Guru saat muridnya mendapat nilai sempurna :";
+		op1.innerHTML = "(30) Mantap".bold();
+		op2.innerHTML = "(20) Pertahankan".bold();
+		op3.innerHTML = "(15) Bagus".bold();
+		op4.innerHTML = "(10) Hebat".bold();
+		op5.innerHTML = "(7) Pintar".bold();
+		op6.innerHTML = "(5) Luar Biasa".bold();
 	}else if (y == 3) {
-		document.getElementById('tema').innerHTML = "Tempat yang sering disebut mistik:";
-		op1.innerHTML = "(30) Kuburan".bold();
-		op2.innerHTML = "(20) Goa".bold();
-		op3.innerHTML = "(15) Gunung".bold();
-		op4.innerHTML = "(10) Hutan".bold();
-		op5.innerHTML = "(7) Rumah tua".bold();
-		op6.innerHTML = "(5) Laut".bold();
+		document.getElementById('tema').innerHTML = "Kegiatan Guru CGS di weekend :";
+		op1.innerHTML = "(30) Tidur".bold();
+		op2.innerHTML = "(20) Olahraga".bold();
+		op3.innerHTML = "(15) Cari Duit".bold();
+		op4.innerHTML = "(10) Kumpul sama keluarga".bold();
+		op5.innerHTML = "(7) Membersihkan".bold();
+		op6.innerHTML = "(5) a".bold();
+	}else if (y == 4) {
+		document.getElementById('tema').innerHTML = "Jenis binatang yang berbisa :";
+		op1.innerHTML = "(30) Ular".bold();
+		op2.innerHTML = "(20) Kelabang".bold();
+		op3.innerHTML = "(15) Laba-laba".bold();
+		op4.innerHTML = "(10) Tawon".bold();
+		op5.innerHTML = "(7) Lebah".bold();
+		op6.innerHTML = "(5) Kalajengking".bold();
+	}else if (y == 5) {
+		document.getElementById('tema').innerHTML = "Tempat untuk bersandar :";
+		op1.innerHTML = "(30) Tiang listrik".bold();
+		op2.innerHTML = "(20) Mobil".bold();
+		op3.innerHTML = "(15) Kursi".bold();
+		op4.innerHTML = "(10) Pintu".bold();
+		op5.innerHTML = "(7) Tembok".bold();
+		op6.innerHTML = "(5) Punggung orang".bold();
+	}else if (y == 6) {
+		document.getElementById('tema').innerHTML = "Hal yang dilakukan saat menunggu antrian :";
+		op1.innerHTML = "(30) Main HP".bold();
+		op2.innerHTML = "(20) Melihat-lihat".bold();
+		op3.innerHTML = "(15) Ngobrol".bold();
+		op4.innerHTML = "(10) Cek uang".bold();
+		op5.innerHTML = "(7) Cek belanjaan".bold();
+		op6.innerHTML = "(5) Bengong".bold();
+	}else if (y == 7) {
+		document.getElementById('tema').innerHTML = "Hewan dengan wajah yang seram :";
+		op1.innerHTML = "(30) Harimau".bold();
+		op2.innerHTML = "(20) Gorilla".bold();
+		op3.innerHTML = "(15) Monyet".bold();
+		op4.innerHTML = "(10) Iguana".bold();
+		op5.innerHTML = "(7) Buaya".bold();
+		op6.innerHTML = "(5) Serigala".bold();
+	}else if (y == 8) {
+		document.getElementById('tema').innerHTML = "Pujian orang tua pada anaknya yang baru cukur :";
+		op1.innerHTML = "(30) Ganteng".bold();
+		op2.innerHTML = "(20) Bersih".bold();
+		op3.innerHTML = "(15) Rapi".bold();
+		op4.innerHTML = "(10) Macho".bold();
+		op5.innerHTML = "(7) Bagus".bold();
+		op6.innerHTML = "(5) Keren".bold();
 	}else if (y == p) {
 		document.getElementById('tema').innerHTML = "";
 		op1.innerHTML = "(30) a".bold();

@@ -1,5 +1,4 @@
 html, body{
-	overflow: hidden;
 	font-family: "ESCAMPURENAK";
 	margin: 0;
 	padding: 0;
@@ -22,10 +21,6 @@ html, body{
 	text-align: center;
 	font-size: 56px;
 	text-shadow: 0px 2px 10px #6b778d;
-}
-.tema_on {
-	color: #17223b;
-	text-shadow: 0px 2px 10px #000000;
 }
 
 #list>li {
@@ -67,6 +62,7 @@ html, body{
 */
 
 #silang1, #silang2, #silang3 {
+    vertical-align: middle;
 	margin-top: 10px;
 	min-width: 170px;
 	min-height: 170px;
@@ -160,14 +156,14 @@ html, body{
 
 .grid1 {
 	display: grid;
-	grid-template-columns: 25% 25%;
+	grid-template-columns: 25% 25% 25% 25%;;
 	grid-template-rows: auto auto auto;
-	grid-template-areas:"header header header "
-                    	"kiri kiri kanan"
-                       	"kiri kiri kanan"
-                    	"kiri kiri kanan"
-                       	"kiri kiri kanan"
-                    	"footer footer footer";
+	grid-template-areas:"header header header header "
+                    	"kiri kiri kanan kanan"
+                       	"kiri kiri kanan kanan"
+                    	"kiri kiri kanan kanan"
+                       	"kiri kiri kanan kanan"
+                    	"footer_kiri footer footer footer_kanan";
 	grid-auto-flow: dense;
 	grid-gap: 13px;
 	height: 100vh;
@@ -203,18 +199,7 @@ html, body{
 }
 
 .griditem6 {
-	grid-area: footer;
-}
-
-[class^="gridnilai"] {
-	font-family: "ESCAMPURENAK";
-	align-items: center;
-	text-align: center;
-	border-style: none;
-	background-color: #fefefe;
-	color: #17223b;
-	border-radius: 5px;
-	box-shadow: 0px 0px 20px #6b778d;	
+	grid-area: footer_kanan;
 }
 
 .grid2 {
@@ -225,31 +210,66 @@ html, body{
 	padding: 0;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	grid-template-areas:"satu dua "
-						"tiga empat ";
-	grid-gap: 10px;
+	grid-template-areas:"satu empat "
+						"dua lima "
+						"tiga enam";
+	grid-gap: 20px;
 	grid-auto-flow: dense;
 	width: 90%;
 }
 
-.gridnilai1{
+[class^="gridnilai"] {
+    vertical-align: middle;
+	font-family: "ESCAMPURENAK";
+	align-items: center;
+	text-align: center;
+	border-style: none;
+	background-color: #fefefe;
+	color: #17223b;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px #6b778d;	
+}
+
+.gridnilai1a{
 	margin: auto;
 	width: 100%;
 	grid-area: satu;
 	font-size: 60px;
-}.gridnilai2{
+}.gridnilai2a{
 	margin: auto;
 	width: 100%;
 	grid-area: dua;
 	font-size: 60px;
-}.gridnilai3{
+}.gridnilai3a{
+	margin: auto;
+	width: 100%;
 	grid-area: tiga;
-	font-size: 120px;
-}.gridnilai4{
+	font-size: 60px;
+}.gridnilai1b{
 	grid-area: empat;
-	font-size: 120px;
+	font-size: 110px;
+}.gridnilai2b{
+	grid-area: lima;
+	font-size: 110px;
+}.gridnilai3b{
+	grid-area: enam;
+	font-size: 110px;
 }
 
 .gridnilai3, .gridnilai4:hover{
 	cursor: default;
+}
+
+#countdown_timer {
+	font-family: "ESCAMPURENAK";
+	color: #fefefe;	text-align: center;
+	font-size: 100px;
+	text-shadow: 0px 2px 10px #6b778d;
+}
+
+#pilihan_team{
+	font-family: "ESCAMPURENAK";
+	color: #fefefe;	text-align: center;
+	font-size: 100px;
+	text-shadow: 0px 2px 10px #6b778d;
 }
