@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Takaramono</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/connect/favicon.png" />
+</head>
+<body bgcolor= #191919 style="overflow: hidden">
+  <video controls style="margin: auto">
+  <source src="ECWw9uTW4uMcANhX.mp4" type="video/mp4">
+</video>
+</body>
+</html>
