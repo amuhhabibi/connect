@@ -182,12 +182,12 @@ function pertanyaan(){
 		op5.innerHTML = "Dada".bold();
 		op6.innerHTML = "Dagu".bold();
 	}else if (y == 3) {
-		document.getElementById('tema').innerHTML = "Tempat yang sering disebut mistik:";
+		document.getElementById('tema').innerHTML = "Tempat yang sering disebut mistis:";
 		op1.innerHTML = "(30) Kuburan".bold();
 		op2.innerHTML = "(20) Goa".bold();
 		op3.innerHTML = "(15) Gunung".bold();
 		op4.innerHTML = "(10) Hutan".bold();
-		op5.innerHTML = "(7) Rumah tua".bold();
+		op5.innerHTML = "(7) Rumah kosong".bold();
 		op6.innerHTML = "(5) Laut".bold();
 	}else if (y == p) {
 		document.getElementById('tema').innerHTML = "";
