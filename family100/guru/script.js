@@ -206,7 +206,7 @@ function pertanyaan(){
 		op5.innerHTML = "(7) Tembok".bold();
 		op6.innerHTML = "(5) Punggung orang".bold();
 	}else if (y == 6) {
-		document.getElementById('tema').innerHTML = "Hal yang dilakukan saat menunggu antrian :";
+		document.getElementById('tema').innerHTML = "Hal yang dilakukan saat menunggu antrian di indomarket:";
 		op1.innerHTML = "(30) Main HP".bold();
 		op2.innerHTML = "(20) Melihat-lihat".bold();
 		op3.innerHTML = "(15) Ngobrol".bold();
