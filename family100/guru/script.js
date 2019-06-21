@@ -185,10 +185,10 @@ function pertanyaan(){
 		document.getElementById('tema').innerHTML = "Kegiatan Guru CGS di weekend :";
 		op1.innerHTML = "(30) Tidur".bold();
 		op2.innerHTML = "(20) Olahraga".bold();
-		op3.innerHTML = "(15) Cari Duit".bold();
-		op4.innerHTML = "(10) Kumpul sama keluarga".bold();
+		op3.innerHTML = "(15) Kumpul sama keluarga".bold();
+		op4.innerHTML = "(10) Cari duit".bold();
 		op5.innerHTML = "(7) Membersihkan".bold();
-		op6.innerHTML = "(5) a".bold();
+		op6.innerHTML = "(5) Belajar".bold();
 	}else if (y == 4) {
 		document.getElementById('tema').innerHTML = "Jenis binatang yang berbisa :";
 		op1.innerHTML = "(30) Ular".bold();
