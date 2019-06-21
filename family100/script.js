@@ -176,11 +176,11 @@ function pertanyaan(){
 	}else if (y == 2) {
 		document.getElementById('tema').innerHTML = "Bagian tubuh yang bergerak saat tertawa :";
 		op1.innerHTML = "(30) Mulut".bold();
-		op2.innerHTML = "Pipi".bold();
-		op3.innerHTML = "Perut".bold();
-		op4.innerHTML = "Bahu".bold();
-		op5.innerHTML = "Dada".bold();
-		op6.innerHTML = "Dagu".bold();
+		op2.innerHTML = "(20) Pipi".bold();
+		op3.innerHTML = "(15) Perut".bold();
+		op4.innerHTML = "(10) Bahu".bold();
+		op5.innerHTML = "(7) Dada".bold();
+		op6.innerHTML = "(5) Dagu".bold();
 	}else if (y == 3) {
 		document.getElementById('tema').innerHTML = "Tempat yang sering disebut mistis:";
 		op1.innerHTML = "(30) Kuburan".bold();
