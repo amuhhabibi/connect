@@ -188,7 +188,7 @@ function pertanyaan(){
 		op3.innerHTML = "(15) Kumpul sama keluarga".bold();
 		op4.innerHTML = "(10) Cari duit".bold();
 		op5.innerHTML = "(7) Membersihkan".bold();
-		op6.innerHTML = "(5) Belajar".bold();
+		op6.innerHTML = "(5) Susun materi".bold();
 	}else if (y == 4) {
 		document.getElementById('tema').innerHTML = "Jenis binatang yang berbisa :";
 		op1.innerHTML = "(30) Ular".bold();
