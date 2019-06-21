@@ -44,10 +44,6 @@ function plus30(){
 	tulisan_nilais.innerHTML = pad(setto += 30);
 	needed()
 }
-function plus30(){
-	tulisan_nilais.innerHTML = pad(setto += 30);
-	needed()
-}
 function plus20(){
 	tulisan_nilais.innerHTML = pad(setto += 20);
 	needed()
