@@ -64,8 +64,8 @@ function plus7(){
 	tulisan_nilais.innerHTML = pad(setto += 7);
 	needed()
 }
-function plus2(){
-	tulisan_nilais.innerHTML = pad(setto += 2);
+function plus5(){
+	tulisan_nilais.innerHTML = pad(setto += 5);
 	needed()
 }
 
