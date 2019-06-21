@@ -204,7 +204,7 @@ function pertanyaan(){
 		op3.innerHTML = "(15) Kursi".bold();
 		op4.innerHTML = "(10) Pintu".bold();
 		op5.innerHTML = "(7) Tembok".bold();
-		op6.innerHTML = "(5) Pundak orang".bold();
+		op6.innerHTML = "(5) Punggung orang".bold();
 	}else if (y == 6) {
 		document.getElementById('tema').innerHTML = "Hal yang dilakukan saat menunggu antrian :";
 		op1.innerHTML = "(30) Main HP".bold();
