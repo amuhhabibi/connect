@@ -27,8 +27,8 @@ canvas{
 	border: 8px solid #a0948a;
 	max-width: 100%;
 	max-height: 100%;
-	width: 50%;
-	height: 28%;
+	width: 420px;
+	height: 220px;
 	top: 50%;
 	left: 50%;
 	position: absolute;
@@ -47,8 +47,8 @@ canvas{
 	border: 8px solid #fefefe;
 	max-width: 100%;
 	max-height: 100%;
-	width: 50%;
-	height: 28%;
+	width: 220px;
+	height: 420px;
 	top: 50%;
 	left: 50%;
 	position: absolute;
