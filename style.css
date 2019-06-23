@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "alexana";
-	src: url('../fonts/alexana.eot');
-	src: url('../fonts/alexana.eot?#iefix') format('embedded-opentype'),
-     	url('../fonts/alexana.woff2') format('woff2'),
-     	url('../fonts/alexana.woff') format('woff'),
-     	url('../fonts/alexana.ttf') format('truetype'),
-     	url('../fonts/alexana.svg#alexanaregular') format('svg');
+	src: url('/fonts/alexana.eot');
+	src: url('/fonts/alexana.eot?#iefix') format('embedded-opentype'),
+     	url('/fonts/alexana.woff2') format('woff2'),
+     	url('/fonts/alexana.woff') format('woff'),
+     	url('/fonts/alexana.ttf') format('truetype'),
+     	url('/fonts/alexana.svg#alexanaregular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
