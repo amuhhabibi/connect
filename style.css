@@ -21,10 +21,12 @@ canvas{
 }
 
 .loginBox1, .loginBox2{
-	background-color: #00;
+	background-color: #63dfff33;
 	box-shadow: 0px 0px 15px #000;
 	border-radius: 5px;
 	border: 8px solid #a0948a;
+	max-width: 100%;
+	max-height: 100%;
 	width: 420px;
 	height: 220px;
 	top: 50%;
@@ -39,10 +41,12 @@ canvas{
 }
 
 .loginBoxMain{
-	background-color: #191919;
+	background-color: #191919f7;
 	box-shadow: 0px 0px 10px #a0948a;
 	border-radius: 5px;
 	border: 8px solid #fefefe;
+	max-width: 100%;
+	max-height: 100%;
 	width: 420px;
 	height: 220px;
 	top: 50%;
@@ -65,6 +69,8 @@ canvas{
 	margin: 15px auto auto auto;
 	display: inline-block;
 	text-align: center;
+	max-width: 100%;
+	max-height: 100%;
 	height: 20px;
 	width: 150px;
 	border: 0px solid #191919;
@@ -83,6 +89,8 @@ canvas{
 	border-radius: 20px;
 	-moz-border-radius: 20px;
 	line-height: 200%;
+	max-width: 100%;
+	max-height: 100%;
 	width: 110px;
 	height: 30px;
 	background: white;
@@ -100,6 +108,8 @@ canvas{
 }
 
 .isi{
+	max-width: 100%;
+	max-height: 100%;
 	margin-top: 25%;
 	transform: translate(0, -50%);
 }
