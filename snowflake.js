@@ -1,10 +1,3 @@
-/*
- * @name Snowflakes
- * @description Particle system simulating the motion of falling snowflakes.
- * Uses an array of objects to hold the snowflake particles.
- * Contributed by Aatish Bhatia.
- */
-
 let snowflakes = []; // array to hold snowflake objects
 
 function setup() {
