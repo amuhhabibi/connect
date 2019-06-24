@@ -1,7 +1,7 @@
 function pwCheck(){
     event.preventDefault();
 	var password = document.getElementById("password").value;
-	location.replace("/" + password);
+	window.location = "/" + password;
 }
 
 function pwCheckBtn(){
