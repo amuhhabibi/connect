@@ -6,5 +6,5 @@ function preload(){
 
 function setup(){
 	noCanvas();
-	createP(join(txt, "<br><br>"));
+	document.getElementById("story").innerHTML = (join(txt, "<br><br>"));
 }
