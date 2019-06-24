@@ -4,11 +4,9 @@ function pwCheck(){
 	location.replace("/" + password);
 }
 
-var input = document.getElementById("password");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    pwCheck();
-    event.preventDefault();
-    pwCheck();
-  }
-});
+function pwCheckBtn(){
+	var x = event.keyCode;
+	if (x == 13) {
+	  	pwCheck();
+	}
+}
