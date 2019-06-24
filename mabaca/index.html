@@ -4,10 +4,14 @@
 <head>
 	<title>Read</title>
 	<link rel="stylesheet" style="text/css" href="style.css">
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <script src="../p5/p5.min.js"></script>
+    <script src="../p5/addons/p5.dom.min.js"></script>
+    <script src="../p5/addons/p5.sound.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <div class="page_wrap" align="center">
-<body bgcolor= #191919 onload="start()">
+<body bgcolor= #191919>
 
 <div id="sidebar">
 	<div class="toggle-btn" onclick="document.getElementById('sidebar').classList.toggle('active')">
@@ -35,73 +39,7 @@
 		<object data="story.html" id="openFile" width="700" height="2000"></object>
 	</div>
 </div>
-
-	<a href="/">
-	<ul id="dnt">
-		<li id="time"></li>
-		<li id="day"></li>
-	</ul>
-	</a>
-	
-	<audio id="nyaa">
-	  <source src="/nyaa.mp3" type="audio/mp3">
-	</audio>
-	
-	<img src="/images/waifu03.png" class="waifu" onclick="document.getElementById('nyaa').play();"/>
 </div>
-
-<script>
-
-window.onscroll = function() {scrollBarf()};
-
-function scrollBarf() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
-
-function startTime() {
-  var dn = new Date();
-  var hr = dn.getHours();
-  var mn = dn.getMinutes();
-  var sc = dn.getSeconds();
-  
-  document.getElementById('time').innerHTML =
-  hr + ":" + mn + ":" + sc;
-  var t = setTimeout(startTime, 500);
-}
-
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};
-  return i;
-}
-
-function startDays() {
-  var dn = new Date();
-  var dt = dn.getDate();
-  var mth = dn.getMonth() + 1;
-  var yr = dn.getFullYear();
-    
-  var weekday = new Array(7);
-  weekday[0] = "Sunday";
-  weekday[1] = "Monday";
-  weekday[2] = "Tuesday";
-  weekday[3] = "Wednesday";
-  weekday[4] = "Thursday";
-  weekday[5] = "Friday";
-  weekday[6] = "Saturday";
-
-  var n = weekday[dn.getDay()];
-  document.getElementById("day").innerHTML = n + "," + dt + "/" + mth + "/" + yr;
-}
-
-function start(){
-	startTime();
-    startDays();
-}
-
-</script>
 
 </body>
 </html>
