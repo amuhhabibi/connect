@@ -1,5 +1,3 @@
-function preload(){
-
 let snowflakes = []; // array to hold snowflake objects
 
 function setup() {
@@ -55,5 +53,4 @@ function snowflake() {
   this.display = function() {
     ellipse(this.posX, this.posY, this.size);
   };
-}
 }
