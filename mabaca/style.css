@@ -13,7 +13,7 @@
 .header {
   margin-top: 30px;
   font-family: "Courier New";
-  width: 700px;
+  max-width: 700px;
   padding: 20px;
   font-size: 20px;
   background: white;
@@ -41,8 +41,8 @@
 	background: white;
 	margin-top: 20px;
 	padding: 20px;
-  height: 100%;
-	width: 700px;
+  	height: 100%;
+	max-width: 700px;
 	box-shadow: 0px 0px 130px #a0948a;
 }
 
