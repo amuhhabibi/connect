@@ -16,6 +16,13 @@ html, body{
   margin: 0;
 } 
 
+.page_wrap{
+  position:absolute;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
 .main {
 	font-family: "Courier New";
 	background: #191919;
@@ -26,10 +33,6 @@ html, body{
   font-size: 130%;
   color: white;
   text-shadow: 0px 2px 10px #a0948a;
-  position:absolute;
-  left:50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
 }
 
 .bugisa {
