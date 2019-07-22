@@ -10,12 +10,6 @@
     font-style: normal;
 }
 
-html, body{
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-} 
-
 .page_awrap{
   position:absolute;
   left:50%;
