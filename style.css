@@ -100,3 +100,9 @@ canvas{
 	-webkit-appearance: none;
 	text-align-last: center;
 }
+.isi > select > option {
+	padding: 7px 30px 7px 30px;
+	font-family: "BugisA";
+	-webkit-appearance: none;
+	text-align-last: center;
+}
