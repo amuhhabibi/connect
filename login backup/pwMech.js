@@ -10,8 +10,3 @@ function pwCheckBtn(){
 	  	pwCheck();
 	}
 }
-
-function valueCheck(){
-	var x = document.getElementById("list").value;
-	window.location = "/" + x;
-}
