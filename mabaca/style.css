@@ -41,3 +41,21 @@
   height:100%;
   text-align: justify;
 }
+
+.page_wrap {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.a1.a3{
+  background: #191919;
+  color: white;
+}
+
+.a2.a4{
+  background: white;
+  color: #191919;
+}
