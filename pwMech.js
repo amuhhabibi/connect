@@ -11,7 +11,15 @@ function pwCheckBtn(){
 	}
 }
 
-function valueCheck(){
-	var x = document.getElementById("list").value;
-	window.location = "/" + x;
+// function valueCheck(){
+// 	var x = document.getElementById("list").value;
+// 	window.location = "/" + x;
+// }
+
+function mGallery(){
+	window.location = "/gallery";
+}
+
+function mMabaca(){
+	window.location = "/mabaca";
 }
