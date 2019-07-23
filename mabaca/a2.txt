@@ -1,7 +1,4 @@
-
-
-"KURAng Sehat"
-<br>
+"KURAng Sehat"<br>
 kursi yang membungkuk menatap lantai
 pintu yang berteriak
 mereka terlihat tidak sehat
@@ -19,6 +16,5 @@ menunggumu
 di rumahmu
 bercumbu
 bersama adikmu
-lalu kulupakan dirimu
-<br>
+lalu kulupakan dirimu<br>
 - 14:19 / 23 / 07 / 2019 -
