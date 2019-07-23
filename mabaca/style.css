@@ -46,15 +46,9 @@
   display: grid;
   grid-template-columns: auto;
   grid-gap: 10px;
-  padding: 10px;
 }
 
-.a1.a3{
-  background: #191919;
-  color: white;
-}
-
-.a2.a4{
+.a2 , .a4{
   background: white;
   color: #191919;
 }
