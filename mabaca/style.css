@@ -47,3 +47,7 @@
   grid-template-columns: auto;
   grid-gap: 10px;
 }
+
+.lightup{
+  text-shadow: 0px 0px 10px white;
+}
