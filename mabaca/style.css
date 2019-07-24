@@ -49,11 +49,13 @@
 }
 
 .footer{
-  text-align: center;
+  left:50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
   text-decoration: none;
   text-shadow: 0px 0px 10px white;
   font-size: 20px;
   font-family: "Courier New";
-  background-color: rgba(100, 125, 146, 0.91);
+  background: #191919;
   color: white;
 }
