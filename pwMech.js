@@ -20,6 +20,6 @@ function mGallery(){
 	window.location = "/gallery";
 }
 
-function mMabaca(){
-	window.location = "/mabaca";
-}
+// function mMabaca(){
+// 	window.location = "/mabaca";
+// }
