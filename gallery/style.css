@@ -37,6 +37,9 @@ body {
   vertical-align: middle;
   width: 100%;
 }
+.column img:hover {
+  cursor: pointer;
+}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1080px) {
@@ -60,4 +63,10 @@ body {
   position: absolute;
   transform: translate(5% ,-130%);
   text-shadow: 0px 0px 5px #191919;
+}
+
+.profile{
+  text-decoration: none;
+  text-shadow: 0px 0px 10px white;
+  color: white;
 }
