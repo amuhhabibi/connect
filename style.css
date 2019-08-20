@@ -131,3 +131,10 @@ canvas{
 	background: #191919;
 	box-shadow: 0px 5px 10px #000;
 }
+
+.profile{
+  font-family: "Courier New";
+  text-decoration: none;
+  text-shadow: 0px 0px 10px white;
+  color: white;
+}
