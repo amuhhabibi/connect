@@ -15,12 +15,18 @@
 	<div id="page_wrap">
 		<div class="loginBoxMain" align="center">
 			<form method="POST" action="https://formspree.io/amuhhabibi@gmail.com" class="isi">
-				<input type="email" name="email" placeholder="Your email" id="isian"><br><br>
-				<textarea name="message" placeholder="Test Message" id="isian"></textarea><br><br>
+				<input type="email" name="email" placeholder="Your email" id="isian_email"><br><br>
+				<p name="message" placeholder="Test Message" id="isian"></p><br><br>
 				<button type="submit" id="connect">Send Test</button>
 			</form>
 		</div>
 				<a class="profile" href="/profile/">p r o f i l e</a>
 	</div>
+
+<script>
+	var d = new Date();
+	document.getElementById("isian").innerHTML = d.toUTCString();
+</script>
+
 </body>
 </html>
