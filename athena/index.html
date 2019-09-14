@@ -29,6 +29,8 @@
 
 <script>
 	var x = document.getElementById("posisi");
+	var d = new Date();
+	var waktu = document.getElementById("demo").innerHTML = d.toString();
 
 	function getLocation() {
 	  if (navigator.geolocation) {
@@ -37,9 +39,9 @@
 	    x.innerHTML = "Geolocation is not supported by this browser.";
 	  }
 	}
-	function showPosition(position) {
-	  x.innerHTML = "https://www.google.com/maps/place/" + position.coords.latitude + 
-	  "%20" + position.coords.longitude;
+	function showPosition(position) {  
+	  x.innerHTML = "Melewati" + "https://www.google.com/maps/place/" + position.coords.latitude + 
+	  "%20" + position.coords.longitude + " pada " + waktu + ;
 	}
 
     window.onload = getLocation;
