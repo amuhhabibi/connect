@@ -1,0 +1,31 @@
+@font-face {
+	font-family: "alexana";
+	src: url('/fonts/alexana.eot');
+	src: url('/fonts/alexana.eot?#iefix') format('embedded-opentype'),
+     	url('/fonts/alexana.woff2') format('woff2'),
+     	url('/fonts/alexana.woff') format('woff'),
+     	url('/fonts/alexana.ttf') format('truetype'),
+     	url('/fonts/alexana.svg#alexanaregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'BugisA';
+    src: url('/fonts/BugisA.eot');
+    src: url('/fonts/BugisA.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/BugisA.woff2') format('woff2'),
+        url('/fonts/BugisA.woff') format('woff'),
+        url('/fonts/BugisA.ttf') format('truetype'),
+        url('/fonts/BugisA.svg#BugisA') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+	background-color: #191919;
+}
+
+#foto{
+	box-shadow: 0px 2px 8px #fefefe;
+}
