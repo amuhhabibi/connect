@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Read</title>
+	<link rel="stylesheet" style="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+	<script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script type="text/javascript">
+		var txt;
+
+		function preload(){
+			loada1 = loadStrings("a1.txt");
+			loada2 = loadStrings("a2.txt");
+			loada3 = loadStrings("a3.txt");
+			loada4 = loadStrings("mimpi.txt");
+		}
+
+		function setup(){
+			noCanvas();
+			document.getElementById("a1").innerHTML = join(loada1, "<br>");
+			document.getElementById("a2").innerHTML = join(loada2, "<br>");
+			document.getElementById("a3").innerHTML = join(loada3, "<br>");
+			document.getElementById("a4").innerHTML = join(loada4, "<br>");
+		}
+    </script>
+</head>
+<body bgcolor= #191919>
+<div class="page_wrap" align="center">
+	<div id="a1" class="main"></div>
+	<div class="main lightup">1</div>
+	<hr align="center" width="100%">
+	<hr align="center" width="100%">
+	<div id="a2" class="main"></div>
+	<div class="main lightup">2</div>
+	<hr align="center" width="100%">
+	<hr align="center" width="100%">
+	<div id="a3" class="main"></div>
+	<div class="main lightup">3</div>
+	<hr align="center" width="100%">
+	<hr align="center" width="100%">
+	<div id="a4" class="main"></div>
+	<div class="main lightup">m1mp1</div>
+</div><br><br>
+<a class="footer" href="/profile/">p r o f i l e</a>
+</body>
+</html>
