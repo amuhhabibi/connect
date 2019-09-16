@@ -34,9 +34,9 @@ canvas{
 }
 
 .loginBoxMain{
-    background-color: rgba(78, 76, 74, 0.58);
+    /*background-color: rgba(78, 76, 74, 0.58);*/
 	border-radius: 5px;
-	border: 8px solid #fefefe;
+	/*border: 8px solid #fefefe;*/
 	top: 50%;
 	left: 50%;
 	position: absolute;
@@ -110,7 +110,7 @@ canvas{
 	color: #191919;
 	border: 3px solid #191919;
 	font-family: alexana;
-	font-size: 12px;
+	font-size: 13px;
 	border-radius: 20px;
 	-moz-border-radius: 20px;
 	line-height: 200%;
