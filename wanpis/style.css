@@ -36,7 +36,10 @@
     height: 30px;*/
     background: white;
     text-decoration: none;
-    margin: 5px
+    margin-bottom: 5px;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+    padding: 5px;
 }
 
 .butt:hover{
