@@ -73,3 +73,16 @@
   background: #191919;
   color: white;
 }
+
+.not_selected{
+    color: #fefefe; 
+    font-family:'alexana'; 
+    padding-left: 20px;
+}
+
+.selected{
+    color: #9eb0e8; 
+    font-family:'alexana'; 
+    padding-left: 20px; 
+    text-shadow: 0px 2px 10px #686868;
+}
