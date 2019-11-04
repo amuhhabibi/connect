@@ -35,12 +35,12 @@
     src: url('../fonts/cumisans.otf');
 }
 @font-face{
-    font-family: 'letsjazz';
-    src: url('../fonts/letsjazz.otf');   
-}
-@font-face{
     font-family: 'zelda-reg';
     src: url('../fonts/zelda_reg.otf');
+}
+@font-face{
+    font-family: 'letsjazz';
+    src: url('../fonts/letsjazz.otf');   
 }
 
 .not_selected{

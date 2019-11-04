@@ -21,11 +21,16 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family: 'letsjazz';
+    src: url('../fonts/letsjazz.otf');   
+}
 
 .not_selected{
     color: #fefefe; 
     font-family:'alexana'; 
     padding-left: 20px;
+    font-family: 'letsjazz';
 }
 
 .selected{
@@ -33,6 +38,7 @@
     font-family:'alexana'; 
     padding-left: 20px; 
     text-shadow: 0px 2px 10px #686868;
+    font-family: 'letsjazz';
 }
 
 .selected:hover{
@@ -46,4 +52,5 @@
     color: #fefefe; 
     font-family:'alexana'; 
     padding-left: 20px;
+    font-family: 'letsjazz';
 }
