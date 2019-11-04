@@ -26,6 +26,26 @@
   font-family: 'letsjazz';
   src: url('../fonts/letsjazz.otf');   
 }
+@font-face{
+    font-family: 'ballyhoo';
+    src: url('../fonts/ballyhoo.otf');
+}
+@font-face{
+    font-family: 'blanka-reg';
+    src: url('../fonts/blanka_reg.otf');
+}
+@font-face{
+    font-family: 'cumisans';
+    src: url('../fonts/cumisans.otf');
+}
+@font-face{
+    font-family: 'zelda-reg';
+    src: url('../fonts/zelda_reg.otf');
+}
+@font-face{
+    font-family: 'letsjazz';
+    src: url('../fonts/letsjazz.otf');   
+}
 
 
 /*.page_wrap{
@@ -35,8 +55,12 @@
   transform: translate(-50%,-50%);
 }*/
 
-.main{
+.fofont{
   font-family: "Courier New";
+}
+
+.main{
+  font-family: "cumisans";
   background: #191919;
   margin-top: 20px;
   padding: 20px;
@@ -80,14 +104,12 @@
 
 .not_selected{
   color: #fefefe; 
-  font-family:'alexana'; 
   padding-left: 20px;
   font-family: 'letsjazz';
 }
 
 .selected{
   color: #9eb0e8; 
-  font-family:'alexana'; 
   padding-left: 20px; 
   text-shadow: 0px 2px 10px #686868;
   font-family: 'letsjazz';
@@ -95,14 +117,12 @@
 
 .selected:hover{
   color: #9eb0e8; 
-  font-family:'alexana'; 
   padding-left: 20px; 
   text-shadow: 0px 2px 10px #686868;
 }
 
 .not_selected:hover{
   color: #fefefe; 
-  font-family:'alexana'; 
   padding-left: 20px;
   font-family: 'letsjazz';
 }
