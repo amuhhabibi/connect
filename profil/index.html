@@ -61,28 +61,16 @@
                     </div>
                 </div>
                 <div class="form-group">
-					<textarea placeholder="Pesan Anda" class="form-control" id="pesan" name="message" rows="14" required></textarea>
-					<textarea type="hidden" id="waktu" name="message"></textarea>
+					<textarea placeholder="Pesan Anda" class="form-control" name="message" rows="14" required></textarea>
 					<input type="hidden" name="_captcha" value="false">
 					<input type="hidden" name="_next" value="https://amuhhabibi.xyz/other/athena/">
                 </div>
-				<button type="submit" class="btn btn-lg btn-dark btn-block" onclick="setWaktu()">Kirim</button>
+				<button type="submit" class="btn btn-lg btn-dark btn-block">Kirim</button>
             </form>
 		</div><br>
 		<footer class="page-footer font-small blue pt-1" style="background-color: #1e1e1e; margin-top: 40px">
 			<div class="footer-copyright text-center py-3" style="color: #fefefe;">Laman ini dikembangkan oleh <a href="../profil/">Andi Muhammad Habibi</a> © 2018-2019</div>
 		</footer>
 		</div>
-		<script>
-			var x = document.getElementById("pesan");
-			var y = document.getElementById("waktu");
-			var waktu = new Date().toString();
-		
-			function setWaktu() {
-			  y.innerHTML = x.textContent + " pada " + waktu;
-			}
-
-			window.onload = setWaktu;
-		</script>
 	</body>
 </html>
