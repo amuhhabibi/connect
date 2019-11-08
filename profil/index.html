@@ -57,18 +57,29 @@
                         </div>
                         <div class="col">
                             <input type="email" name="email" class="form-control" placeholder="Alamat Pos-el" required>
+							<textarea name="message" style="display:none;" id="waktu" required></textarea>
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <textarea placeholder="Pesan Anda" class="form-control" name="message" rows="14" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-lg btn-dark btn-block">Kirim</button>
+                <button type="submit" class="btn btn-lg btn-dark btn-block" onclick="setWaktu()">Kirim</button>
             </form>
 		</div>
 		<footer class="page-footer font-small blue pt-1" style="background-color: #1e1e1e; margin-top: 40px">
 			<div class="footer-copyright text-center py-3" style="color: #fefefe;">Laman ini dikembangkan oleh <a href="../profil/">Andi Muhammad Habibi</a> © 2018-2019</div>
 		</footer>
 		</div>
+		<script>
+			var x = document.getElementById("waktu");
+			var waktu = new Date().toString();
+		
+			function setWaktu() {
+			  x.innerHTML = waktu;
+			}
+		
+			window.onload = getLocation;
+		</script>
 	</body>
 </html>
