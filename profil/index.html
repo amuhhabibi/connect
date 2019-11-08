@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-					<textarea placeholder="Pesan Anda" class="form-control" id="message" name="message" rows="14" required></textarea>
+					<textarea placeholder="Pesan Anda" class="form-control" id="pesan" name="message" rows="14" required></textarea>
 					<input type="hidden" name="_captcha" value="false">
 					<input type="hidden" name="_next" value="https://amuhhabibi.xyz/other/athena/">
                 </div>
@@ -73,14 +73,12 @@
 		</footer>
 		</div>
 		<script>
-			var x = document.getElementById("message");
+			var x = document.getElementById("pesan");
 			var waktu = new Date().toString();
 		
 			function setWaktu() {
 			  x.innerHTML = x.textContent + " pada " + waktu;
 			}
-		
-			window.onload = getLocation;
 		</script>
 	</body>
 </html>
