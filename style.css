@@ -1,144 +1,140 @@
 @font-face {
-	font-family: "alexana";
-	src: url('fonts/alexana.eot');
-	src: url('fonts/alexana.eot?#iefix') format('embedded-opentype'),
-     	url('fonts/alexana.woff2') format('woff2'),
-     	url('fonts/alexana.woff') format('woff'),
-     	url('fonts/alexana.ttf') format('truetype'),
-     	url('fonts/alexana.svg#alexanaregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: "alexana";
+    src: url('fonts/alexana.eot');
+    src: url('fonts/alexana.eot?#iefix') format('embedded-opentype'), url('fonts/alexana.woff2') format('woff2'), url('fonts/alexana.woff') format('woff'), url('fonts/alexana.ttf') format('truetype'), url('fonts/alexana.svg#alexanaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'BugisA';
     src: url('/fonts/BugisA.eot');
-    src: url('/fonts/BugisA.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/BugisA.woff2') format('woff2'),
-        url('/fonts/BugisA.woff') format('woff'),
-        url('/fonts/BugisA.ttf') format('truetype'),
-        url('/fonts/BugisA.svg#BugisA') format('svg');
+    src: url('/fonts/BugisA.eot?#iefix') format('embedded-opentype'), url('/fonts/BugisA.woff2') format('woff2'), url('/fonts/BugisA.woff') format('woff'), url('/fonts/BugisA.ttf') format('truetype'), url('/fonts/BugisA.svg#BugisA') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-html, body{
-	overflow: hidden;
-	padding: 0;
-	margin: 0;
-	background-color: #191919;
-} 
-
-canvas{
-	display: block;
+html,
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #191919;
 }
 
-.loginBoxMain{
+canvas {
+    display: block;
+}
+
+.loginBoxMain {
     /*background-color: rgba(78, 76, 74, 0.58);*/
-	border-radius: 5px;
-	/*border: 8px solid #fefefe;*/
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	transform: translate(-50%,-50%);
-	box-sizing: border-box;
+    border-radius: 5px;
+    /*border: 8px solid #fefefe;*/
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
 }
 
 #password {
-	display: inline-block;
-	text-align: center;
-	max-width: 100%;
-	max-height: 100%;
-	height: 20px;
-	width: 150px;
-	border: 0px solid #191919;
-	padding: 5px ;
-	font-family: alexana;
-	border-radius: 7px;
-	box-shadow: 0px 2px 8px #000;
+    display: inline-block;
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    height: 20px;
+    width: 150px;
+    border: 0px solid #191919;
+    padding: 5px;
+    font-family: alexana;
+    border-radius: 7px;
+    box-shadow: 0px 2px 8px #000;
 }
 
-#connect{
-	color: #191919;
-	border: 3px solid #191919;
-	font-family: alexana;
-	font-size: 12px;
-	border-radius: 20px;
-	-moz-border-radius: 20px;
-	line-height: 200%;
-	max-width: 100%;
-	max-height: 100%;
-	width: 110px;
-	height: 30px;
-	background: white;
-	text-decoration: none;
-	box-shadow: 0px 4px 8px #a0948a;
+#connect {
+    color: #191919;
+    border: 3px solid #191919;
+    font-family: alexana;
+    font-size: 12px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    line-height: 200%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 110px;
+    height: 30px;
+    background: white;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px #a0948a;
 }
 
-#connect:hover{
-	cursor: pointer;
-	color: #fefefe;
-	border: 3px solid #fefefe;
-	font-size: 12px;
-	background: #191919;
-	box-shadow: 0px 5px 10px #000;
+#connect:hover {
+    cursor: pointer;
+    color: #fefefe;
+    border: 3px solid #fefefe;
+    font-size: 12px;
+    background: #191919;
+    box-shadow: 0px 5px 10px #000;
 }
 
-.isi{
-	margin: 15px 15px 15px 15px;
-	max-width: 100%;
-	max-height: 100%;
-}
-.isi > input, select {
-	margin: 15px 15px 15px 15px;
+.isi {
+    margin: 15px 15px 15px 15px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.isi > select {
-	padding: 7px 30px 7px 30px;
-	font-family: "BugisA";
-	-webkit-appearance: none;
-	text-align-last: center;
-}
-.isi > select > option {
-	padding: 7px 30px 7px 30px;
-	font-family: "BugisA";
-	-webkit-appearance: none;
-	text-align-last: center;
+.isi>input,
+select {
+    margin: 15px 15px 15px 15px;
 }
 
-.butt{
-	color: #191919;
-	border: 3px solid #191919;
-	font-family: alexana;
-	font-size: 13px;
-	border-radius: 20px;
-	-moz-border-radius: 20px;
-	line-height: 200%;
-	max-width: 100%;
-	max-height: 100%;
-	width: 110px;
-	height: 30px;
-	background: white;
-	text-decoration: none;
-	box-shadow: 0px 4px 8px #a0948a;
+.isi>select {
+    padding: 7px 30px 7px 30px;
+    font-family: "BugisA";
+    -webkit-appearance: none;
+    text-align-last: center;
 }
 
-.butt:hover{
-	cursor: pointer;
-	color: #fefefe;
-	border: 3px solid #fefefe;
-	font-size: 12px;
-	background: #191919;
-	box-shadow: 0px 5px 10px #000;
+.isi>select>option {
+    padding: 7px 30px 7px 30px;
+    font-family: "BugisA";
+    -webkit-appearance: none;
+    text-align-last: center;
 }
 
-.profile{
-  font-family: "Courier New";
-  text-decoration: none;
-  text-shadow: 0px 0px 10px white;
-  color: white;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translate(-50%,0);
+.butt {
+    color: #191919;
+    border: 3px solid #191919;
+    font-family: alexana;
+    font-size: 13px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    line-height: 200%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 110px;
+    height: 30px;
+    background: white;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px #a0948a;
+}
+
+.butt:hover {
+    cursor: pointer;
+    color: #fefefe;
+    border: 3px solid #fefefe;
+    font-size: 12px;
+    background: #191919;
+    box-shadow: 0px 5px 10px #000;
+}
+
+.profile {
+    font-family: "Courier New";
+    text-decoration: none;
+    text-shadow: 0px 0px 10px white;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }

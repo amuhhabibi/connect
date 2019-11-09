@@ -1,217 +1,122 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>mabaca</title>
-	<link rel="stylesheet" href="style.css"/>
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.png"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mabaca</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="p5.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="p5.min.js"></script>
     <script src="p5.dom.min.js"></script>
     <script src="p5.sound.min.js"></script>
 </head>
-<body  background="#191919" style="background-color: #191919 !important;">
 
-	<div class="container-fluid" style="background-color: #191919;">
-		<nav class="navbar navbar-expand-md" style="background-color: #1e1e1e !important;">
-				<button class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#collapse_target" aria-expanded="false" style="background-color: #1e1e1e !important; border: 0px solid #1e1e1e !important;">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-					<div class="collapse navbar-collapse" id="collapse_target">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="navbar-brand not_selected" href="../rumah/">Rumah</a>
-							</li>
-							<li class="nav-item">
-								<a class="navbar-brand selected" href="#">Mabaca</a>
-							</li>
-							<li class="nav-item">
-								<a class="navbar-brand not_selected" href="../galeri/">Galeri</a>
-							</li>
-							<li class="nav-item">
-								<a class="navbar-brand not_selected" href="../profil/">Profil</a>
-							</li>
-						</ul>
-					</div>
-		</nav>
-		<div class="row justify-content-center align-self-center" style="margin-top: 30px; margin-bottom: 30px">
-			<div class="col-sm-8">
-				<h2 class="text-justify fofont" style="color: #fefefe;  font-size: 25px; text-shadow: 0px 2px 6px #686868;">"JumlAHnyA 20eNAM."</h2>
-				<p class="text-justify fofont" style="color: #fefefe;  font-size: 18px; text-shadow: 0px 2px 10px #686868;">
-					dalam empat hari\<br>
-					berapa banyak hal yang bisa dilakukan manusia?\<br>
-					berapa banyak yang terkenang?\<br>
-					berapa lama akan terkenang?\<br>
-					jawabannya salah\<br>
-					kenapa?\<br>
-					tidak percaya?\<br>
-					coba buktikan\<br>
-					- 20:04 / 03 / 11 / 2019 -<br><br><br>
-				<h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"selamat malam."</h2>
-				<p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
-					malam itu\<br>
-					dirimu ialah purnama\<br>
-					di tengah meriahnya lantunan irama\<br>
-					<br>
-					bergerak melintasi ruang dan waktu\<br>
-					di bawah terangnya malam sabtu\<br>
-					<br>
-					mungkin sedikit terlalu\<br>
-					dariku yang ingin memilikimu\<br>
-					tapi kuharap tak ada mata selain kita\<br>
-					saling mengerti tanpa melanturkan sepatah kata\<br>
-					<br>
-					di bawah rembulan bertatap muka\<br>
-					di dalam mimpi lelaki yang baka\<br>
-					- 23:41 / 27 / 10 / 2019 -<br><br><br>
-				<h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"hA?"</h2>
-				<p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
-					bulan memercikkan fatamorgana\<br>
-					seakan surya ada di depan mata\<br>
-					bohong\<br>
-					itu hanya bunga\<br>
-					- 21:57 / 27 / 10 / 2019 -<br><br><br>
-				<h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"cinta"</h2>
-				<p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
-					cinta itu beragam\<br>
-					mencinta\<br>
-					mencintakan\<br>
-					tercinta\<br>
-					dicinta\<br>
-					pencinta\<br>
-					percintaan\<br>
-					bercinta\<br>
-					bercintakan\<br>
-					ancaman\<br>
-					pelecehan\<br>
-					- 18:23 / 27 / 10 / 2019 -<br><br><br>
-				</p>
-				<h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"mimPI INDAH"</h2>
-				<p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
-					Aku bertunas dengan namanya\<br>
-					tapi kenapa kami berbeda?\<br>
-					kenapa rantingku tak sepanjang miliknya?\<br>
-					saat Tuhan menyeru pemenang selanjutnya\<br>
-					bukan aku yang dikehendakinya\<br>
-					tapi rasanya jiwaku seperti dikunyah\<br>
-					<br>
-					kucoba berlari mengitari keluh\<br>
-					namun terjatuh\<br>
-					kucoba tahan hantaman geruh\<br>
-					lalu kumohon pada sang absolut\<br>
-					<br>
-					ya Tuhan!\<br>
-					kumohon!\<br>
-					jangan biarkan siapapun memetik bunganya\<br>
-					jangan biarkan siapapun mencabut akarnya\<br>
-					eyang\<br>
-					jasamu takkan terlupakan\<br>
-					ketuhanan\<br>
-					kemanusiaan\<br>
-					persatuan\<br>
-					kerakyatan\<br>
-					dan keadilan\<br>
-					semua kau abdikan\<br>
-					<br>
-					selamat jalan eyang\<br>
-					istirahatlah dengan tenang\<br>
-					pangkatmu sudah dinaikkan\<br>
-					sisanya biar kami yang abadikan\<br>
-					- 16:22 / 16 / 09 / 2019 -<br><br><br>
-				</p>
-				<h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"tAk seNDIri"</h2>
-				<p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
-					malam kutiduri\<br>
-					pagi kubanguni\<br>
-					hari baru kuhadiri\ <br>
-					dengan menatap sang maharani\<br>
-					4 jam ku di bawah\<br>
-					2 jam ku di atas\<br>
-					4 jam lagi di bawah\<br>
-					6 jam lagi di atas\<br>
-					dan menyangkar di bawah untuk 3 minggu ke depan\<br>
-					seru yang hanya muncul di awal,\<br>
-					perlahan akan tenggelam dalam kebosanan\<br>
-					dingin yang tak bertitik\<br>
-					hanya bisa dilayani dengan sentuhan tubuh dan saling berbisik\<br>
-					berawal dari jembatan panjang yang penuh jejak kaki\<br>
-					dan berakhir di mimpi seorang lelaki\<br>
-					- 22:24 / 25 / 07 / 2019 -<br><br><br>
-				</p>
-				<h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"KURAng Sehat"</h2>
-				<p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
-					kursi yang membungkuk menatap lantai\<br>
-					pintu yang berteriak\<br>
-					mereka terlihat tidak sehat\<br>
-					kenapa?\ <br>
-					kenapa kau pergi?\ <br>
-					ke mana kau pergi?\ <br>
-					dengan siapa kau pergi?\ <br>
-					setiap hari aku menunggumu\<br>
-					di rumhamu\<br>
-					bersama adikmu\<br>
-					meunggumu\<br>
-					di rumahmu\<br>
-					bersama adikmu\<br>
-					menunggu\<br>
-					di rumahmu\<br>
-					bersama adikmu\<br>
-					bercumbu\<br>
-					di rumahmu\<br>
-					bersama adikmu\<br>
-					lalu kulupakan dirimu\<br>
-					- 14:19 / 23 / 07 / 2019 -<br><br><br>
-				</p>
-				<h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"MAKAn"</h2>
-				<p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
-					di sebuah dunia,\<br>
-					di alam semesta,\<br>
-					di balik cahaya sang surya,\<br>
-					di bawah langit,\<br>
-					di atas bumi,\<br>
-					di tumpukan batu yang tinggi,\<br>
-					di dalam ingatan yang tak berperadaban,\<br>
-					hadir sebuah bayangan yang berbaring di atas sofa\<br>
-					<br>
-					tertidur tanpa wajah yang tak berekspresi,\<br>
-					layaknya sedang tenggelam dalam tidur yang baka\<br>
-					tidur yang dijaga seorang wanita,\<br>
-					dengan punggung melengkung dan mata yang dalam\<br>
-					<br>
-					"Aku ingin makan!" sabdanya\<br>
-					bayangan yang awalnya berbaring,\<br> 
-					kini tergeletak\<br>
-					ruangan yang sunyi memberikan instruksi untuk bersikap mandiri\<br>
-					pintu yang terbuka sendiri,\<br>
-					meninggalkan sang bayangan tak berdiri\<br>
-					<br>
-					kupikir ia sendri, ternyata ada yang duduk seorang diri\<br>
-					waktu sudah hampir habis\<br>
-					semua akan mati dan terlahir kembali\<br>
-					<br>
-					sebelum mati,\<br>
-					ada satu hal yang kuingin\<br>
-					aku tidak ingin mati\<br>
-					“How to Write and Speak Better!”\<br>
-					aku ingin membaca itu!\<br>
-					<br>
-					tapi sepertinya waktu sudah habis\<br>
-					aku akan mati\<br>
-					aku tidak ingin mati\<br>
-					tapi Aku sudah mati\<br>
-					ditelan tangis sang surya,\<br>
-					sembari berbaring di mimpi yang baka\<br>
-					- 14:18 / 22 / 07 / 2019 - <br><br><br>
-				</p>
-			</div>
-		</div>
-		<footer class="page-footer font-small blue pt-1" style="background-color: #1e1e1e; margin-top: 40px">
-			<div class="footer-copyright text-center py-3" style="color: #fefefe;">Laman ini dikembangkan oleh <a href="../profil/">Andi Muhammad Habibi</a> © 2018-2019</div>
-		</footer>
-	</div>
+<body background="#191919" style="background-color: #191919 !important;">
+
+    <div class="container-fluid" style="background-color: #191919;">
+        <nav class="navbar navbar-expand-md" style="background-color: #1e1e1e !important;">
+            <button class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#collapse_target" aria-expanded="false" style="background-color: #1e1e1e !important; border: 0px solid #1e1e1e !important;">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+            <div class="collapse navbar-collapse" id="collapse_target">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="navbar-brand not_selected" href="../rumah/">Rumah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand selected" href="#">Mabaca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand not_selected" href="../galeri/">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand not_selected" href="../profil/">Profil</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row justify-content-center align-self-center" style="margin-top: 30px; margin-bottom: 30px">
+            <div class="col-sm-8">
+                <h2 class="text-justify fofont" style="color: #fefefe;  font-size: 25px; text-shadow: 0px 2px 6px #686868;">"JumlAHnyA 20eNAM."</h2>
+                <p class="text-justify fofont" style="color: #fefefe;  font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                    dalam empat hari\<br> berapa banyak hal yang bisa dilakukan manusia?\<br> berapa banyak yang terkenang?\<br> berapa lama akan terkenang?\<br> jawabannya salah\<br> kenapa?\
+                    <br> tidak percaya?\<br> coba buktikan\<br> - 20:04 / 03 / 11 / 2019 -<br><br><br>
+                    <h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"selamat malam."</h2>
+                    <p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                        malam itu\<br> dirimu ialah purnama\<br> di tengah meriahnya lantunan irama\<br>
+                        <br> bergerak melintasi ruang dan waktu\<br> di bawah terangnya malam sabtu\<br>
+                        <br> mungkin sedikit terlalu\<br> dariku yang ingin memilikimu\<br> tapi kuharap tak ada mata selain kita\<br> saling mengerti tanpa melanturkan sepatah kata\<br>
+                        <br> di bawah rembulan bertatap muka\<br> di dalam mimpi lelaki yang baka\<br> - 23:41 / 27 / 10 / 2019 -<br><br><br>
+                        <h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"hA?"</h2>
+                        <p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                            bulan memercikkan fatamorgana\<br> seakan surya ada di depan mata\<br> bohong\
+                            <br> itu hanya bunga\<br> - 21:57 / 27 / 10 / 2019 -<br><br><br>
+                            <h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"cinta"</h2>
+                            <p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                                cinta itu beragam\<br> mencinta\
+                                <br> mencintakan\
+                                <br> tercinta\
+                                <br> dicinta\
+                                <br> pencinta\
+                                <br> percintaan\
+                                <br> bercinta\
+                                <br> bercintakan\
+                                <br> ancaman\
+                                <br> pelecehan\
+                                <br> - 18:23 / 27 / 10 / 2019 -<br><br><br>
+                            </p>
+                            <h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"mimPI INDAH"
+                            </h2>
+                            <p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                                Aku bertunas dengan namanya\<br> tapi kenapa kami berbeda?\<br> kenapa rantingku tak sepanjang miliknya?\<br> saat Tuhan menyeru pemenang selanjutnya\<br> bukan aku yang dikehendakinya\<br> tapi rasanya jiwaku seperti dikunyah\<br>
+                                <br> kucoba berlari mengitari keluh\<br> namun terjatuh\<br> kucoba tahan hantaman geruh\<br> lalu kumohon pada sang absolut\<br>
+                                <br> ya Tuhan!\<br> kumohon!\
+                                <br> jangan biarkan siapapun memetik bunganya\<br> jangan biarkan siapapun mencabut akarnya\<br> eyang\
+                                <br> jasamu takkan terlupakan\<br> ketuhanan\
+                                <br> kemanusiaan\
+                                <br> persatuan\
+                                <br> kerakyatan\
+                                <br> dan keadilan\<br> semua kau abdikan\<br>
+                                <br> selamat jalan eyang\<br> istirahatlah dengan tenang\<br> pangkatmu sudah dinaikkan\<br> sisanya biar kami yang abadikan\<br> - 16:22 / 16 / 09 / 2019 -<br><br><br>
+                            </p>
+                            <h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"tAk seNDIri"
+                            </h2>
+                            <p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                                malam kutiduri\<br> pagi kubanguni\<br> hari baru kuhadiri\ <br> dengan menatap sang maharani\<br> 4 jam ku di bawah\<br> 2 jam ku di atas\<br> 4 jam lagi di bawah\<br> 6 jam lagi di atas\<br> dan menyangkar di bawah untuk
+                                3 minggu ke depan\<br> seru yang hanya muncul di awal,\<br> perlahan akan tenggelam dalam kebosanan\<br> dingin yang tak bertitik\<br> hanya bisa dilayani dengan sentuhan tubuh dan saling berbisik\<br> berawal dari jembatan
+                                panjang yang penuh jejak kaki\<br> dan berakhir di mimpi seorang lelaki\<br> - 22:24 / 25 / 07 / 2019 -<br><br><br>
+                            </p>
+                            <h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"KURAng Sehat"
+                            </h2>
+                            <p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                                kursi yang membungkuk menatap lantai\<br> pintu yang berteriak\<br> mereka terlihat tidak sehat\<br> kenapa?\ <br> kenapa kau pergi?\ <br> ke mana kau pergi?\ <br> dengan siapa kau pergi?\ <br> setiap hari aku menunggumu\<br>                                di rumhamu\<br> bersama adikmu\<br> meunggumu\
+                                <br> di rumahmu\<br> bersama adikmu\<br> menunggu\
+                                <br> di rumahmu\<br> bersama adikmu\<br> bercumbu\
+                                <br> di rumahmu\<br> bersama adikmu\<br> lalu kulupakan dirimu\<br> - 14:19 / 23 / 07 / 2019 -<br><br><br>
+                            </p>
+                            <h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"MAKAn"</h2>
+                            <p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                                di sebuah dunia,\<br> di alam semesta,\<br> di balik cahaya sang surya,\<br> di bawah langit,\<br> di atas bumi,\<br> di tumpukan batu yang tinggi,\<br> di dalam ingatan yang tak berperadaban,\<br> hadir sebuah bayangan
+                                yang berbaring di atas sofa\<br>
+                                <br> tertidur tanpa wajah yang tak berekspresi,\<br> layaknya sedang tenggelam dalam tidur yang baka\<br> tidur yang dijaga seorang wanita,\<br> dengan punggung melengkung dan mata yang dalam\<br>
+                                <br> "Aku ingin makan!" sabdanya\<br> bayangan yang awalnya berbaring,\<br> kini tergeletak\<br> ruangan yang sunyi memberikan instruksi untuk bersikap mandiri\<br> pintu yang terbuka sendiri,\<br> meninggalkan sang bayangan
+                                tak berdiri\<br>
+                                <br> kupikir ia sendri, ternyata ada yang duduk seorang diri\<br> waktu sudah hampir habis\<br> semua akan mati dan terlahir kembali\<br>
+                                <br> sebelum mati,\<br> ada satu hal yang kuingin\<br> aku tidak ingin mati\<br> “How to Write and Speak Better!”\<br> aku ingin membaca itu!\<br>
+                                <br> tapi sepertinya waktu sudah habis\<br> aku akan mati\<br> aku tidak ingin mati\<br> tapi Aku sudah mati\<br> ditelan tangis sang surya,\<br> sembari berbaring di mimpi yang baka\<br> - 14:18 / 22 / 07 / 2019 - <br><br><br>
+                            </p>
+            </div>
+        </div>
+        <footer class="page-footer font-small blue pt-1" style="background-color: #1e1e1e; margin-top: 40px">
+            <div class="footer-copyright text-center py-3" style="color: #fefefe;">Laman ini dikembangkan oleh <a href="../profil/">Andi Muhammad Habibi</a> © 2018-2019</div>
+        </footer>
+    </div>
 
 </body>
+
 </html>
