@@ -25,14 +25,10 @@ function user2AddPoint() {
 
 function turnCheck() {
     const z = (user1Score + user2Score) % 4;
-    if (z == 2) {
+    if (z == 2 || z == 3) {
         turnDesc.innerHTML = user2Name.value;
-    } else if (z == 1) {
+    } else if (z == 1 || z == 0) {
         turnDesc.innerHTML = user1Name.value;
-    } else if (z == 0) {
-        turnDesc.innerHTML = user1Name.value;
-    } else if (z == 3) {
-        turnDesc.innerHTML = user2Name.value;
     }
 }
 
