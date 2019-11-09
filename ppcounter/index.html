@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ping Pong</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="score-board">
+            <div id="user1-label" class="label">User1</div>
+            <div id="user2-label" class="label">User2</div>
+            <span id="user1-score">0</span>:<span id="user2-score">0</span>
+        </div>
+        <div id="turn-decide">
+            <div id="turn-description">
+                it's <span id="userNamesTurn">x</span>'s turn
+            </div>
+        </div>
+        <div class="score-buttons">
+            <button id="user2-addpoint" class="btn" onclick="user2AddPoint()">+</button>
+            <button id="user1-addpoint" class="btn" onclick="user1AddPoint()">+</button>
+        </div>
+    </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="game.js"></script>
+</body>
+
+</html>

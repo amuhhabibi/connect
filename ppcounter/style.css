@@ -1,0 +1,63 @@
+* {
+    box-sizing: 0;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+}
+
+.score-board {
+    border: solid 2px black;
+    background: white;
+    text-align: center;
+    padding: 20px 25px;
+    position: relative;
+}
+
+#user1-label {
+    position: absolute;
+    top: 50%;
+    left: -16%;
+    transform: translate(0, -50%);
+    background: red;
+    padding: 2px 5px;
+}
+
+#user2-label {
+    position: absolute;
+    top: 50%;
+    right: -16%;
+    transform: translate(0, -50%);
+    background: red;
+    padding: 2px 5px;
+}
+
+#turn-description {
+    margin: 10px 0px;
+}
+
+.score-buttons {
+    position: relative;
+}
+
+.btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+#user1-addpoint {
+    left: 0;
+}
+
+#user2-addpoint {
+    right: 0;
+}
