@@ -14,6 +14,10 @@ body {
     background-color: bisque;
 }
 
+.container {
+    width: 60%;
+}
+
 .score-board {
     border: solid 2px black;
     background: white;
@@ -22,26 +26,29 @@ body {
     position: relative;
 }
 
-#user1-label {
+.label {
+    border: solid 1px black;
+    background: #c9f0c5;
+    padding: 2px 5px;
     position: absolute;
+    border-radius: 5px;
+}
+
+#user1-label {
     top: 50%;
     left: -16%;
     transform: translate(0, -50%);
-    background: red;
-    padding: 2px 5px;
 }
 
 #user2-label {
-    position: absolute;
     top: 50%;
     right: -16%;
     transform: translate(0, -50%);
-    background: red;
-    padding: 2px 5px;
 }
 
 #turn-description {
-    margin: 10px 0px;
+    text-align: center;
+    margin: 10px 10px;
 }
 
 .score-buttons {
@@ -52,6 +59,8 @@ body {
     position: absolute;
     width: 50px;
     height: 50px;
+    border: solid 2px black;
+    border-radius: 25px;
 }
 
 #user1-addpoint {

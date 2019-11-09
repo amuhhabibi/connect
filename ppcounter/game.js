@@ -26,12 +26,12 @@ function isOdd(n) {
 function turnCheck() {
     const z = (user1Score + user2Score) % 4;
     if (z == 2) {
-        turnDesc.innerHTML = "player1 trn";
+        turnDesc.innerHTML = "User2";
     } else if (z == 1) {
-        turnDesc.innerHTML = "player1 trn";
+        turnDesc.innerHTML = "User1";
     } else if (z == 0) {
-        turnDesc.innerHTML = "PLAyer 2 tteun"
+        turnDesc.innerHTML = "User1"
     } else if (z == 3) {
-        turnDesc.innerHTML = "PLAyer 2 tteun"
+        turnDesc.innerHTML = "User2"
     }
 }
