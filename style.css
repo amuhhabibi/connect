@@ -98,7 +98,7 @@ select {
 .isi>select>option {
     padding: 7px 30px 7px 30px;
     font-family: "BugisA";
-    -webkit-appearance: none;
+    -webkit-appearance: 1none;
     text-align-last: center;
 }
 
