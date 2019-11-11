@@ -40,7 +40,7 @@ body {
   background-color: rgb(255, 255, 255);
   padding: 10px;
   border: 5px solid rgb(27, 27, 27);
-  box-shadow: 0 0 5px 0px;
+  box-shadow: 0 0 10px 0px;
 }
 
 .btn-grid {
