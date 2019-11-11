@@ -5,7 +5,6 @@ let state = {}
 
 const bgm = document.getElementById('bgm');
 bgm.loop = true;
-bgm.load();
 bgm.play();
 
 function startGame() {
