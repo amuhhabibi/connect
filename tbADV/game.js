@@ -47,7 +47,7 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: 'Pada suatu hari terjadi perang besar antara Varlen dan Granlin yang menghancuran banyak kota kecil di sekitarnya. Salah satunya kota bernama Bradford',
+    text: 'Pada suatu hari terjadi perang besar antara Varlen dan Granlin yang menghancuran banyak kota kecil di sekitarnya. Salah satunya adalah Bradford',
     options: [
       {
         text: 'Lanjut',
@@ -77,7 +77,7 @@ const textNodes = [
   },
   {
     id: 4,
-    text: 'Setelah perang redah, Masako dan Raiko dirawat dengan baik oleh ibunya, sampai saat ibunya menikah dengan seorang Jendral Perang bernama Hammock',
+    text: 'Setelah perang redah, Masako dan Raiko tetap hidup dengan damai bersama ibunya, sampai saat ibunya menikah dengan seorang Jendral Perang bernama Hammock',
     options: [
       {
         text: 'Lanjut',
