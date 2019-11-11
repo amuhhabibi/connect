@@ -3,10 +3,10 @@ const optionButtonsElement = document.getElementById('option-buttons')
 
 let state = {}
 
-const bgm = new Audio();
-bgm.src = "bgm01.wav";
+const bgm = document.getElementById('bgm');
 bgm.loop = true;
 bgm.load();
+bgm.play();
 
 function startGame() {
   state = {}
@@ -167,4 +167,3 @@ const textNodes = [
 ]
 
 startGame();
-bgm.play();
