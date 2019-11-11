@@ -70,7 +70,7 @@ body {
 #mute{
   outline: none;
   position: fixed;
-  background-image: url('unmute.png');
+  background-image: url('mute.png');
   background-size: cover;
   background-color: rgba(0, 0, 0, 0);
   border: none;
