@@ -12,6 +12,15 @@ function playClickSound(){
   audio.play();
 }
 
+function playBGM(){
+  const bgm = new Audio();
+  bgm.src = "bgm01.wav";
+  bgm.loop = true;
+  bgm.play();
+}
+
+
+
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
   textElement.innerText = textNode.text
@@ -145,4 +154,5 @@ const textNodes = [
   },
 ]
 
-startGame()
+startGame();
+playBGM();
