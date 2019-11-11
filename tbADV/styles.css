@@ -16,11 +16,12 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(167, 125, 47);
+  background-color: rgb(228, 175, 77);
 }
 
 #text{
   margin: 10px 15px;
+  transition: 2s;
 }
 
 .container {
@@ -49,7 +50,7 @@ body {
   padding: 5px 10px;
   color: white;
   outline: none;
-  transition: .2s;
+  transition: 2s;
 }
 
 .btn:hover {

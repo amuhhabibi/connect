@@ -7,6 +7,10 @@ function startGame() {
   state = {}
   showTextNode(1)
 }
+function playClickSound(){
+  const audio = document.getElementById('audio');
+  audio.play();
+}
 
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
@@ -36,6 +40,7 @@ function selectOption(option) {
     return startGame()
   }
   state = Object.assign(state, option.setState)
+  playClickSound();
   showTextNode(nextTextNodeId)
 }
 
