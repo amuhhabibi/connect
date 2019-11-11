@@ -110,7 +110,36 @@ const textNodes = [
     text: 'hari demi hari sifat Ayah tirinya menjadi lebih kasar',
     options: [
       {
-        text: '...'
+        text: '. . .',
+        nextText: 8
+      }
+    ]
+  },
+  {
+    id: 8,
+    text: '. . .',
+    options: [
+      {
+        text: '. . .',
+        nextText: 9
+      }
+    ]
+  },
+  {
+    id: 9,
+    text: 'still work in progress :P',
+    options: [
+      {
+        text: '. . .'
+      },
+      {
+        text: '. . .'
+      },
+      {
+        text: '. . .'
+      },
+      {
+        text: '. . .'
       }
     ]
   },
