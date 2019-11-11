@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'letsjazz';
+  src: url('../fonts/letsjazz.otf');
+}
+@font-face {
+  font-family: 'munro';
+  src: url('../fonts/munro.ttf');
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'munro';
+}
+
+body {
+  overflow: hidden;
+  background-image: url('bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #E4A891;
+}
+
+#text{
+  margin: 10px 15px;
+  transition: .2s;
+}
+
+.container {
+  font-size: 35px;
+  width: 800px;
+  max-width: 80%;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 5px solid rgb(27, 27, 27);
+  box-shadow: 0 0 5px 0px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  font-size: 25px;
+  background-color: hsl(204, 46%, 41%);
+  border: 5px solid hsl(204, 46%, 24%);
+  margin: 0px 10px 10px 10px;
+  padding: 5px 5px;
+  color: white;
+  outline: none;
+  transition: .2s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  border-color: hsl(204, 60%, 51%);
+
+}
