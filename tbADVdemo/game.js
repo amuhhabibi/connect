@@ -3,6 +3,13 @@ const optionButtonsElement = document.getElementById('option-buttons')
 
 let state = {}
 
+
+const bgm = new Audio();
+bgm.src = "bgm01.wav";
+bgm.loop = true;
+bgm.play();
+
+
 function startGame() {
   state = {}
   showTextNode(1)
@@ -12,11 +19,17 @@ function playClickSound(){
   audio.play();
 }
 
-function playBGM(){
-  const bgm = new Audio();
-  bgm.src = "bgm01.wav";
-  bgm.loop = true;
-  bgm.play();
+var mute = document.getElementById('mute');
+mute.addEventListener('click', mutee);
+
+function mutee(){
+  if(bgm.muted){
+    bgm.muted = false;
+    mute.style.backgroundImage = "url(unmute.png)";
+  }else{
+    bgm.muted = true;
+    mute.style.backgroundImage = "url(mute.png)";
+  }
 }
 
 function showTextNode(textNodeIndex) {
