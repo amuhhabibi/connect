@@ -2,10 +2,14 @@
   font-family: 'letsjazz';
   src: url('../fonts/letsjazz.otf');
 }
+@font-face {
+  font-family: 'munro';
+  src: url('../fonts/munro.ttf');
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
-  font-family: 'MedievalSharp', cursive;
+  font-family: 'munro';
 }
 
 body {
@@ -21,17 +25,17 @@ body {
 
 #text{
   margin: 10px 15px;
-  transition: 2s;
+  transition: .2s;
 }
 
 .container {
-  font-size: 30px;
+  font-size: 35px;
   width: 800px;
   max-width: 80%;
-  background-color: rgb(233, 219, 204);
+  background-color: rgb(255, 255, 255);
   padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px 2px;
+  border: 5px solid rgb(27, 27, 27);
+  box-shadow: 0 0 5px 0px;
 }
 
 .btn-grid {
@@ -42,19 +46,18 @@ body {
 }
 
 .btn {
-  font-size: 20px;
+  font-size: 25px;
   background-color: hsl(204, 46%, 41%);
-  border: 1px solid hsl(204, 46%, 24%);
-  margin: 10px 5px;
-  border-radius: 5px;
-  padding: 5px 10px;
+  border: 5px solid hsl(204, 46%, 24%);
+  margin: 8px 5px;
+  padding: 5px 5px;
   color: white;
   outline: none;
-  transition: 2s;
+  transition: .2s;
 }
 
 .btn:hover {
   cursor: pointer;
-  border-color: black;
-  box-shadow: 0px 2px 8px black;
+  border-color: hsl(204, 60%, 51%);
+
 }
