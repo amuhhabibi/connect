@@ -7,6 +7,7 @@ let state = {}
 const bgm = new Audio();
 bgm.src = "bgm01.wav";
 bgm.loop = true;
+bgm.load();
 bgm.play();
 
 
