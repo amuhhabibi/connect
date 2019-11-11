@@ -19,6 +19,10 @@ body {
   background-color: rgb(167, 125, 47);
 }
 
+#text{
+  margin: 10px 15px;
+}
+
 .container {
   font-size: 30px;
   width: 800px;
@@ -39,7 +43,8 @@ body {
 .btn {
   font-size: 20px;
   background-color: hsl(204, 46%, 41%);
-  border: 1px solid hsl(204, 46%, 24%);;
+  border: 1px solid hsl(204, 46%, 24%);
+  margin: 10px 5px;
   border-radius: 5px;
   padding: 5px 10px;
   color: white;

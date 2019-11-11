@@ -42,7 +42,7 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: 'Pada suatu hari terjadi perang besar antara Negara Varlen dan Granlin yang menyebabkan kehancuran pada sebuah kota kecil bernama Bradford yang berada di sektar daerah peperangan.',
+    text: 'Pada suatu hari terjadi perang besar antara Varlen dan Granlin yang menghancuran banyak kota kecil di sekitarnya. Salah satunya kota bernama Bradford',
     options: [
       {
         text: 'Lanjut',
@@ -52,7 +52,7 @@ const textNodes = [
   },
   {
     id: 2,
-    text: 'Perang itu membekaskan rasa takut yang sangat mendalam bagi Masako dan Raiko. Dan disusul oleh rasa dendam terhadap kematian Ayahnya.',
+    text: 'Perang besar itu membekaskan rasa takut yang mendalam pada Masako dan Raiko',
     options: [
       {
         text: 'Lanjut',
@@ -62,7 +62,7 @@ const textNodes = [
   },
   {
     id: 3,
-    text: 'Masako dan Raiko dirawat dengan baik oleh Ibunya, sampai saat ia menikah dengan seorang jendral perang bernama Hammock.',
+    text: 'Bukan cuma itu, perang itu juga menumbuhkan dendam terhadap kematian ayahnya',
     options: [
       {
         text: 'Lanjut',
@@ -72,11 +72,40 @@ const textNodes = [
   },
   {
     id: 4,
-    text: 'Pada hari pertama tinggal bersama, si Hammock membawa seorang anak yang bernama Hervey. Namun hari demi hari difat Ayah tirinya menjadi lebih kasar.',
+    text: 'Setelah perang redah, Masako dan Raiko dirawat dengan baik oleh ibunya, sampai saat ibunya menikah dengan seorang Jendral Perang bernama Hammock',
     options: [
       {
-        text: 'Ulang',
-        nextText: -1
+        text: 'Lanjut',
+        nextText: 5
+      }
+    ]
+  },
+  {
+    id: 5,
+    text: 'Pada hari pertama tinggal bersama, Hammock datang bersama anaknya yang bernama Hervey dengan sifat sebagaimana layaknya seorang ayah,',
+    options: [
+      {
+        text: 'Lanjut',
+        nextText: 6
+      }
+    ]
+  },
+  {
+    id: 6,
+    text: 'namun . . .',
+    options: [
+      {
+        text: 'Lanjut',
+        nextText: 7
+      }
+    ]
+  },
+  {
+    id: 7,
+    text: 'hari demi hari sifat Ayah tirinya menjadi lebih kasar',
+    options: [
+      {
+        text: '...'
       }
     ]
   },
