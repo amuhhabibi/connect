@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-  font-size: 35px;
+  font-size: 30px;
   width: 800px;
   max-width: 80%;
   background-color: rgb(255, 255, 255);
@@ -51,7 +51,7 @@ body {
 }
 
 .btn {
-  font-size: 25px;
+  font-size: 20px;
   background-color: hsl(204, 46%, 41%);
   border: 5px solid hsl(204, 46%, 24%);
   margin: 0px 10px 10px 10px;
