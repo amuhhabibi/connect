@@ -15,6 +15,8 @@ mute.addEventListener('click', mutee);
 
 const bgm = new Audio();
 bgm.src = "bgm02.wav";
+bgm.loop = true;
+bgm.play();
 
 function mutee(){
   if(bgm.muted){
