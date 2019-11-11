@@ -319,4 +319,3 @@ const textNodes = [
 ]
 
 startGame();
-playBGM();
