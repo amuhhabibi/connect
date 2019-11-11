@@ -3,23 +3,19 @@ const optionButtonsElement = document.getElementById('option-buttons')
 
 let state = {}
 
-const bgm = document.getElementById('bgm');
-bgm.loop = true;
-bgm.play();
-
-function startGame() {
-  state = {}
-  showTextNode(1)
-}
-
 function playClickSound(){
-  const audio = document.getElementById('audio');
-  audio.play();
+  const click2 = new Howl({
+    urls: ['click2.wav'],
+  }).play();
 }
-
 
 var mute = document.getElementById('mute');
 mute.addEventListener('click', mutee);
+
+
+const bgm = new Audio();
+bgm.src = "bgm02.wav";
+bgm.loop = true;
 
 function mutee(){
   if(bgm.muted){
@@ -31,6 +27,10 @@ function mutee(){
   }
 }
 
+function startGame() {
+  state = {}
+  showTextNode(1)
+}
 
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
