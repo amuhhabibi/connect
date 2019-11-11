@@ -5,7 +5,7 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'MedievalSharp', cursive;
 }
 
 body {
@@ -16,10 +16,11 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #333;
+  background-color: rgb(214, 177, 108);
 }
 
 .container {
+  font-size: 30px;
   width: 800px;
   max-width: 80%;
   background-color: white;
@@ -36,13 +37,14 @@ body {
 }
 
 .btn {
-  background-color: hsl(200, 100%, 50%);
-  border: 1px solid hsl(200, 100%, 30%);
+  font-size: 20px;
+  background-color: hsl(194, 49%, 35%);
+  border: 1px solid hsl(194, 49%, 35%);
   border-radius: 5px;
   padding: 5px 10px;
   color: white;
   outline: none;
-  transition: .3s;
+  transition: .1s;
 }
 
 .btn:hover {

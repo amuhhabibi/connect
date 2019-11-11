@@ -55,10 +55,6 @@ const textNodes = [
     text: 'Perang itu membekaskan rasa takut yang sangat mendalam bagi Masako dan Raiko. Dan disusul oleh rasa dendam terhadap kematian Ayahnya.',
     options: [
       {
-        text: 'Kembali',
-        nextText: 1
-      },
-      {
         text: 'Lanjut',
         nextText: 3
       }
@@ -69,10 +65,6 @@ const textNodes = [
     text: 'Masako dan Raiko dirawat dengan baik oleh Ibunya, sampai saat ia menikah dengan seorang jendral perang bernama Hammock.',
     options: [
       {
-        text: 'Kembali',
-        nextText: 2
-      },
-      {
         text: 'Lanjut',
         nextText: 4
       }
@@ -82,10 +74,6 @@ const textNodes = [
     id: 4,
     text: 'Pada hari pertama tinggal bersama, si Hammock membawa seorang anak yang bernama Hervey. Namun hari demi hari difat Ayah tirinya menjadi lebih kasar.',
     options: [
-      {
-        text: 'Kembali',
-        nextText: 3
-      },
       {
         text: 'Ulang',
         nextText: -1
