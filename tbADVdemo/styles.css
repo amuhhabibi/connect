@@ -144,8 +144,8 @@ body {
 }
 
 .modal-content{
-  height: 500px;
-  width: 70%;
+  height: 85%;
+  width: 55%;
   background-color: white;
   border: 5px solid rgb(0, 0, 0);
 }
