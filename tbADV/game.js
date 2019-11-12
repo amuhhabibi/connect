@@ -15,6 +15,7 @@ mute.addEventListener('click', mutee);
 
 const bgm = new Audio();
 bgm.src = "bgm02.wav";
+bgm.volume = 0;
 bgm.loop = true;
 bgm.play();
 
@@ -78,7 +79,7 @@ const textNodes = [
   },
   {
     id: 2,
-    text: 'Perang besar itu membekaskan rasa takut yang mendalam pada Masako dan Raiko',
+    text: 'Pada suatu hari terjadi perang besar antara Varlen dan Granlin yang menghancuran banyak kota kecil di sekitarnya. Salah satunya adalah Bradford' + '\n\nPerang besar itu membekaskan rasa takut yang mendalam pada Masako dan Raiko',
     options: [
       {
         text: 'Lanjut',
