@@ -1,5 +1,12 @@
 const textElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById('option-buttons')
+const toggleModal = () => {
+  document.querySelector('.modal').classList.toggle('modal-hidden');
+  document.querySelector('.uverlay').classList.toggle('overlay');
+};
+
+document.querySelector('.inventory-btn').addEventListener('click', toggleModal);
+document.querySelector('.close-btn').addEventListener('click', toggleModal);
 
 let state = {}
 
@@ -32,6 +39,7 @@ function mutee(){
     mute.style.backgroundImage = "url(mute.png)";
   }
 }
+
 
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
