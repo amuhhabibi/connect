@@ -22,8 +22,16 @@ function startGame() {
   state = {}
   showTextNode(1)
 }
-function playClickSound(){
-  const audio = document.getElementById('audio');
+function playClickSound_02(){
+  const audio = document.getElementById('click02');
+  audio.play();
+}
+function playClickSound_03(){
+  const audio = document.getElementById('click03');
+  audio.play();
+}
+function playClickSound_04(){
+  const audio = document.getElementById('click04');
   audio.play();
 }
 
@@ -69,7 +77,7 @@ function selectOption(option) {
     return startGame()
   }
   state = Object.assign(state, option.setState)
-  playClickSound();
+  playClickSound_02();
   showTextNode(nextTextNodeId)
 }
 

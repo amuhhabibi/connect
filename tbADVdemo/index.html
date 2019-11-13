@@ -12,7 +12,9 @@
   <title>text based adventure</title>
 </head>
 <body>
-    <audio id="audio" src="click2.wav"></audio>
+    <audio id="click02" src="click2.wav"></audio>
+    <audio id="click03" src="click03.wav"></audio>
+    <audio id="click04" src="click04.wav"></audio>
     <!-- <audio id="bgm" src="bgm02.wav"></audio> credit https://patreon.com/randommind   -->
     <!-- <iframe src="click2.wav" id="audio" style="display:none"></iframe> -->
     <!-- <embed name="bgm01" src="bgm01.wav" hidden="false" autostart="true" loop="false"> -->
@@ -29,7 +31,7 @@
   </div>
   <div class="inv-container">
       <div id="inv-buttons" class="inv-btn-grid">
-        <button class="inv-btn inventory-btn">Inventory</button>
+        <button class="inv-btn inventory-btn" onclick="playClickSound_04();">Inventory</button>
         <button class="inv-btn stats-btn">Stats</button>
         <button class="inv-btn maps-btn">Quests</button>
         <button class="inv-btn menu-btn">Menu</button>
@@ -38,7 +40,7 @@
   <button id="mute"></button>
   <div class="modal modal-hidden">
     <div class="modal-content">
-        <button class="inv-btn close-btn">close</button>
+        <button class="inv-btn close-btn" onclick="playClickSound_03();">close</button>
     </div>
   </div>
   <div id="" class="uverlay"></div>
