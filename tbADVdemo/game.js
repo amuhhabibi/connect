@@ -1,6 +1,8 @@
 const textElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById('option-buttons')
-const toggleModal = () => {
+const itemTextElement = document.getElementById('inventory-menu')
+
+function toggleModal(){
   document.querySelector('.modal').classList.toggle('modal-hidden');
   document.querySelector('.uverlay').classList.toggle('overlay');
 };
@@ -8,19 +10,38 @@ const toggleModal = () => {
 document.querySelector('.inventory-btn').addEventListener('click', toggleModal);
 document.querySelector('.close-btn').addEventListener('click', toggleModal);
 
-let state = {}
-
+let state = { }
+let itemName = { }
 
 const bgm = new Audio();
 bgm.src = "bgm01.wav";
-bgm.loop = true;
+bgm.loop = true ;
+bgm.volume = 0;
 bgm.load();
 
 
 function startGame() {
-  state = {}
-  showTextNode(1)
+  state = {
+    blueGoo:0,
+    sword:0,
+    shield:0,
+    potion_health:1,
+    potion_mana:1,
+    tree_wig:1
+  }
+  itemName = {
+    blueGoo:"Blue Goo",
+    sword:"Sword of Justice",
+    shield:"Tate no Yuusha no Tate",
+    potion_health:"Health Potion",
+    potion_mana:"Mana Potion",
+    tree_wig:"Twig"
+  }
+  
+  showTextNode(1);
+  setInventory()
 }
+
 function playClickSound_02(){
   const audio = document.getElementById('click02');
   audio.play();
@@ -32,6 +53,31 @@ function playClickSound_03(){
 function playClickSound_04(){
   const audio = document.getElementById('click04');
   audio.play();
+}
+
+
+function setInventory(){
+  while (itemTextElement.firstChild) {
+    itemTextElement.removeChild(itemTextElement.firstChild)
+  }  
+  checkInventory(state)
+}
+
+function checkInventory(a){
+
+  a = Object.keys(a).filter(function(key) {
+      return a[key] === 1;
+  });
+  console.log(a);
+
+  a.forEach(function(e){
+    const li = document.createElement('li')
+    li.innerText = itemName[e];
+    li.classList.add('item');
+    itemTextElement.appendChild(li);
+  })
+
+    
 }
 
 var mute = document.getElementById('mute');
@@ -46,7 +92,6 @@ function mutee(){
     mute.style.backgroundImage = "url(mute.png)";
   }
 }
-
 
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
@@ -77,6 +122,7 @@ function selectOption(option) {
   }
   state = Object.assign(state, option.setState)
   playClickSound_02();
+  setInventory();
   showTextNode(nextTextNodeId)
 }
 
@@ -188,7 +234,7 @@ const textNodes = [
     options: [
       {
         text: 'Take the goo',
-        setState: { blueGoo: true },
+        setState: { blueGoo:1 },
         nextText: 2
       },
       {
@@ -204,13 +250,13 @@ const textNodes = [
       {
         text: 'Trade the goo for a sword',
         requiredState: (currentState) => currentState.blueGoo,
-        setState: { blueGoo: false, sword: true },
+        setState: { blueGoo: 0, sword: 1 },
         nextText: 3
       },
       {
         text: 'Trade the goo for a shield',
         requiredState: (currentState) => currentState.blueGoo,
-        setState: { blueGoo: false, shield: true },
+        setState: { blueGoo: 0, shield: 1},
         nextText: 3
       },
       {
@@ -335,4 +381,5 @@ const textNodes = [
 ]
 
 startGame();
-bgm.play();
+// bgm.play();
+

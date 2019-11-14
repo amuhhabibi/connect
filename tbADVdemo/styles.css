@@ -85,7 +85,7 @@ body {
   transition: .2s;
 }
 
-.inv-container {
+.menu-bar-container {
   position: absolute;
   top: 0;
   width: 90%;
@@ -96,13 +96,13 @@ body {
   border-right: 5px solid black;
 }
 
-.inv-btn-grid {
+.menu-bar-btn-grid {
   display: grid;
   grid-template-columns: repeat(4, auto);
   gap: 10px;
 }
 
-.inv-btn {
+.menu-bar-btn {
   color: white;
   font-size: 15px;
   background-color: hsl(81, 46%, 41%);
@@ -114,7 +114,7 @@ body {
   transition: .2s;
 }
 
-.inv-btn:hover {
+.menu-bar-btn:hover {
   cursor: pointer;
   border-color: hsl(83, 57%, 43%);
 }
@@ -144,14 +144,14 @@ body {
 }
 
 .modal-content{
-  height: 85%;
+  height: 70%;
   width: 55%;
   background-color: white;
   border: 5px solid rgb(0, 0, 0);
 }
 
 .close-btn{
-  margin: 10px;
+  margin: 20px;
   padding: 5px;
   background-color: rgb(189, 123, 36);
   border: 5px solid rgb(102, 68, 24);
@@ -181,4 +181,14 @@ body {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.item{
+  list-style-type: square;
+  font-size: 25px;
+  padding: 3px;
+}
+
+#inventory-menu{
+  margin: 0px;
 }

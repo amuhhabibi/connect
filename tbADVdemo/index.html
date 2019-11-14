@@ -29,19 +29,24 @@
       </div>
     </div>
   </div>
-  <div class="inv-container">
-      <div id="inv-buttons" class="inv-btn-grid">
-        <button class="inv-btn inventory-btn" onclick="playClickSound_04();">Inventory</button>
-        <button class="inv-btn stats-btn">Stats</button>
-        <button class="inv-btn maps-btn">Quests</button>
-        <button class="inv-btn menu-btn">Menu</button>
+  <div class="menu-bar-container">
+      <div id="menu-bar-buttons" class="menu-bar-btn-grid">
+        <button class="menu-bar-btn inventory-btn" onclick="playClickSound_04();">Inventory</button>
+        <button class="menu-bar-btn stats-btn">Stats</button>
+        <button class="menu-bar-btn quest-btn">Quests</button>
+        <button class="menu-bar-btn menu-btn">Menu</button>
       </div>
     </div>
   <button id="mute"></button>
   <div class="modal modal-hidden">
     <div class="modal-content">
-        <button class="inv-btn close-btn" onclick="playClickSound_03();">close</button>
-    </div>
+        <button class="menu-bar-btn close-btn" onclick="playClickSound_03();">close</button>
+     <ul id="inventory-menu">
+       <li class="item">item 1</li>
+       <li class="item">item 2</li>
+       <li class="item">item 3</li>
+     </ul>
+      </div>
   </div>
   <div id="" class="uverlay"></div>
 </body>
