@@ -21,26 +21,37 @@ bgm.load();
 
 
 function startGame() {
+  
   state = {
     blueGoo:0,
     sword:0,
     shield:0,
     potion_health:1,
     potion_mana:1,
-    tree_wig:1
-  }
+    twig:1
+}
+
   itemName = {
     blueGoo:"Blue Goo",
     sword:"Sword of Justice",
     shield:"Tate no Yuusha no Tate",
     potion_health:"Health Potion",
     potion_mana:"Mana Potion",
-    tree_wig:"Twig"
+    twig:"Twig"
   }
   
   showTextNode(1);
   setInventory()
 }
+
+
+const api_url = 'state.json';
+async function getState(){
+  const response = await fetch(api_url);
+  const data = await response.json();
+  console.log(data);
+}
+
 
 function playClickSound_02(){
   const audio = document.getElementById('click02');
@@ -68,12 +79,12 @@ function checkInventory(a){
   a = Object.keys(a).filter(function(key) {
       return a[key] === 1;
   });
-  console.log(a);
+  // console.log(a);
 
   a.forEach(function(e){
     const li = document.createElement('li')
-    li.innerText = itemName[e];
-    li.classList.add('item');
+    li.innerText = ' ' + itemName[e];
+    li.classList.add('item', e);
     itemTextElement.appendChild(li);
   })
 

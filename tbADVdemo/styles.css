@@ -184,11 +184,21 @@ body {
 }
 
 .item{
-  list-style-type: square;
-  font-size: 25px;
+  font-size: 30px;
   padding: 3px;
+}
+.item::before{
+  width: 1px;
+  content: "🅱";
+  color: rgb(255, 64, 64);
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
 }
 
 #inventory-menu{
+  list-style: none;
   margin: 0px;
+  padding: 0 40px 0 40px;
 }

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'letsjazz';
+    src: url('../fonts/letsjazz.otf');
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
+  }
+.container{
+    padding: 0 20px 0 20px;
+}
+.container > ul >li {
+    list-style-type:  decimal;
+    padding: 10px 0 0 0;
+}
+.container > ul >li > ul > li {
+    list-style-type: lower-latin;
+    padding: 10px 0 0 0;
+}
+.container > h2 {
+    margin: 50px 0 0 0;
+}
