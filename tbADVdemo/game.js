@@ -16,7 +16,7 @@ let itemName = { }
 const bgm = new Audio();
 bgm.src = "bgm01.wav";
 bgm.loop = true ;
-bgm.volume = 0;
+bgm.volume = 1;
 bgm.load();
 
 
@@ -392,5 +392,5 @@ const textNodes = [
 ]
 
 startGame();
-// bgm.play();
+bgm.play();
 
