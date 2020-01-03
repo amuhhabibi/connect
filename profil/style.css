@@ -71,9 +71,20 @@
 
 #ito{
     position: absolute;
-    width: 100%;
+    z-index: 0;
+    width: 100vw;
+    min-height: 50vw;
     opacity: .3;
-    bottom: 40px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.mundur{
+    position: relative;
+    z-index: 1;
 }
 
 .nav-item{
@@ -84,6 +95,7 @@
     border-radius: 0 0 5px 5px; 
 }
 .titel{
+    z-index: 1;
     color: #fefefe;
     padding-left: 20px;
     font-family: 'letsjazz';
