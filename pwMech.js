@@ -17,7 +17,7 @@ function valueCheck() {
 }
 
 function mProfile() {
-    window.location = "/rumah/";
+    window.location = "/profil/";
 }
 
 // function mMabaca(){
