@@ -473,30 +473,61 @@ textarea {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MY CODE */
+/* MY CODE */
+/* MY CODE */
+/* MY CODE */
+/* MY CODE */
+/* MY CODE */
+
+
+
+
+
 
 
 
 /* HEADER SECTION */
 
 body {
-    background-color: #191919;
+    background-color: #f0f0f0;
     font-family: 'Dosis', sans-serif;
 }
 
-#nav-bar {
+.nav-bar {
     padding: 20px;
     background-color: #f0f0f0;
 }
 
 
-#nav-bar div {
+.nav-bar div {
     text-align: center;
     padding: 0 0 10px 0;
     font-weight: 600;
 }
 
-#nav-bar div a {
+.nav-bar div a {
     line-height: 25px;
     font-family: 'Libre Baskerville', serif;
     font-size: 25px;
@@ -506,20 +537,20 @@ body {
     text-transform: uppercase;
 }
 
-#nav-bar ul {
+.nav-bar ul {
     display: block;
     margin: 0 auto;
     width: fit-content;
 }
 
-#nav-bar ul li {
+.nav-bar ul li {
     display: inline-block;
     padding: 0 5px 0 5px;
 }
 
-#nav-bar ul li a {
+.nav-bar ul li a {
     line-height: 22px;
-    font-size: 22px;
+    font-size: 20px;
     text-shadow: 0 0 6px rgb(185, 185, 185);
     color: #191919;
     text-decoration: none;
@@ -527,16 +558,47 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MAIN BODY SECTION */
 
 main {
     z-index: -1;
+    background-color: #191919;
 }
 
 .main-banner {
     width: 100%;
     height: calc(100vh - 97px);
-    background-image: url(bg1.JPG);
+    background-image: url(bg1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -562,4 +624,86 @@ main section h2 {
     color: #fefefe;
     text-shadow: 0 2px 10px #191919;
 
+}
+
+.case-wrapper {
+    margin: 50px 0 0 0;
+    padding: 0 0 20px 0;
+    /* background-color: rgb(186, 255, 74); */
+}
+
+.cases {
+    border-style: solid;
+    border-color: #fefefe;
+    border-width: 1px 0 0 0;
+    text-align: justify;
+    line-height: 24px;
+    margin: 25px 9px;
+    padding: 50px 9px 25px 9px;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: rgb(77, 214, 196); */
+}
+
+.case-3 {
+    margin: 25px 9px 0 9px;
+}
+
+.case-title {
+    padding: 0 0 8px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.case-text a {
+    font-weight: 300;
+}
+
+.cases a {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: #f0f0f0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px 10px;
+    color: #191919;
+}
+
+footer a {
+    color: darkblue;
 }
