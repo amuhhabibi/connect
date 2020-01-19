@@ -4,8 +4,9 @@ var txt = [];
 var article = [];
 
 function preload() {
-  for (i = 1; i < 100; i++) {
-    article.push(loadStrings("mabaca/article/article00" + i + ".txt"));
+  for (i = 1; i < 4; i++) {
+    v = i.toString().padStart(3, "0");
+    article.push(loadStrings("mabaca/article/article" + v + ".txt"));
   }
 }
 
