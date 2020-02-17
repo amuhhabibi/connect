@@ -293,11 +293,12 @@ function startTime() {
         document.getElementById("bar").style.width = ((mTot - 860) / 40) * 100 + "%";
     } else if (mTot > 900) {
         document.getElementById('judul').innerHTML = "School is over";
-        document.getElementById('fTime').innerHTML = "(:)";
+        document.getElementById('selanjutnya').innerHTML = "";
+        document.getElementById('fTime').innerHTML = "";
         document.getElementById("bar").style.width = "100%";
     };
     var t = setTimeout(startTime, 500);
-    document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+    document.getElementById('time').innerHTML = "It's " + h + ":" + m;
 
     // change bar width
     // document.getElementById("bar").style.width = (m / 60) * 100 + "%";
