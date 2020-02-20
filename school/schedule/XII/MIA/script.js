@@ -249,7 +249,7 @@ function startTime() {
             document.getElementById("bar").style.width = ((mTot - 490) / 40) * 100 + "%";
         } else if (mTot < 570) {
             document.getElementById('judul').innerHTML = "[III] " + eval(hariNama + '.jam3');
-            document.getElementById('selanjutnya').innerHTML = "next: Break";
+            document.getElementById('selanjutnya').innerHTML = "next: Break then " + eval(hariNama + '.jam4');
             document.getElementById('fTime').innerHTML = "(09:30)";
             document.getElementById("bar").style.width = ((mTot - 530) / 40) * 100 + "%";
         } else if (mTot < 580) {
@@ -269,7 +269,7 @@ function startTime() {
             document.getElementById("bar").style.width = ((mTot - 620) / 40) * 100 + "%";
         } else if (mTot < 700) {
             document.getElementById('judul').innerHTML = "[VI] " + eval(hariNama + '.jam6');
-            document.getElementById('selanjutnya').innerHTML = "next: Break";
+            document.getElementById('selanjutnya').innerHTML = "next: Break then " + eval(hariNama + '.jam7');
             document.getElementById('fTime').innerHTML = "(11:40)";
             document.getElementById("bar").style.width = ((mTot - 660) / 40) * 100 + "%";
         } else if (mTot < 780) {
@@ -323,7 +323,7 @@ function startTime() {
             document.getElementById("bar").style.width = ((mTot - 450) / 40) * 100 + "%";
         } else if (mTot < 530) {
             document.getElementById('judul').innerHTML = "[II] " + eval(hariNama + '.jam2');
-            document.getElementById('selanjutnya').innerHTML = "next: Break";
+            document.getElementById('selanjutnya').innerHTML = "next: Break then " + eval(hariNama + '.jam4');
             document.getElementById('fTime').innerHTML = "(08:50)";
             document.getElementById("bar").style.width = ((mTot - 490) / 40) * 100 + "%";
         } else if (mTot < 540) {
@@ -348,7 +348,7 @@ function startTime() {
             document.getElementById("bar").style.width = ((mTot - 620) / 40) * 100 + "%";
         } else if (mTot < 700) {
             document.getElementById('judul').innerHTML = "[VI] " + eval(hariNama + '.jam6');
-            document.getElementById('selanjutnya').innerHTML = "next: Break";
+            document.getElementById('selanjutnya').innerHTML = "next: Break then " + eval(hariNama + '.jam7');
             document.getElementById('fTime').innerHTML = "(11:40)";
             document.getElementById("bar").style.width = ((mTot - 660) / 40) * 100 + "%";
         } else if (mTot < 780) {
