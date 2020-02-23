@@ -3,23 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="/frameworks/jquery-3.4.1.min.js"></script>
+    <script src="/frameworks/bootstrap-4.4.1-dist/js/bootstrap.js"></script> -->
+    <link rel="stylesheet" href="/frameworks/bootstrap.min.css">
+    <script src="/frameworks/jquery.min.js"></script>
+    <script src="/frameworks/bootstrap.min.js"></script>
     <title>priject atom</title>
 </head>
 
-<body>
+<body scroll="no" style="overflow: hidden">
     <div id="wrapper">
-        <ul id="top-bar">
-            <li class="top-items">1</li>
-            <li class="top-items">2</li>
-            <li class="top-items">3</li>
-            <li class="top-items">4</li>
-            <li class="top-items">5</li>
-        </ul>
-
+        <div class="container-fluid top-bar bars">
+            <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
+            <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 top-items">A</div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 top-items">B</div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 top-items">C</div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 top-items">D</div>
+            </div>
+        </div>
+        <button id="my-button">notif</button>
+        <div class="container-fluid bottom-bar bars ">
+            <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
+            <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 top-items">A</div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 top-items">B</div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 top-items">C</div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 top-items">D</div>
+            </div>
+        </div>
     </div>
-    <button id="my-button">notif</button>
 </body>
 <script src="/frameworks/notify.js-3.0.0/dist/notify.js"></script>
 <script src="script.js"></script>

@@ -495,23 +495,29 @@ textarea {
 
 /* ================================================== POLICE LINE ==================================================*/
 
-body {
-  background-color: rgb(37, 37, 37);
-  color: white;
-}
-
-#top-bar {
-  display: block;
-  margin: 0 auto;
-  width: fit-content;
-}
-
 .top-items {
-  width: 20%;
-  display: inline-block;
-  padding: 0 5px 0 5px;
+  color: ghostwhite;
+  text-align: center;
 }
 
-button {
-  background-color: white;
+.bars {
+  background-color: #303030;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.top-bar {
+  border-bottom: 2px solid ghostwhite;
+  top: 0;
+}
+
+.bottom-bar {
+  border-top: 2px solid ghostwhite;
+  position: absolute;
+  bottom: 0;
+}
+
+body {
+  background-color: #303030 !important;
 }
