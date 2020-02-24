@@ -309,7 +309,7 @@ function startTime() {
     } else if (mTot < 900) {
       document.getElementById("judul").innerHTML =
         "[IX] " + eval(hariNama + ".jam9");
-      document.getElementById("selanjutnya").innerHTML = "next: -";
+      document.getElementById("selanjutnya").innerHTML = "next: Pulang";
       document.getElementById("fTime").innerHTML = "(15:00)";
       document.getElementById("bar").style.width =
         ((mTot - 860) / 40) * 100 + "%";
@@ -318,13 +318,14 @@ function startTime() {
       document.getElementById("selanjutnya").innerHTML = "";
       document.getElementById("fTime").innerHTML = "";
       document.getElementById("bar").style.width = "100%";
+      document.getElementById("modal-button").style.display = "none";
     }
   } else if (harib == 6) {
     document.getElementById("judul").innerHTML = "It's Saturday dumbass";
     document.getElementById("selanjutnya").innerHTML = "";
     document.getElementById("fTime").innerHTML = "";
     document.getElementById("bar").style.width = "100%";
-  } else if (harib == 7) {
+  } else if (harib == 0) {
     document.getElementById("judul").innerHTML = "It's Monday dumbass";
     document.getElementById("selanjutnya").innerHTML = "";
     document.getElementById("fTime").innerHTML = "";
@@ -417,7 +418,7 @@ function startTime() {
     } else if (mTot < 900) {
       document.getElementById("judul").innerHTML =
         "[IX] " + eval(hariNama + ".jam9");
-      document.getElementById("selanjutnya").innerHTML = "next: -";
+      document.getElementById("selanjutnya").innerHTML = "next: Pulang";
       document.getElementById("fTime").innerHTML = "(15:00)";
       document.getElementById("bar").style.width =
         ((mTot - 860) / 40) * 100 + "%";
@@ -426,6 +427,7 @@ function startTime() {
       document.getElementById("selanjutnya").innerHTML = "";
       document.getElementById("fTime").innerHTML = "";
       document.getElementById("bar").style.width = "100%";
+      document.getElementById("modal-button").style.display = "none";
     }
   }
 
