@@ -571,7 +571,10 @@ main {
 }
 .bg-fade {
   width: 100%;
-  background-color: #0f0f0f;
+  background-image: url(/bg2.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   -webkit-mask-image: -webkit-gradient(
     linear,
     left top,
