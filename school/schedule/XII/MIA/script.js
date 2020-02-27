@@ -109,20 +109,22 @@ function startTime() {
     hariNama = "tuesday";
     document.getElementById("isiModal").innerHTML = Object.values(
       eval(hariNama)
-    );
+    ).join("<br>");
   } else if (harib == 3) {
     hariNama = "wednesday";
     document.getElementById("isiModal").innerHTML = Object.values(
       eval(hariNama)
-    );
+    ).join("<br>");
   } else if (harib == 4) {
     hariNama = "thursday";
     document.getElementById("isiModal").innerHTML = Object.values(
       eval(hariNama)
-    );
+    ).join("<br>");
   } else if (harib == 5) {
     hariNama = "friday";
-    document.getElementById("isiModal").innerHTML = Object.values(hariNama);
+    document.getElementById("isiModal").innerHTML = Object.values(
+      eval(hariNama)
+    ).join("<br>");
   } else {
     document.getElementById("modal-button").style.display = "none";
   }
