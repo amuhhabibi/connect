@@ -69,9 +69,7 @@ const friday = {
   jam10: "Subject Matter Consultation"
 };
 
-//=============================== ROSTER ===============================
-
-//=============================== TEST FIELD ===============================
+//^^^^^^^=============================== ROSTER ===============================^^^^^
 
 var waktu1 = [07, 30]; // 450
 var waktu2 = [08, 10]; // 490
@@ -94,8 +92,6 @@ function startTime() {
   var harib = today.getDay();
   var hBaru = h * 60;
   var mTot = hBaru + m;
-
-  // console.log(harib)
 
   m = checkTime(m);
   s = checkTime(s);
@@ -346,6 +342,10 @@ function startTime() {
   // document.getElementById("bar").style.width = (m / 60) * 100 + "%";
 }
 
+//=============================== TEST FIELD ===============================
+//=============================== TEST FIELD ===============================
+
+//=============================== TEST FIELD ===============================
 //=============================== TEST FIELD ===============================
 
 function checkTime(i) {

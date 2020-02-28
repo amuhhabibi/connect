@@ -648,6 +648,18 @@ main section h2 {
   text-decoration: none;
   color: #fefefe;
 }
+.modal-dialog {
+  font-size: 30px;
+}
+.modal-content {
+  color: rgb(224, 224, 224) !important;
+  background-color: rgb(37, 37, 37) !important;
+}
+
+.m-body {
+  padding: 10px 10px 10px 30px;
+  line-height: 25px;
+}
 
 /* FOOTER SECTION */
 
