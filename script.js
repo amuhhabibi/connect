@@ -1,3 +1,7 @@
+// $(window).on("load", function() {
+//     $("#myModal").modal("show");
+//   });
+
 // function checkStatus() {
 //   if (typeof Storage !== "undefined") {
 //     // Store

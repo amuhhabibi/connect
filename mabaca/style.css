@@ -561,9 +561,9 @@ main {
   z-index: -1;
   background-color: #191919;
 }
-.main-banner1 {
+.main-banner {
   margin: 0 9px;
-  width: calc(100%-9px);
+  width: calc(100vw - 18px);
   height: calc(100vh - 97px);
   position: absolute;
   display: table;
@@ -572,7 +572,7 @@ main {
 .bg-fade {
   width: 100%;
 
-  background-image: url(/mabaca/bg1.JPG);
+  background-image: url(/img/bg-mabaca.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -609,6 +609,7 @@ main section h2 {
 }
 
 .case-wrapper {
+  width: 100%;
   padding: 20px 0 20px 0;
   /* background-color: rgb(186, 255, 74); */
 }

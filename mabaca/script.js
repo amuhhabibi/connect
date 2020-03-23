@@ -1,6 +1,6 @@
-$(window).on("load", function() {
-  $("#myModal").modal("show");
-});
+// $(window).on("load", function() {
+//   $("#myModal").modal("show");
+// });
 
 // function readTextFile(file) {
 //   var rawFile = new XMLHttpRequest();
