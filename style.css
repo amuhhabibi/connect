@@ -574,6 +574,9 @@ body {
 	padding: 0 5px 0 5px;
 }
 
+.nav-bar ul:hover {
+	cursor: default;
+}
 .nav-bar ul li a {
 	line-height: 22px;
 	font-size: 20px;
@@ -581,6 +584,10 @@ body {
 	color: #191919;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+
+#bibi:hover {
+	cursor: default;
 }
 
 /* MAIN BODY SECTION */
@@ -636,7 +643,7 @@ main {
 
 .main-banner {
 	margin: 0 9px;
-	width: calc(100vw - 18px);
+	width: calc(100vw - 36px);
 	height: calc(100vh - 97px);
 	position: absolute;
 	vertical-align: middle;
@@ -645,7 +652,7 @@ main {
 }
 .bg-fade {
 	width: 100%;
-	background-image: url(img/bg-home.JPG);
+	background-image: url(img/pic1.JPG);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -673,6 +680,11 @@ main section h1 {
 	text-shadow: 0 2px 10px #191919;
 }
 
+main section h1,
+h2:hover {
+	cursor: default;
+}
+
 main section h2 {
 	text-align: center;
 	font-size: 28px;
@@ -687,13 +699,16 @@ main section h2 {
 	/* background-color: rgb(186, 255, 74); */
 }
 
-.recent-article {
+.tentang-penulis {
 	font-family: 'Dosis', sans-serif;
 	margin: 30px 0;
 	text-align: center;
 	font-size: 30px;
 	font-weight: 600;
 	color: #fefefe;
+}
+.tentang-penulis:hover {
+	cursor: default;
 }
 
 .cases {
@@ -706,6 +721,14 @@ main section h2 {
 	padding: 20px 9px 0px;
 	font-family: 'Montserrat', sans-serif;
 	/* background-color: rgb(77, 214, 196); */
+}
+
+#text1:hover {
+	cursor: default;
+}
+
+#text1 a:hover {
+	cursor: pointer;
 }
 
 .modal-dialog {
@@ -741,10 +764,7 @@ main section h2 {
 }
 
 .form-kontak {
-	width: calc(100vw - 18px);
-	border-style: solid;
-	border-color: #fefefe;
-	border-width: 1px 0 0 0;
+	width: calc(100% - 18px);
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	color: #fefefe;
@@ -767,21 +787,27 @@ main section h2 {
 	margin: 12px 0 24px;
 }
 
-.namasurel {
+.namapos {
+	width: 30%;
 	text-align: center;
 	padding: 5px 12px;
+	margin: 5px 10px;
 	height: 35px;
-	margin: 0 0 15px;
+}
+
+.shift-left {
+	margin-top: 10px;
+	transform: translateX(-3px);
 }
 
 .pesan {
+	margin: 5px 0 0 0;
 	text-align: center;
 	padding: 5px 10px;
 	height: 90px;
 }
 
 .form-input {
-	margin: 0 0 12px;
 	min-width: 300px;
 	max-width: 400px;
 	border-style: none;
@@ -790,11 +816,21 @@ main section h2 {
 
 .form-kontak-label {
 	font-family: 'Dosis', sans-serif;
-	margin: 30px 0 12px;
+	margin: 30px 0 30px;
 	text-align: center;
 	font-size: 30px;
 	font-weight: 600;
 	color: #fefefe;
+}
+
+#fs-frm-inputs {
+	border-style: solid;
+	border-color: #fefefe;
+	border-width: 1px 0 0 0;
+}
+
+.form-kontak-label:hover {
+	cursor: default;
 }
 
 /* FOOTER SECTION */
@@ -833,6 +869,65 @@ footer {
 	color: #191919;
 }
 
+footer p:hover {
+	cursor: default;
+}
+
 footer a {
 	color: darkblue;
 }
+
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+
+@media only screen and (min-width: 680px) {
+	.nonbanner {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 768px;
+	}
+
+	.shift-left {
+		margin: 13px -5px 10px 10px !important;
+	}
+
+	.form-input {
+		min-width: 0 !important;
+	}
+
+	.napos {
+		width: 40% !important;
+	}
+	.pesan {
+		transform: translateX(-2px);
+		max-width: calc(60% + 10px) !important;
+		width: 70% !important;
+	}
+}
+
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */
+/* DESKTOP SITE */

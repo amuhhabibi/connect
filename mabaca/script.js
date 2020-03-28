@@ -1,19 +1,18 @@
 // $(window).on("load", function() {
-//   $("#myModal").modal("show");
-// });
+//     $("#myModal").modal("show");
+//   });
 
-// function readTextFile(file) {
-//   var rawFile = new XMLHttpRequest();
-//   rawFile.open("GET", file, false);
-//   rawFile.onreadystatechange = function() {
-//     if (rawFile.readyState === 4) {
-//       if (rawFile.status === 200 || rawFile.status == 0) {
-//         var allText = rawFile.responseText;
-//         console.log(allText);
-//       }
+// function checkStatus() {
+//   if (typeof Storage !== "undefined") {
+//     // Store
+//     //   localStorage.setItem("lastname", "Smith");
+//     // Retrieve
+//     if (localStorage.getItem("verify") == true) {
+//     } else {
+//       window.location.replace("/nikki/");
 //     }
-//   };
-//   rawFile.send(null);
+//   } else {
+//     document.getElementById("result").innerHTML =
+//       "Sorry, your browser does not support Web Storage...";
+//   }
 // }
-
-// readTextFile("texts/001.txt");
