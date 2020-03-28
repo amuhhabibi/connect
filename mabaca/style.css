@@ -485,14 +485,6 @@ textarea {
 
 /* MY CODE */
 
-/* LOAD FONTS */
-/* LOAD FONTS */
-/* LOAD FONTS */
-/* LOAD FONTS */
-/* LOAD FONTS */
-/* LOAD FONTS */
-/* LOAD FONTS */
-
 @font-face {
 	font-family: Montserrat;
 	src: url(/fonts/Montserrat/Montserrat-Light.ttf);
@@ -505,37 +497,6 @@ textarea {
 	font-family: Libre Baskerville;
 	src: url(/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
 }
-
-/* LOAD FONTS */
-/* LOAD FONTS */
-/* LOAD FONTS */
-/* LOAD FONTS */
-/* LOAD FONTS */
-/* LOAD FONTS */
-/* LOAD FONTS */
-/* LOAD FONTS */
-/* LOAD FONTS */
-/* LOAD FONTS */
-
-/* HEADER SECTION */
-
-/* HEADER SECTION */
-
-/* HEADER SECTION */
-
-/* HEADER SECTION */
-
-/* HEADER SECTION */
-
-/* HEADER SECTION */
-
-/* HEADER SECTION */
-
-/* HEADER SECTION */
-
-/* HEADER SECTION */
-
-/* HEADER SECTION */
 
 body {
 	background-color: #f0f0f0;
@@ -590,56 +551,10 @@ body {
 	cursor: default;
 }
 
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
-/* MAIN BODY SECTION */
-
 main {
 	z-index: -1;
 	background-color: #191919;
 }
-
-/* .main-banner {
-  width: 100%;
-  height: calc(100vh - 97px);
-  background-image: url(bg1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: table;
-} */
 
 .main-banner {
 	margin: 0 9px;
@@ -693,172 +608,6 @@ main section h2 {
 	text-shadow: 0 2px 10px #191919;
 }
 
-.case-wrapper {
-	width: 100%;
-	padding: 10px 0 10px 0;
-	/* background-color: rgb(186, 255, 74); */
-}
-
-.tentang-penulis {
-	font-family: 'Dosis', sans-serif;
-	margin: 30px 0;
-	text-align: center;
-	font-size: 30px;
-	font-weight: 600;
-	color: #fefefe;
-}
-.tentang-penulis:hover {
-	cursor: default;
-}
-
-.cases {
-	border-style: solid;
-	border-color: #fefefe;
-	border-width: 1px 0 0 0;
-	text-align: justify;
-	line-height: 24px;
-	margin: 25px 9px 0px;
-	padding: 20px 9px 0px;
-	font-family: 'Montserrat', sans-serif;
-	/* background-color: rgb(77, 214, 196); */
-}
-
-#text1:hover {
-	cursor: default;
-}
-
-#text1 a:hover {
-	cursor: pointer;
-}
-
-.modal-dialog {
-	font-size: 30px;
-}
-.modal-content {
-	color: rgb(224, 224, 224) !important;
-	background-color: rgb(37, 37, 37) !important;
-}
-
-.modal-body {
-	padding: 10px 10px 10px 30px;
-	line-height: 25px;
-}
-
-.case-title {
-	padding: 0 0 12px 10px;
-	font-size: 20px;
-	font-weight: 600;
-}
-
-.case-text p {
-	font-weight: 300;
-}
-
-.case-text {
-	font-size: 15px;
-}
-
-.cases p {
-	text-decoration: none;
-	color: #fefefe;
-}
-
-.form-kontak {
-	width: calc(100% - 18px);
-	font-family: 'Montserrat', sans-serif;
-	text-align: center;
-	color: #fefefe;
-	margin: 0 9px;
-	padding: 0 9px;
-}
-
-.form-label {
-	font-size: 20px;
-	margin: 15px;
-}
-
-.form-submit {
-	font-size: 20px;
-	color: #fefefe;
-	background-color: #191919;
-	border-style: solid;
-	border-radius: 4px;
-	padding: 5px 10px;
-	margin: 12px 0 24px;
-}
-
-.namapos {
-	width: 30%;
-	text-align: center;
-	padding: 5px 12px;
-	margin: 5px 10px;
-	height: 35px;
-}
-
-.shift-left {
-	margin-top: 10px;
-	transform: translateX(-3px);
-}
-
-.pesan {
-	margin: 5px 0 0 0;
-	text-align: center;
-	padding: 5px 10px;
-	height: 90px;
-}
-
-.form-input {
-	min-width: 300px;
-	max-width: 400px;
-	border-style: none;
-	border-radius: 4px;
-}
-
-.form-kontak-label {
-	font-family: 'Dosis', sans-serif;
-	margin: 30px 0 30px;
-	text-align: center;
-	font-size: 30px;
-	font-weight: 600;
-	color: #fefefe;
-}
-
-#fs-frm-inputs {
-	border-style: solid;
-	border-color: #fefefe;
-	border-width: 1px 0 0 0;
-}
-
-.form-kontak-label:hover {
-	cursor: default;
-}
-
-/* FOOTER SECTION */
-
-/* FOOTER SECTION */
-
-/* FOOTER SECTION */
-
-/* FOOTER SECTION */
-
-/* FOOTER SECTION */
-
-/* FOOTER SECTION */
-
-/* FOOTER SECTION */
-
-/* FOOTER SECTION */
-
-/* FOOTER SECTION */
-
-/* FOOTER SECTION */
-
-/* FOOTER SECTION */
-
-/* FOOTER SECTION */
-
-/* FOOTER SECTION */
-
 footer {
 	background-color: #f0f0f0;
 	font-family: 'Montserrat', sans-serif;
@@ -877,21 +626,6 @@ footer a {
 	color: darkblue;
 }
 
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-
 @media only screen and (min-width: 680px) {
 	.nonbanner {
 		position: relative;
@@ -899,35 +633,4 @@ footer a {
 		transform: translateX(-50%);
 		width: 768px;
 	}
-
-	.shift-left {
-		margin: 13px -5px 10px 10px !important;
-	}
-
-	.form-input {
-		min-width: 0 !important;
-	}
-
-	.napos {
-		width: 40% !important;
-	}
-	.pesan {
-		transform: translateX(-2px);
-		max-width: calc(60% + 10px) !important;
-		width: 70% !important;
-	}
 }
-
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
-/* DESKTOP SITE */
