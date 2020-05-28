@@ -642,8 +642,7 @@ main {
 } */
 
 .main-banner {
-	margin: 0 9px;
-	width: calc(100vw - 36px);
+	width: 100vw;
 	height: calc(100vh - 97px);
 	position: absolute;
 	vertical-align: middle;
