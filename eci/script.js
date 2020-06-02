@@ -1,6 +1,10 @@
 var hari = {
   "28/05/2020":["08:30","11:30"], 
-  "29/05/2020":["09:30","12:30"]
+  "29/05/2020":["09:30","12:30"], 
+  "02/06/2020":["08:30","11:30"], 
+  "03/06/2020":["08:30","11:30"], 
+  "04/06/2020":["08:30","11:30"],
+  "05/06/2020":["09:30","12:30"]
 }
 
 function padZero(i) {
@@ -32,6 +36,10 @@ function cekTanggal(){
       var selesaiMenit = Number(String(selesai).split(":")[0])*60 + Number(String(selesai).split(":")[1]);
       // sebelum mulai
       if (mulaiMenit > waktuMenit){
+        document.getElementById("time").innerHTML = "Class hasn't started yet";
+        document.getElementById("timeLeft").innerHTML = padZero(jam) + ":" + padZero(men);
+        document.getElementById("bar").style.width = "0%";
+      }else if (mulaiMenit > waktuMenit){
         document.getElementById("time").innerHTML = "Class hasn't started yet";
         document.getElementById("timeLeft").innerHTML = padZero(jam) + ":" + padZero(men);
         document.getElementById("bar").style.width = "0%";
