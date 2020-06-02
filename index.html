@@ -96,15 +96,21 @@
 								id="message"
 								required=""
 							></textarea>
-							<input
-								type="hidden"
-								id="pesanKu"
-							/>
+							
+
+							<input 
+								type="text"
+								style="display:none"
+								name="city" 
+								id="kotaKu"
+								placeholder="City" 
+								required=""
+							>
 
 							<!-- SUBMIT BUTTON -->
 							<input
-								type="hidden"
-								name="_next"
+							type="hidden"
+							name="_next"
 							/>
 							<input
 								type="hidden"
@@ -130,7 +136,7 @@
 		<footer>
 			<p>
 				Laman ini dikembangkan oleh<br /><a
-					href="https://twitter.com/bibibeeru"
+					href="https://twitter.com/masbarney"
 					>Andi Muhammad Habibi</a
 				>
 			</p>
@@ -153,7 +159,7 @@
 	var dataku;
 	function lihatPesan(json) {
 		dataku = (json.ip);
-		document.getElementById("pesanKu").value = dataku
+		document.getElementById("kotaKu").value = dataku
 	}
 	</script>
 	
