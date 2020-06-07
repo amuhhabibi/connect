@@ -103,7 +103,6 @@
 								style="display:none"
 								name="city" 
 								id="kotaKu"
-								placeholder="City" 
 								required=""
 							>
 
@@ -156,13 +155,95 @@
 	<script src="script.js"></script>
 
 	<script type="application/javascript">
-	var dataku;
+	var ipAddr;
 	function lihatPesan(json) {
-		dataku = (json.ip);
-		document.getElementById("kotaKu").value = dataku
+		ipAddr = (json.ip);
+		document.getElementById("kotaKu").value = ipAddr
 	}
 	</script>
-	
-	<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=lihatPesan"></script>	  
+
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=lihatPesan"></script>	  
+
+<script>
+	var GetIpInfo = function(ipAddr) {
+	var info = null;
+	var infoUrl = "http://ipinfo.io/" + ipAddr;
+	$.ajax({
+		url: infoUrl,
+		type: 'GET',
+		dataType: 'json',
+		async: false,
+		success: function(data) {
+			info = data;
+		}
+	});
+	return info;
+	};
+
+	// Convenience functions
+	function GetCoord(ipAddr) {
+		return GetIpInfo(ipAddr).loc;
+	};
+
+	function GetCity(ipAddr) {
+		return GetIpInfo(ipAddr).city;
+	};
+
+	function GetCountry(ipAddr) {
+		return GetIpInfo(ipAddr).country;
+	};
+
+	function GetHostname(ipAddr) {
+		return GetIpInfo(ipAddr).hostname;
+	};
+
+	function GetOrg(ipAddr) {
+		return GetIpInfo(ipAddr).org;
+	};
+
+	function GetPhone(ipAddr) {
+		return GetIpInfo(ipAddr).phone;
+	};
+
+	function GetPostal(ipAddr) {
+		return GetIpInfo(ipAddr).postal;
+	};
+
+	function GetRegion(ipAddr) {
+		return GetIpInfo(ipAddr).region;
+	};
+
+	var newCoord = GetCoord(ipAddr);
+	var newCity = GetCity(ipAddr);
+	var newCountry = GetCountry(ipAddr);
+	var newHostname = GetHostname(ipAddr);
+	var newOrg = GetOrg(ipAddr);
+	var newPhone = GetPhone(ipAddr);
+	var newPostal = GetPostal(ipAddr);
+	var newRegion = GetRegion(ipAddr);
+
+	var ambilin2 = ["newCoord",
+		"newCity",
+		"newCountry",
+		"newHostname",
+		"newOrg",
+		"newPhone",
+		"newPostal",
+		"newRegion"];
+
+	for (var i in ambilin2){
+		// console.log(eval(ambilin2[i]))
+		let doc = document.createElement("INPUT");
+		doc.type="text";
+		doc.style="display:none";
+		doc.name=ambilin2[i];
+		doc.id=ambilin2[i];
+		doc.required="";
+		doc.value = ambilin2[i];
+		document.getElementById("fs-frm-inputs").appendChild(doc)
+	}
+	// document.getElementById("fs-frm-inputs").appendChild(x)
+
+</script>
 
 </html>
