@@ -495,15 +495,15 @@ textarea {
 
 @font-face {
 	font-family: Montserrat;
-	src: url(/fonts/Montserrat/Montserrat-Light.ttf);
+	src: url(fonts/Montserrat/Montserrat-Light.ttf);
 }
 @font-face {
 	font-family: Dosis;
-	src: url(/fonts/Dosis/static/Dosis-Regular.ttf);
+	src: url(fonts/Dosis/static/Dosis-Regular.ttf);
 }
 @font-face {
 	font-family: Libre Baskerville;
-	src: url(/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
+	src: url(fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
 }
 
 /* LOAD FONTS */
@@ -632,17 +632,17 @@ main {
 }
 
 /* .main-banner {
-  width: 100%;
-  height: calc(100vh - 97px);
-  background-image: url(bg1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: table;
+	width: 100%;
+	height: calc(100vh - 97px);
+	background-image: url(bg1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: table;
 } */
 
 .main-banner {
-	width: 100vw;
+	width: 100%;
 	height: calc(100vh - 97px);
 	position: absolute;
 	vertical-align: middle;

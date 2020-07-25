@@ -1,152 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
-		<link rel="stylesheet" href="/frameworks/bootstrap.min.css" />
-		<link rel="stylesheet" href="style.css" />
-		<title>bibi</title>
-	</head>
+<html>
 
-	<body>
-		<header>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mabaca</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+</head>
+
+<body style="background-color: #f0f0f0 !important;">
+
+    <div class="kentang">
+        <header>
 			<div class="nav-bar">
-				<div><a id="bibi">Bibi</a></div>
+				<div><a id="bibi" href="/">Bibi</a></div>
 				<ul>
-					<li><a id="mabaca" href="/mabaca/">mabaca</a></li>
-					<li><a id="galeri" href="/galeri/">galeri</a></li>
-					<li><a id="nikki" href="/nikki/">nikki</a></li>
+					<li><a id="mabaca" >mabaca</a></li>
+					<li><a id="galeri" href="galeri/">galeri</a></li>
+					<li><a id="nikki" href="nikki/">nikki</a></li>
 				</ul>
 			</div>
-		</header>
-		<main>
-			<section class="main-banner">
-				<div class="v-centerer">
-					<h1>HARTA,<br />TAHTA,</h1>
-					<br />
-					<h2>Chef Renatta.</h2>
-				</div>
-			</section>
-			<section class="bg-fade">
-			</section>
-			<div class="nonbanner">
-				<div class="wrap">
-					<div class="case-wrapper">
-						<div>
-							<h1 class="tentang-penulis">TENTANG PENULIS</h1>
-						</div>
-						<div class="cases">
-							<div class="case-text">
-								<p id="text1">
-									&nbsp&nbsp&nbsp&nbsp&nbspRemaja ini sudah berusia 17 tahun dan masih belajar cara menulis dengan benar. Lahir dari rahim Ibu Pertiwi pada 16 April 2002 sebagai makhluk Tuhan yang berakal sehat. Dididik di Sekolah Islam Athirah selama kurang lebih 8 tahun lalu dipindahkan keluar kota dengan jarak tempuh kurang lebih 4 jam dengan mobil. Hari-hari selama 3 tahun di kota tersebut dihabiskan dengan bermain game dan menonton tanpa sedikitpun belajar di rumah. Entah bagaimana ia bisa lulus dengan nilai yang benar-benar anjlok.<br>&nbsp&nbsp&nbsp&nbsp&nbspDilanjutkanlah kisahnya dengan kembali ke kota asal untuk melanjut ‘pendidikan'nya ke sekolah berbasis international, yaitu Q2VsZWJlcyBHbG9iYWwgU2Nob29s. Tidak terhitung pengalaman baru dan pelajaran yang ia dapat selama dua tahun menuntut ilmu di sekolah ini. Mungkin 70% pengalamannya ia dapat di sini. Selain itu ia juga berhasil berhenti dari kebiasaan ‘buruk’nya, yaitu bermain game dan menonton tanpa henti.<br>&nbsp&nbsp&nbsp&nbsp&nbspSaat ini ia sedang memikirkan bagaimana cara ia dapat menggapai cita-citanya. Katanya ia ingin jadi dokter spesialis di bidang saraf, tapi ia lupa alasan kenapa ia ingin menjadi ahli di bidang saraf. Walau begitu, entah mengapa ia merasa tetap harus menggapai mimpinya. Katanya setelah berhasil menjadi dokter ahli saraf, ia ingin menjadi presiden. Ia juga kurang tau kenapa hal ini terpikirkan olehnya, mungkin karena baru saja salah satu inspirasinya telah naik pangkat dan butuh pengganti. “Kalau orang tuaku menjadikannya sebagai inspirasi dari namaku, aku harus bisa melampauinya!” pikirnya. Jadi katanya sebagai permbuka, ia akan mulai dengan menjadi presiden negerinya. (15 September 2019)
-									<!-- <a
-										style="color: rgb(145, 145, 145);text-decoration: none;"
-										onclick="bukaDong()"
-										;
-										id="bukaDong"
-									> -->
-										(baca lebih lanjut)
-									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<br />
-				</div>
-				<div class="form-kontak">
-					<h1 class="form-kontak-label">KONTAK PENULIS</h1>
-					<form
-						id="fs-frm"
-						name="simple-contact-form"
-						accept-charset="utf-8"
-						action="https://formspree.io/amuhhabibi@gmail.com"
-						method="post"
-					>
-						<fieldset id="fs-frm-inputs">
-
-							<!-- NAMA -->
-							<input
-								class="form-input namapos shift-left"
-								placeholder="Nama"
-								type="text"
-								name="nama"
-								id="full-name"
-								required=""
-							/>
-							
-							<!-- Email -->
-							<input
-								class="form-input namapos"
-								placeholder="Alamat Pos-el"
-								type="email"
-								name="alamat pos-el pengirim"
-								id="email-address"
-								required=""
-							/>
-							<br>
-							<!-- PESAN -->
-							<textarea
-								class="form-input pesan"
-								placeholder="Pesan"
-								rows="5"
-								name="message"
-								id="message"
-								required=""
-							></textarea>
-
-							<!-- SUBMIT BUTTON -->
-							<input
-								type="hidden"
-								name="_next"
-							/>
-							<input
-								type="hidden"
-								name="_subject"
-								id="email-subject"
-								value="Contact Form Submission"
-							/><br />
-						</fieldset>
-						<input class="form-submit" type="submit" value="Kirim" />
-					</form>
-				</div>
-			</div>
-			<div class="modal fade" id="myModal" role="dialog">
-				<div class="modal-dialog modal-dialog-centered" role="document">
-					<div class="modal-content">
-						<div class="modal-body">
-							<h1>BE AWARE that this website is still under development</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-		<footer>
-			<p>
-				Laman ini dikembangkan oleh<br /><a
-					href="https://twitter.com/bibibeeru"
-					>Andi Muhammad Habibi</a
-				>
+        </header>
+        <main style="background-color: #191919;">
+            <div class="row justify-content-center align-self-center" style="padding: 30px 0; margin-left: 0 !important; margin-right: 0 !important;">
+                <div class="col-sm-8">
+                    <h2 class="text-justify fofont" style="color: #fefefe;  font-size: 25px; text-shadow: 0px 2px 6px #686868;">"JumlAHnyA 20eNAM."</h2>
+                        <p class="text-justify fofont" style="color: #fefefe;  font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                            dalam empat hari\<br> berapa banyak hal yang bisa dilakukan manusia?\<br> berapa banyak yang terkenang?\<br> berapa lama akan terkenang?\<br> jawabannya salah\<br> kenapa?\
+                            <br> tidak percaya?\<br> coba buktikan\<br> - 20:04 / 03 / 11 / 2019 -<br><br><br>
+                        </p>
+                    <h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"selamat malam."</h2>
+                        <p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                            malam itu\<br> dirimu ialah purnama\<br> di tengah meriahnya lantunan irama\<br>
+                            <br> bergerak melintasi ruang dan waktu\<br> di bawah terangnya malam sabtu\<br>
+                            <br> mungkin sedikit terlalu\<br> dariku yang ingin memilikimu\<br> tapi kuharap tak ada mata selain kita\<br> saling mengerti tanpa melanturkan sepatah kata\<br>
+                            <br> di bawah rembulan bertatap muka\<br> di dalam mimpi lelaki yang baka\<br> - 23:41 / 27 / 10 / 2019 -<br><br><br>
+                        </p>
+                    <h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"hA?"</h2>
+                        <p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                            bulan memercikkan fatamorgana\<br> seakan surya ada di depan mata\<br> bohong\
+                            <br> itu hanya bunga\<br> - 21:57 / 27 / 10 / 2019 -<br><br><br>
+                        </p>
+                    <h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"cinta"</h2>
+                        <p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                            cinta itu beragam\<br> mencinta\
+                            <br> mencintakan\
+                            <br> tercinta\
+                            <br> dicinta\
+                            <br> pencinta\
+                            <br> percintaan\
+                            <br> bercinta\
+                            <br> bercintakan\
+                            <br> ancaman\
+                            <br> pelecehan\
+                            <br> - 18:23 / 27 / 10 / 2019 -<br><br><br>
+                        </p>
+                    <h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"mimPI INDAH"</h2>
+                        <p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                            Aku bertunas dengan namanya\<br> tapi kenapa kami berbeda?\<br> kenapa rantingku tak sepanjang miliknya?\<br> saat Tuhan menyeru pemenang selanjutnya\<br> bukan aku yang dikehendakinya\<br> tapi rasanya jiwaku seperti dikunyah\<br>
+                            <br> kucoba berlari mengitari keluh\<br> namun terjatuh\<br> kucoba tahan hantaman geruh\<br> lalu kumohon pada sang absolut\<br>
+                            <br> ya Tuhan!\<br> kumohon!\
+                            <br> jangan biarkan siapapun memetik bunganya\<br> jangan biarkan siapapun mencabut akarnya\<br> eyang\
+                            <br> jasamu takkan terlupakan\<br> ketuhanan\
+                            <br> kemanusiaan\
+                            <br> persatuan\
+                            <br> kerakyatan\
+                            <br> dan keadilan\<br> semua kau abdikan\<br>
+                            <br> selamat jalan eyang\<br> istirahatlah dengan tenang\<br> pangkatmu sudah dinaikkan\<br> sisanya biar kami yang abadikan\<br> - 16:22 / 16 / 09 / 2019 -<br><br><br>
+                        </p>
+                    <h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"tAk seNDIri"</h2>
+                        <p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                            malam kutiduri\<br> pagi kubanguni\<br> hari baru kuhadiri\ <br> dengan menatap sang maharani\<br> 4 jam ku di bawah\<br> 2 jam ku di atas\<br> 4 jam lagi di bawah\<br> 6 jam lagi di atas\<br> dan menyangkar di bawah untuk
+                            3 minggu ke depan\<br> seru yang hanya muncul di awal,\<br> perlahan akan tenggelam dalam kebosanan\<br> dingin yang tak bertitik\<br> hanya bisa dilayani dengan sentuhan tubuh dan saling berbisik\<br> berawal dari jembatan
+                            panjang yang penuh jejak kaki\<br> dan berakhir di mimpi seorang lelaki\<br> - 22:24 / 25 / 07 / 2019 -<br><br><br>
+                        </p>
+                    <h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"KURAng Sehat"</h2>
+                        <p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                            kursi yang membungkuk menatap lantai\<br> pintu yang berteriak\<br> mereka terlihat tidak sehat\<br> kenapa?\ <br> kenapa kau pergi?\ <br> ke mana kau pergi?\ <br> dengan siapa kau pergi?\ <br> setiap hari aku menunggumu\<br>                                di rumhamu\<br> bersama adikmu\<br> meunggumu\
+                            <br> di rumahmu\<br> bersama adikmu\<br> menunggu\
+                            <br> di rumahmu\<br> bersama adikmu\<br> bercumbu\
+                            <br> di rumahmu\<br> bersama adikmu\<br> lalu kulupakan dirimu\<br> - 14:19 / 23 / 07 / 2019 -<br><br><br>
+                        </p>
+                    <h2 class="text-justify fofont" style="color: #fefefe; font-size: 25px; text-shadow: 0px 2px 6px #686868;">"MAKAn"</h2>
+                        <p class="text-justify fofont" style="color: #fefefe; font-size: 18px; text-shadow: 0px 2px 10px #686868;">
+                            di sebuah dunia,\<br> di alam semesta,\<br> di balik cahaya sang surya,\<br> di bawah langit,\<br> di atas bumi,\<br> di tumpukan batu yang tinggi,\<br> di dalam ingatan yang tak berperadaban,\<br> hadir sebuah bayangan
+                            yang berbaring di atas sofa\<br>
+                            <br> tertidur tanpa wajah yang tak berekspresi,\<br> layaknya sedang tenggelam dalam tidur yang baka\<br> tidur yang dijaga seorang wanita,\<br> dengan punggung melengkung dan mata yang dalam\<br>
+                            <br> "Aku ingin makan!" sabdanya\<br> bayangan yang awalnya berbaring,\<br> kini tergeletak\<br> ruangan yang sunyi memberikan instruksi untuk bersikap mandiri\<br> pintu yang terbuka sendiri,\<br> meninggalkan sang bayangan
+                            tak berdiri\<br>
+                            <br> kupikir ia sendri, ternyata ada yang duduk seorang diri\<br> waktu sudah hampir habis\<br> semua akan mati dan terlahir kembali\<br>
+                            <br> sebelum mati,\<br> ada satu hal yang kuingin\<br> aku tidak ingin mati\<br> “How to Write and Speak Better!”\<br> aku ingin membaca itu!\<br>
+                            <br> tapi sepertinya waktu sudah habis\<br> aku akan mati\<br> aku tidak ingin mati\<br> tapi Aku sudah mati\<br> ditelan tangis sang surya,\<br> sembari berbaring di mimpi yang baka\<br> - 14:18 / 22 / 07 / 2019 - <br>
+                        </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+			<p style="margin-bottom: 0; font-family: 'Montserrat', sans-serif;">
+				Laman ini dikembangkan oleh<br/><a href="https://twitter.com/bobibolla">Andi Muhammad Habibi</a>
 			</p>
 		</footer>
-	</body>
+    </div>
 
-	<!-- LOAD JAVASCRIPT AFTER LOADING THE WEB -->
-	<!-- LOAD JAVASCRIPT AFTER LOADING THE WEB -->
-	<!-- LOAD JAVASCRIPT AFTER LOADING THE WEB -->
-	<!-- LOAD JAVASCRIPT AFTER LOADING THE WEB -->
-	<!-- LOAD JAVASCRIPT AFTER LOADING THE WEB -->
-	<!-- LOAD JAVASCRIPT AFTER LOADING THE WEB -->
-	<!-- LOAD JAVASCRIPT AFTER LOADING THE WEB -->
+</body>
 
-	<script src="/frameworks/jquery.min.js"></script>
-	<script src="/frameworks/bootstrap.min.js"></script>
-	<script src="script.js"></script>
-	<!-- <script>
-		function bukaDong() {
-			document.getElementById('text1').innerHTML =
-				"&nbsp&nbsp&nbsp&nbsp&nbspRemaja ini sudah berusia 17 tahun dan masih belajar cara menulis dengan benar. Lahir dari rahim Ibu Pertiwi pada 16 April 2002 sebagai makhluk Tuhan yang berakal sehat. Dididik di Sekolah Islam Athirah selama kurang lebih 8 tahun lalu dipindahkan keluar kota dengan jarak tempuh kurang lebih 4 jam dengan mobil. Hari-hari selama 3 tahun di kota tersebut dihabiskan dengan bermain game dan menonton tanpa sedikitpun belajar di rumah. Entah bagaimana ia bisa lulus dengan nilai yang benar-benar anjlok.<br>&nbsp&nbsp&nbsp&nbsp&nbspDilanjutkanlah kisahnya dengan kembali ke kota asal untuk melanjut ‘pendidikan'nya ke sekolah berbasis international, yaitu Q2VsZWJlcyBHbG9iYWwgU2Nob29s. Tidak terhitung pengalaman baru dan pelajaran yang ia dapat selama dua tahun menuntut ilmu di sekolah ini. Mungkin 70% pengalamannya ia dapat di sini. Selain itu ia juga berhasil berhenti dari kebiasaan ‘buruk’nya, yaitu bermain game dan menonton tanpa henti.<br>&nbsp&nbsp&nbsp&nbsp&nbspSaat ini ia sedang memikirkan bagaimana cara ia dapat menggapai cita-citanya. Katanya ia ingin jadi dokter spesialis di bidang saraf, tapi ia lupa alasan kenapa ia ingin menjadi ahli di bidang saraf. Walau begitu, entah mengapa ia merasa tetap harus menggapai mimpinya. Katanya setelah berhasil menjadi dokter ahli saraf, ia ingin menjadi presiden. Ia juga kurang tau kenapa hal ini terpikirkan olehnya, mungkin karena baru saja salah satu inspirasinya telah naik pangkat dan butuh pengganti. “Kalau orang tuaku menjadikannya sebagai inspirasi dari namaku, aku harus bisa melampauinya!” pikirnya. Jadi katanya sebagai permbuka, ia akan mulai dengan menjadi presiden negerinya. (15 September 2019)";
-		}
-	</script> -->
 </html>
