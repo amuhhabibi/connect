@@ -41,7 +41,7 @@ function reloadPilihan(){
         var a = document.getElementById("audioNum").value;
         console.log(a)
         var audio = document.getElementById('audio');
-        document.getElementById('audioSource').src = "/src/audio/KB/" + a + ".mp3";
+        document.getElementById('audioSource').src = "./src/audio/KB/" + a + ".mp3";
     
         audio.load(); //call this to just preload the audio without playing
 }
