@@ -7,24 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-		<div class="card__inner">
-			<div class="card__face card__face--front">
-				<h2>To meet</h2>
-			</div>
-			<div class="card__face card__face--back">
-				<div class="card__content">
-					<div class="card__header">
-						<h2>die Antwort</h2>
-					</div>
-					<div class="card__body">
-						<h3>Sich treffen</h3>
-						<p>Wir <strong>treffen uns</strong> morgen um siebzehn Uhr.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="latar" id="latar"></div>
+    <div class="card1">
+        <div class="card__inner">
+            <div class="card__face card__face--front">
+                <h2 id="english">Flip mich!</h2>
+            </div>
+            <div class="card__face card__face--back">
+                <div class="card__content">
+                    <div class="card__header">
+                        <h2>die Antwort</h2>
+                    </div>
+                    <div class="card__body">
+                        <h3 id="deutsch">Hier wird das Wort auf Deutsch sein!</h3>
+                        <p id="desc">Hier wird die Beschreibung des Wortes sein! Flip die Karte wieder, und dann klickt außerhalb der Karte!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <div class="card__inner2">
+            <div class="card__face no_shadow card__face--front2 new__color">
+                <h2 id="english2"></h2>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
