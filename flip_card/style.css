@@ -8,13 +8,15 @@
 * {
     margin: 0;
     padding: 0;
+    outline:0;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    -o-user-select: none;       
+    user-select: none;
 }
 
 body {
@@ -24,7 +26,7 @@ body {
 }
 
 .latar{
-    /* background:#8bfe48; */
+    background:#8bfe48;
     width:100vw;
     height:100vh;
 }
@@ -123,6 +125,13 @@ body {
     padding: 30px 30px 40px;
 }
 
+#credit{
+    position:absolute;
+    right:30px;
+    bottom:20px; 
+    font-size: 16px;
+}
+
 .card__header:after {
     content: '';
     display: block;
@@ -206,6 +215,13 @@ body {
 }
 
 @media (pointer:none), (pointer:coarse) {
+    #credit{
+        position:absolute;
+        right:30px;
+        bottom:20px; 
+        font-size: 12px;
+    }
+
     .card1 {
         margin: 0;
         position: absolute;

@@ -3,6 +3,14 @@ const card__face = document.querySelector(".card__face--front");
 const card__face2 = document.querySelector(".card__face--front2");
 const latar = document.getElementById("latar");
 
+function check(){
+    if (card.classList.contains('is-flipped')){
+        latar.classList.add('no_latar');   
+    }else{
+        latar.classList.remove('no_latar');
+    }
+}
+
 card.addEventListener("click", function (e) {
     card.classList.toggle('is-flipped');
     if (latar.classList.contains('no_latar')){
@@ -11,7 +19,10 @@ card.addEventListener("click", function (e) {
         }, 800);    
     }else{
         latar.classList.add('no_latar');
-    }   
+    };
+    setTimeout(function(){
+        check();
+    }, 800);
 });
 
 $(document).ready(function(){
