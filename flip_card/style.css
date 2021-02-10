@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     outline:0;
+    word-wrap: break-word;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
@@ -88,6 +89,7 @@ body {
 }
 
 .card__face--front h2 {
+    padding: 0 10px;
     color: #FFF;
     text-align: center;
     font-size: 38px;
@@ -101,6 +103,7 @@ body {
 }
 
 .card__face--front2 h2 {
+    padding: 0 10px;
     color: #FFF;
     text-align: center;
     font-size: 38px;
