@@ -16,7 +16,7 @@ card.addEventListener("click", function (e) {
 
 $(document).ready(function(){
     $("#latar").click(function(){
-        var randNum = Math.floor(Math.random() * 4);
+        var randNum = Math.floor(Math.random() * Object.keys(wortsätze).length);
         document.getElementById("english2").innerHTML = Object.keys(wortsätze)[randNum].toString();
         $(".card2").addClass("changeAni");
         $(".card__face2").addClass("changeShadow");
