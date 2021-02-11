@@ -47,33 +47,12 @@ $(document).ready(function(){
     });
 });
 
-const wortsätze = {
-    "To meet" : ["Sich treffen", "Mein Bruder und sein Sohn <strong>treffen sich</strong> morgen um neun Uhr in einem Restaurant."],
-    "To look forward": ["Sich freuen + auf", "Ich <strong>freue mich auf</strong> Ihre Party Herr Budi"],
-    "Phone" : ["Das Handy", "Dieses <strong>neue Handy</strong>, das ich gekauft habe, ist für meine Schwester"],
-    "Car" : ["Das Auto", "Das <strong>rote Auto</strong>, das vor Ihrem Haus geparkt ist, gehört meinem Onkel."],
-    "Analysis" : ["Die Analyse, -n",""],
-    "To work on, process, edit" : ["Bearbeiten,",""],
-    "Postal carrier (f.)" : ["Die Briefträgerin, -nen",""],
-    "Chemist (f.)" : ["die Chemikerin, -nen",""],
-    "Electronics" : ["Die Elektronik",""],
-    "Knowledge of foreign languages" : ["Die Fremdsprachenkenntnis, -se",""],
-    "Controlled" : ["Geregelt",""],
-    "Laboratorium" : ["Das Labor, -s",""],
-    "Mechanical electronics engineer (f.)" : ["Die Mechatronikerin, -nen",""],
-    "Metal" : ["Das Metall, -e",""],
-    "To take s.o. or s.t. seriously" : ["Ernst nehmen",""],
-    "Challenge" : ["Die Herausforderung, -en",""],
-    "To regulate, control" : ["Regeln",""],
-    "Scientist (f.)" : ["Die Wissenschaftlerin, -nen",""],
-    "File, record" : ["Die Akte, -n",""],
-    "Farmer (m.)" : ["Der Bauer, -n",""],
-    "Company, corporation, society" : ["Die Gesellschaft ",""],
-    "Dealer, trader (m.)" : ["Der Händler, -",""],
-    "Artisan (m.)" : ["Der Handwerker, -",""],
-    "People skills" : ["Die Menschenkenntnis (Singular)",""],
-    "Politician (m.)" : ["Der Politiker, -",""],
-    "Reporter (m.)" : ["Der Reporter, -",""],
-    "Judge (m.)" : ["Der Richter, -",""],
-    "Carpenter (f.)" : ["Die Schreinerin, -nen",""]
-};
+
+var wortsätze = new Object();
+var error = new Object();
+$.getJSON('../wortsätze.json').done(function (data) {
+    wortsätze = data;
+    // console.log(data);
+}).error(function (err) {
+    error = err;
+});

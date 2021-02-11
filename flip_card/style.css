@@ -190,6 +190,7 @@ body {
 }
 
 .changeAni{
+    transition: ease-out;
     animation-name: changeAni;
     animation-duration: 1.2s;
 }
