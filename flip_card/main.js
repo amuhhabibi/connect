@@ -50,7 +50,7 @@ $(document).ready(function(){
 
 var wortsätze = new Object();
 var error = new Object();
-$.getJSON('../wortsätze.json').done(function (data) {
+$.getJSON('wortsätze.json').done(function (data) {
     wortsätze = data;
     // console.log(data);
 }).error(function (err) {
