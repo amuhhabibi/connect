@@ -1,138 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		<link rel="stylesheet" href="style.css" />
-		<title>bibi</title>
-	</head>
+<html lang="en" dir="ltr">
 
-	<body>
-		<header>
-			<div class="nav-bar">
-				<div><a id="bibi">Bibi</a></div>
-				<ul>
-					<li><a id="mabaca" href="mabaca/">mabaca</a></li>
-					<li><a id="galeri" href="galeri/">galeri</a></li>
-					<li><a id="nikki" style="text-decoration: line-through;">nikki</a></li>
-				</ul>
-			</div>
-		</header>
-		<main>
-			<section class="main-banner">
-				<div class="v-centerer">
-					<h1>HARTA,<br />TAHTA,</h1>
-					<br />
-					<h2>Chef Renatta.</h2>
-				</div>
-			</section>
-			<section class="bg-fade">
-			</section>
-			<div class="nonbanner">
-				<div class="wrap">
-					<div class="case-wrapper">
-						<div>
-							<h1 class="tentang-penulis">TENTANG PENULIS</h1>
-						</div>
-						<div class="cases">
-							<div class="case-text">
-								<p id="text1">
-									&nbsp&nbsp&nbsp&nbsp&nbspRemaja ini sudah berusia 17 tahun dan masih belajar cara menulis dengan benar. Lahir dari rahim Ibu Pertiwi pada 16 April 2002 sebagai makhluk Tuhan yang berakal sehat. Dididik di Sekolah Islam Athirah selama kurang lebih 8 tahun lalu dipindahkan keluar kota dengan jarak tempuh kurang lebih 4 jam dengan mobil. Hari-hari selama 3 tahun di kota tersebut dihabiskan dengan bermain game dan menonton tanpa sedikitpun belajar di rumah. Entah bagaimana ia bisa lulus dengan nilai yang benar-benar anjlok.<br>&nbsp&nbsp&nbsp&nbsp&nbspDilanjutkanlah kisahnya dengan kembali ke kota asal untuk melanjut ‘pendidikan'nya ke sekolah berbasis international, yaitu Q2VsZWJlcyBHbG9iYWwgU2Nob29s. Tidak terhitung pengalaman baru dan pelajaran yang ia dapat selama dua tahun menuntut ilmu di sekolah ini. Mungkin 70% pengalamannya ia dapat di sini. Selain itu ia juga berhasil berhenti dari kebiasaan ‘buruk’nya, yaitu bermain game dan menonton tanpa henti.<br>&nbsp&nbsp&nbsp&nbsp&nbspSaat ini ia sedang memikirkan bagaimana cara ia dapat menggapai cita-citanya. Katanya ia ingin jadi dokter spesialis di bidang saraf, tapi ia lupa alasan kenapa ia ingin menjadi ahli di bidang saraf. Walau begitu, entah mengapa ia merasa tetap harus menggapai mimpinya. Katanya setelah berhasil menjadi dokter ahli saraf, ia ingin menjadi presiden. Ia juga kurang tau kenapa hal ini terpikirkan olehnya, mungkin karena baru saja salah satu inspirasinya telah naik pangkat dan butuh pengganti. “Kalau orang tuaku menjadikannya sebagai inspirasi dari namaku, aku harus bisa melampauinya!” pikirnya. Jadi katanya sebagai permbuka, ia akan mulai dengan menjadi presiden negerinya. (15 September 2019)
-									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<br />
-				</div>
-				<div class="form-kontak">
-					<h1 class="form-kontak-label">KONTAK PENULIS</h1>
-					<form
-						id="fs-frm"
-						name="simple-contact-form"
-						accept-charset="utf-8"
-						action="https://formspree.io/amuhhabibi@gmail.com"
-						method="post"
-					>
-						<fieldset id="fs-frm-inputs">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>der heutige Mond</title>
+</head>
 
-							<!-- NAMA -->
-							<input
-								class="form-input namapos shift-left"
-								placeholder="Nama"
-								type="text"
-								name="nama"
-								id="full-name"
-								required=""
-							/>
-							
-							<!-- Email -->
-							<input
-								class="form-input namapos"
-								placeholder="Alamat Pos-el"
-								type="email"
-								name="alamat pos-el pengirim"
-								id="email-address"
-								required=""
-							/>
+<body>
+  <div class="bege">
+  </div>
+  <!-- <img src="hills.png" alt="hills" id="hills"> -->
+  <!-- © wdisseny -->
+  <div id="teks">
+    <h1 id="tgl"></h1>
+    <h1 id="neks"></h1>
+  </div>
+  <div id="contain_moon">
+    <div style="font-weight:bold"></div>
+    <div style="filter:drop-shadow(0 0 60px rgba(168, 168, 168, 0.301))"></div>
+    <div></div>
+    <div style="font-size:small"></div>
+  </div>
+  
+  <div id="penghalang">
+    <div id="penengah">
+      
+    </div>
+  </div>
 
-							<br>
-							<!-- PESAN -->
-							<textarea
-								class="form-input pesan"
-								placeholder="Pesan"
-								rows="5"
-								name="pesan"
-								id="message"
-								required=""
-							></textarea>
-							
+  <!-- <div id="penghalang2"></div> -->
+  <!-- <div id="teks">
+    <p>Today is the 6th of August</p>
+  </div> -->
 
-							<input 
-								type="text"
-								style="display:none"
-								name="city" 
-								id="kotaKu"
-								required=""
-							>
-
-							<!-- SUBMIT BUTTON -->
-							<input
-							type="hidden"
-							name="_next"
-							/>
-							<input
-								type="hidden"
-								name="_subject"
-								id="email-subject"
-								value="Contact Form Submission"
-							/><br />
-						</fieldset>
-						<input class="form-submit" type="submit" value="Kirim"/>
-					</form>
-				</div>
-			</div>
-			<div class="modal fade" id="myModal" role="dialog">
-				<div class="modal-dialog modal-dialog-centered" role="document">
-					<div class="modal-content">
-						<div class="modal-body">
-							<h1>BE AWARE that this website is still under development</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-		<footer>
-			<p>
-				Laman ini dikembangkan oleh<br /><a
-					href="https://twitter.com/bobibolla"
-					>Andi Muhammad Habibi</a
-				>
-			</p>
-		</footer>
-	</body>
+  <script src="script.js"></script>
+</body>
 
 </html>
+
+
