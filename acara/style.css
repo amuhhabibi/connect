@@ -73,13 +73,14 @@ body{
 #acara{
     position: absolute;
     color: #fefefe;
-    font-size: 160px;
+    font-size: 140px;
     top: 50vh;
     left: 50vw;
     text-align: center;
     width: 100%;
     transform: translate(-150%,-26%);
     animation: masuk 1.8s ease forwards 3.5s;
+    white-space: nowrap;
 }
 
 @keyframes masuk{
