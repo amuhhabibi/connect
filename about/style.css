@@ -30,6 +30,11 @@
     .tulisan h1 {
         line-height: 1.1em !important;
     }
+
+    .email::after{
+        content: "\a";
+        white-space: pre;
+    }
 }
 
 * {
@@ -303,9 +308,10 @@ body {
 }
 
 .follow{
+    text-align: right;
     padding-top: 1em;
     float: right;
-    transform: translateX(-50vw);
+    transform: translateX(-400%);
     animation: follow 1s ease-in-out forwards;
     animation-delay: 2.5s;
 }
