@@ -3,7 +3,7 @@
 
 @media(max-width: 768px) {
     html {
-        font-size: 52% !important;
+        font-size: 55% !important;
         /* padding: 1em 0 1em 1em; */
     }
     .grid-container {
@@ -12,6 +12,17 @@
     }
     .navbar a{
         font-size: 86%;
+    }
+    .navbar{
+        text-align: center !important;
+        justify-content: space-evenly !important;
+    }
+    .tulisan{
+        padding-top: 2em !important;   
+        line-height: 1.28em !important;
+    }
+    .tulisan h1{
+        line-height: 1.1em !important;
     }
 }
 
@@ -74,10 +85,6 @@ body {
     height: 100%;
 }
 
-.kosong {
-    opacity: 0;
-}
-
 .navbar {
     /* border-bottom: var(--hitam) solid .5px; */
     /* background-color: blueviolet; */
@@ -85,8 +92,7 @@ body {
 
 }
 
-.navbar div,
-.navbar-kanan div {
+.navbar div{
     display: inline-block;
     font-size: .5em;
     padding: 1em 0 1em 2em;
@@ -206,12 +212,20 @@ body {
     position: relative;
     text-align: left;
     padding-left: 2rem;
-    font-size: 1.4em;
-    top: 5rem;
-    /* transform: translateY(-50%); */
-    left: 0;
-    line-height: 1.6em;
-    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-top: 4em;
+    line-height: 1.5em;
+    /* font-weight: bold; */
+    /* text-align: justify;
+    text-justify: inter-word; */
+    animation: kiri 1s ease-in-out forwards;
+    transform: translateX(-100%);
+    animation-delay: 1.8s;
+}
+
+.tulisan h1{
+    font-weight: bolder;
 }
 
 .namaku {
@@ -236,4 +250,26 @@ body {
     left: 0;
     padding: 1rem;
     animation: kiri 1s ease-in-out forwards;
+}
+
+.profile{
+    position: absolute;
+    z-index: 5;
+    transform: translate(1px, 100%);
+    bottom: 10%;
+    /* border-radius: 10%; */
+    -webkit-filter: drop-shadow(6px 8px 3px rgb(139, 116, 72));
+    filter: drop-shadow(6px 8px 3px rgb(139, 116, 72));
+    /* margin: 0 -1em 1em 0; */
+    width: 18rem;
+    animation: gambarNaik 1s ease-in-out forwards;
+    animation-delay: 2.3s;
+}
+
+@keyframes gambarNaik{
+    0%{
+    }
+    100%{
+        transform: translate(-3px, 0);
+    }
 }
