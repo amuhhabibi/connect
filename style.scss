@@ -1,0 +1,150 @@
+@import "https://fonts.googleapis.com/css2?family=Inconsolata&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap";
+/* Hide scrollbar for Chrome, Safari and Opera */
+@keyframes "garis1" {
+	0% {
+		height: 0%;
+	}
+	100% {
+		height: 100%;
+	}
+}
+@keyframes "turun" {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+@keyframes "kiri" {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+@media max-width: 768px) {
+	html {
+		font-size: 10px !important;
+	}
+}
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+&:root {
+	--hitam: #505e4a;
+	--bg: #F2DCB1;
+}
+body {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	width: 100%;
+	height: 100vh;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	font-family: Roboto Mono;
+	background-color: var(--bg);
+}
+.grid-container {
+	display: grid;
+	grid-template-areas: 'kiri content kanan' 'footer footer footer';
+	grid-template-columns: 25% 50% 25%;
+	grid-template-rows: 85% 15%;
+	height: 100%;
+	background-color: var(--bg);
+	>div {
+		color: var(--hitam);
+		font-size: 2.2em;
+	}
+}
+.kosong {
+	opacity: 0;
+}
+.navbar {
+	border-bottom: var(--hitam) solid .5px;
+	text-align: right;
+	div {
+		display: inline-block;
+		font-size: .5em;
+		padding: 1em 0 1em 2em;
+		transform: translateY(-100%);
+		animation: turun 1s ease-out forwards;
+		animation-delay: .5s;
+	}
+	a {
+		text-decoration: none;
+		color: var(--hitam);
+		font-weight: bolder;
+	}
+}
+.navbar-kanan {
+	border-bottom: var(--hitam) solid .5px;
+	text-align: right;
+	div {
+		display: inline-block;
+		font-size: .5em;
+		padding: 1em 0 1em 2em;
+		transform: translateY(-100%);
+		animation: turun 1s ease-out forwards;
+		animation-delay: .5s;
+	}
+}
+.garis1 {
+	height: 0%;
+	width: 1px;
+	background-color: var(--hitam);
+	float: right;
+	animation: garis1 1s ease-out forwards;
+}
+.garis2 {
+	position: relative;
+	border-bottom: 0;
+	height: 1px;
+}
+.kiri {
+	grid-area: kiri;
+	z-index: 1;
+	background-color: var(--bg);
+}
+.content {
+	grid-area: content;
+	z-index: 0;
+}
+.kanan {
+	grid-area: kanan;
+}
+.footer {
+	grid-area: footer;
+	border-top: var(--hitam) solid .5px;
+	z-index: 2;
+	background-color: var(--bg);
+}
+.tulisan {
+	position: relative;
+	text-align: left;
+	padding-left: 2rem;
+	font-size: 1.4em;
+	top: 5rem;
+	left: 0;
+	line-height: 1.6em;
+	font-weight: bold;
+}
+.namaku {
+	font-size: 1em;
+	padding-left: 2rem;
+	position: relative;
+	top: 9rem;
+	line-height: 1.3em;
+	transform: translateX(-100%);
+	animation: kiri 1s ease-in-out forwards;
+	animation-delay: 4.5s;
+}
+.spare-time {
+	font-size: .5em;
+}
