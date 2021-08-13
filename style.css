@@ -3,7 +3,7 @@
 
 @media(max-width: 768px) {
     html {
-        font-size: 10px !important;
+        font-size: 50% !important;
         /* padding: 1em 0 1em 1em; */
     }
 }
@@ -23,6 +23,10 @@
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
     display: none;
+}
+
+html{
+    font-size: 1vw;
 }
 
 body {
@@ -83,7 +87,6 @@ body {
 .garis1{
     height: 0%;
     width: 1px;
-    background-color: var(--hitam);
     float: right;
     animation: garis1 1.3s ease-in-out forwards;
     /* animation-delay: 1s; */
@@ -91,7 +94,6 @@ body {
 
 .garis2{
     position: absolute;
-    background-color: var(--hitam);
     height: 1px;
     width: 0%;
     animation: garis2 1.5s ease-in-out forwards;
@@ -99,13 +101,15 @@ body {
 }
 
 .garis3{
-    background-color: var(--hitam);
     height: 1px;
     width: 0%;
     animation: garis3 1s ease-in-out forwards;
     animation-delay: .3s;
 }
 
+.garis{
+    background-color: var(--hitam);
+}
 
 @keyframes garis3{
     0%{
@@ -214,4 +218,12 @@ body {
 
 .spare-time {
     font-size: .5em;
+}
+
+.email{
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
 }
