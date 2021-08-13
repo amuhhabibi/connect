@@ -39,7 +39,8 @@ stars();
       if (typeof moon_widget_loaded == "function") moon_widget_loaded(b);
       document.getElementById("neks").innerHTML = b.phase[d].npWidget
       const dd = new Date();
-      document.getElementById("tgl").innerHTML = dd.getDate() + "." + dd.getMonth() + "." + dd.getFullYear();
+      const bulan = dd.getMonth()+1;
+      document.getElementById("tgl").innerHTML = dd.getDate() + "." + bulan + "." + dd.getFullYear();
     }
   };
   a.open("GET", url, true);
