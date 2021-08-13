@@ -6,23 +6,28 @@
         font-size: 55% !important;
         /* padding: 1em 0 1em 1em; */
     }
+
     .grid-container {
         grid-template-rows: 85% 15% !important;
         grid-template-columns: 25% 55% 20% !important;
     }
-    .navbar a{
+
+    .navbar a {
         font-size: 86%;
     }
-    .navbar{
+
+    .navbar {
         text-align: center !important;
         justify-content: space-evenly !important;
     }
-    .tulisan{
-        padding-top: 2em !important;   
+
+    .tulisan {
+        padding-top: 2em !important;
         line-height: 1.28em !important;
         font-size: .621em !important;
     }
-    .tulisan h1{
+
+    .tulisan h1 {
         line-height: 1.1em !important;
     }
 }
@@ -44,12 +49,23 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-html{
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+html {
     font-size: 1vw;
 }
 
-html,body {
-    height:100%;
+html,
+body {
+    height: 100%;
 }
 
 body {
@@ -93,7 +109,7 @@ body {
 
 }
 
-.navbar div{
+.navbar div {
     display: inline-block;
     font-size: .5em;
     padding: 1em 0 1em 2em;
@@ -102,7 +118,7 @@ body {
     animation-delay: .5s;
 }
 
-.garis1{
+.garis1 {
     height: 0%;
     width: 1px;
     float: right;
@@ -110,7 +126,7 @@ body {
     animation-delay: 1s;
 }
 
-.garis2{
+.garis2 {
     position: absolute;
     height: 1px;
     width: 0%;
@@ -118,7 +134,7 @@ body {
     animation-delay: 1.3s;
 }
 
-.g2cont{
+.g2cont {
     position: absolute;
     width: 100%;
     left: 0;
@@ -126,41 +142,44 @@ body {
     transform: scaleX(-1) !important;
 }
 
-.garis3{
+.garis3 {
     height: 1px;
     width: 0%;
     animation: garis3 1s ease-in-out forwards;
     animation-delay: .3s;
 }
 
-.garis{
+.garis {
     background-color: var(--hitam);
 }
 
-@keyframes garis3{
-    0%{
+@keyframes garis3 {
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 100%;
     }
 }
 
 
-@keyframes garis2{
-    0%{
+@keyframes garis2 {
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 75%;
     }
 }
 
-@keyframes garis1{
-    0%{
+@keyframes garis1 {
+    0% {
         height: 0%;
     }
-    100%{
+
+    100% {
         height: 100%;
     }
 }
@@ -233,7 +252,7 @@ body {
     animation-delay: 1.8s;
 }
 
-.tulisan h1{
+.tulisan h1 {
     font-weight: bolder;
 }
 
@@ -252,7 +271,7 @@ body {
     font-size: .5em;
 }
 
-.email{
+.tulisan-email {
     z-index: 3;
     position: absolute;
     bottom: 0;
@@ -261,7 +280,7 @@ body {
     animation: kiri 1s ease-in-out forwards;
 }
 
-.profile{
+.profile {
     position: absolute;
     z-index: 5;
     transform: translate(-20%, 100%);
@@ -275,10 +294,41 @@ body {
     animation-delay: 2.3s;
 }
 
-@keyframes gambarNaik{
-    0%{
-    }
-    100%{
+@keyframes gambarNaik {
+    0% {}
+
+    100% {
         transform: translate(-3px, 0);
     }
 }
+
+.follow{
+    padding-top: 1em;
+    float: right;
+    transform: translateX(-50vw);
+    animation: follow 1s ease-in-out forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes follow{
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.follow a{
+    text-decoration: none;
+    padding: .15em;
+    font-size: .75em;
+}
+
+.email{
+    background-color: #5e4a4a;
+    color: var(--bg);
+}
+
+.spotify{
+    background-color: #505e4a;
+    color: var(--bg);
+}
+
