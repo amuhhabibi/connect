@@ -3,8 +3,11 @@
 
 @media(max-width: 768px) {
     html {
-        font-size: 50% !important;
+        font-size: 52% !important;
         /* padding: 1em 0 1em 1em; */
+    }
+    .grid-container {
+        grid-template-rows: 90% 10% !important;
     }
 }
 
@@ -29,9 +32,13 @@ html{
     font-size: 1vw;
 }
 
+html,body {
+    height:100%;
+}
+
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
@@ -60,7 +67,7 @@ body {
     /* background-color: rgba(255, 255, 255, 0.8); */
     color: var(--hitam);
     font-size: 2.2em;
-    ;
+    height: 100%;
 }
 
 .kosong {
@@ -89,7 +96,7 @@ body {
     width: 1px;
     float: right;
     animation: garis1 1.3s ease-in-out forwards;
-    /* animation-delay: 1s; */
+    animation-delay: 1s;
 }
 
 .garis2{
@@ -188,7 +195,7 @@ body {
     z-index: 2;
     background-color: var(--bg);
     -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 .tulisan {
@@ -214,8 +221,6 @@ body {
     animation-delay: 4.5s;
 }
 
-
-
 .spare-time {
     font-size: .5em;
 }
@@ -226,4 +231,5 @@ body {
     bottom: 0;
     left: 0;
     padding: 1rem;
+    animation: kiri 1s ease-in-out forwards;
 }
