@@ -20,6 +20,7 @@
     .tulisan{
         padding-top: 2em !important;   
         line-height: 1.28em !important;
+        font-size: .621em !important;
     }
     .tulisan h1{
         line-height: 1.1em !important;
@@ -117,6 +118,14 @@ body {
     animation-delay: 1.3s;
 }
 
+.g2cont{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    -webkit-transform: scaleX(-1) !important;
+    transform: scaleX(-1) !important;
+}
+
 .garis3{
     height: 1px;
     width: 0%;
@@ -204,8 +213,8 @@ body {
     /* background-color: blueviolet; */
     z-index: 2;
     background-color: var(--bg);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    /* -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); */
 }
 
 .tulisan {
@@ -255,14 +264,14 @@ body {
 .profile{
     position: absolute;
     z-index: 5;
-    transform: translate(1px, 100%);
+    transform: translate(-20%, 100%);
     bottom: 10%;
     /* border-radius: 10%; */
-    -webkit-filter: drop-shadow(6px 8px 3px rgb(139, 116, 72));
-    filter: drop-shadow(6px 8px 3px rgb(139, 116, 72));
+    -webkit-filter: drop-shadow(6px 8px 13px rgb(139, 116, 72));
+    filter: drop-shadow(6px 8px 13px rgb(139, 116, 72));
     /* margin: 0 -1em 1em 0; */
     width: 18rem;
-    animation: gambarNaik 1s ease-in-out forwards;
+    animation: gambarNaik 1.5s ease-in-out forwards;
     animation-delay: 2.3s;
 }
 
