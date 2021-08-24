@@ -67,13 +67,22 @@ background: linear-gradient(180deg, rgb(0, 7, 70) 0%, rgba(52,62,114,1) 95%);
 
 #penghalang{
   position: absolute;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0.585);
   width: 100vw;
   height: 100vh;
+  color: aliceblue;
 }
 
 #penghalang2{
   position: absolute;
   width: 100vw;
   height: 100vh;
+}
+
+#wait{
+  font-size: 3rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
