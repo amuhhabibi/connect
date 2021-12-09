@@ -1,0 +1,163 @@
+:root {
+  @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,300;1,100&family=Reenie+Beanie&display=swap");
+  @media only screen and (max-device-width: 768px) {
+    font-size: 3vw;
+  }
+  html, body {margin: 0; height: 100%; overflow: hidden}
+  .dark-mode {
+    --semiwhite: #0a0a0a;
+    --dark: #fefefe;
+  }
+  --dark: #0a0a0a;
+  --semiwhite: #fefefe;
+  body {
+    background-color: var(--dark);
+    .overlay-bg{
+      background-color: var(--dark);
+      width: 100vw;
+      height: 200vh;
+      position: absolute;
+      z-index: 1;
+      animation-name: masuk2;
+      animation-duration: .9s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+      animation-delay: .2s;
+    }
+    .overlay{
+      background-color: #161616;
+      width: 100vw;
+      height: 150vh;
+      position: absolute;
+      z-index: 2;
+      animation-name: masuk;
+      animation-duration: .9s;
+      transform: translateY(-150vh);
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+      animation-delay: .4s;
+    }.overlay2{
+      background-color: #1d1d1d;
+      width: 100vw;
+      height: 150vh;
+      position: absolute;
+      z-index: 3;
+      animation-name: masuk;
+      animation-duration: .9s;
+      transform: translateY(-150vh);
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+      animation-delay: .3s;
+    }.overlay3{
+      background-color: #1a1a1a;
+      width: 100vw;
+      height: 150vh;
+      position: absolute;
+      z-index: 4;
+      animation-name: masuk;
+      animation-duration: .9s;
+      transform: translateY(-150vh);
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+      animation-delay: .2s;
+    }
+    @keyframes masuk {
+      from {
+        transform: translateY(-150vh);
+      }
+      to {
+        transform: translateY(100vh);  
+      } 
+    }
+    @keyframes masuk2 {
+      from {
+        transform: translateY(-100vh);
+      }
+      to {
+        transform: translateY(100vh);  
+      } 
+    }
+    i {
+      color: var(--semiwhite);
+    }
+    .theme-toggle {
+      position: absolute;
+      right: 0.55em;
+      bottom: 0.55em;
+      font-size: 2.5em;
+    }
+    .toggle-btn {
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+    }
+    .containerr {
+      margin: 0;
+      position: absolute;
+      top: 1em;
+      left: 50%;
+      transform: translate(-50%, 0);
+      // background: wheat;
+      font-family: "Azeret Mono", monospace;
+      font-weight: 300;
+      .main {
+        p {
+          color: var(--semiwhite);
+          text-align: center;
+          margin-bottom: 0;
+        }
+        .title {
+          font-size: 3em;
+          letter-spacing: 0.01em;
+          margin-bottom: 0.1em;
+        }
+        .desc {
+          text-align: left;
+          font-style: italic;
+          letter-spacing: 0.1e m;
+          font-size: 1.1em;
+          line-height: 1.5em;
+          margin-bottom: 0.5em;
+        }
+        ul{
+          margin-top: 1.4em;
+          align-items: left;
+          li{
+            color: var(--semiwhite);
+            text-align: left;
+            // font-style: italic;
+            font-weight: 100;
+            letter-spacing: 0.1e m;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            margin-bottom: 0.5em;
+            a{
+              font-size: .8em;
+              font-style: italic;
+
+            }
+          }
+        }
+      }
+      .selections {
+        width: 100%;
+        margin-top: 1em;
+        a {
+          // box-shadow: 2px 5px 10px #161616;
+          text-decoration: none;
+          letter-spacing: 0.1em;
+          background: var(--dark);
+          color: var(--semiwhite);
+          font-size: 1em;
+          padding: 0.5em 1em;
+          margin: 0 0.3em;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

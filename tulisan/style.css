@@ -171,10 +171,10 @@
 :root body .containerr {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 1em;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   font-family: "Azeret Mono", monospace;
   font-weight: 300;
 }
@@ -198,6 +198,28 @@
   font-size: 1.1em;
   line-height: 1.5em;
   margin-bottom: 0.5em;
+}
+
+:root body .containerr .main ul {
+  margin-top: 1.4em;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+:root body .containerr .main ul li {
+  color: var(--semiwhite);
+  text-align: left;
+  font-weight: 100;
+  letter-spacing: 0.1e m;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+:root body .containerr .main ul li a {
+  font-size: .8em;
+  font-style: italic;
 }
 
 :root body .containerr .selections {
