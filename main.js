@@ -1,4 +1,4 @@
-const words = "Guten Morgen, Welt :) <br> Herzlich Wilkommen!"
+const words = "Hallo, Welt :) <br> Herzlich Wilkommen!"
 
 let cursor = gsap.to('#cursor', {
     opacity: 0,
