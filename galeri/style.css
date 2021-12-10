@@ -6,7 +6,7 @@
 
 @media only screen and (max-device-width: 768px) {
   :root {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 }
 
@@ -104,46 +104,62 @@
 }
 
 @-webkit-keyframes masuk {
-  from {
+  0% {
     -webkit-transform: translateY(-150vh);
             transform: translateY(-150vh);
   }
-  to {
+  99% {
     -webkit-transform: translateY(100vh);
             transform: translateY(100vh);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 
 @keyframes masuk {
-  from {
+  0% {
     -webkit-transform: translateY(-150vh);
             transform: translateY(-150vh);
   }
-  to {
+  99% {
     -webkit-transform: translateY(100vh);
             transform: translateY(100vh);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 
 @-webkit-keyframes masuk2 {
-  from {
+  0% {
     -webkit-transform: translateY(-100vh);
             transform: translateY(-100vh);
   }
-  to {
+  99% {
     -webkit-transform: translateY(100vh);
             transform: translateY(100vh);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 
 @keyframes masuk2 {
-  from {
+  0% {
     -webkit-transform: translateY(-100vh);
             transform: translateY(-100vh);
   }
-  to {
+  99% {
     -webkit-transform: translateY(100vh);
             transform: translateY(100vh);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 
@@ -203,6 +219,7 @@
 :root body .containerr .selections {
   width: 100%;
   margin-top: 1em;
+  white-space: nowrap;
 }
 
 :root body .containerr .selections a {

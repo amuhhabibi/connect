@@ -1,7 +1,7 @@
 :root {
   @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,300;1,100&family=Reenie+Beanie&display=swap");
   @media only screen and (max-device-width: 768px) {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   html, body {margin: 0; height: 100%; overflow: hidden}
   .dark-mode {
@@ -62,20 +62,26 @@
       animation-delay: .2s;
     }
     @keyframes masuk {
-      from {
+      0% {
         transform: translateY(-150vh);
       }
-      to {
-        transform: translateY(100vh);  
-      } 
+      99% {
+        transform: translateY(100vh);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
     }
     @keyframes masuk2 {
-      from {
+      0% {
         transform: translateY(-100vh);
       }
-      to {
-        transform: translateY(100vh);  
-      } 
+      99% {
+        transform: translateY(100vh);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
     }
     i {
       color: var(--semiwhite);
@@ -127,6 +133,7 @@
       .selections {
         width: 100%;
         margin-top: 1em;
+        white-space: nowrap;
         a {
           // box-shadow: 2px 5px 10px #161616;
           text-decoration: none;

@@ -6,7 +6,7 @@
 
 @media only screen and (max-device-width: 768px) {
   :root {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 }
 
@@ -23,6 +23,16 @@
 
 :root body {
   background-color: var(--dark);
+  -webkit-animation-name: wait;
+          animation-name: wait;
+  -webkit-animation-duration: .9s;
+          animation-duration: .9s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
 }
 
 :root body .overlay-bg {
@@ -104,46 +114,80 @@
 }
 
 @-webkit-keyframes masuk {
-  from {
+  0% {
     -webkit-transform: translateY(-150vh);
             transform: translateY(-150vh);
   }
-  to {
+  99% {
     -webkit-transform: translateY(100vh);
             transform: translateY(100vh);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 
 @keyframes masuk {
-  from {
+  0% {
     -webkit-transform: translateY(-150vh);
             transform: translateY(-150vh);
   }
-  to {
+  99% {
     -webkit-transform: translateY(100vh);
             transform: translateY(100vh);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 
 @-webkit-keyframes masuk2 {
-  from {
+  0% {
     -webkit-transform: translateY(-100vh);
             transform: translateY(-100vh);
   }
-  to {
+  99% {
     -webkit-transform: translateY(100vh);
             transform: translateY(100vh);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 
 @keyframes masuk2 {
-  from {
+  0% {
     -webkit-transform: translateY(-100vh);
             transform: translateY(-100vh);
   }
-  to {
+  99% {
     -webkit-transform: translateY(100vh);
             transform: translateY(100vh);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes tunggu {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: auto;
+  }
+}
+
+@keyframes tunggu {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: auto;
   }
 }
 
@@ -152,7 +196,7 @@
 }
 
 :root body .theme-toggle {
-  position: absolute;
+  position: fixed;
   right: 0.55em;
   bottom: 0.55em;
   font-size: 2.5em;
@@ -229,6 +273,7 @@
 :root body .containerr .selections {
   width: 100%;
   margin-top: 1em;
+  white-space: nowrap;
 }
 
 :root body .containerr .selections a {

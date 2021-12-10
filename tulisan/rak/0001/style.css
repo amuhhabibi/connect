@@ -6,7 +6,7 @@
 
 @media only screen and (max-device-width: 768px) {
   :root {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 }
 
@@ -15,8 +15,23 @@
   --dark: #fefefe;
 }
 
+:root body::-webkit-scrollbar {
+  display: none;
+}
+
 :root body {
+  overflow-y: hidden;
   background-color: var(--dark);
+  -webkit-animation-name: tunggu;
+          animation-name: tunggu;
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
 }
 
 :root body .overlay-bg {
@@ -27,14 +42,14 @@
   z-index: 1;
   -webkit-animation-name: masuk2;
           animation-name: masuk2;
-  -webkit-animation-duration: .9s;
-          animation-duration: .9s;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 :root body .overlay {
@@ -45,16 +60,16 @@
   z-index: 2;
   -webkit-animation-name: masuk;
           animation-name: masuk;
-  -webkit-animation-duration: .9s;
-          animation-duration: .9s;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
   -webkit-transform: translateY(-150vh);
           transform: translateY(-150vh);
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 :root body .overlay2 {
@@ -65,16 +80,16 @@
   z-index: 3;
   -webkit-animation-name: masuk;
           animation-name: masuk;
-  -webkit-animation-duration: .9s;
-          animation-duration: .9s;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
   -webkit-transform: translateY(-150vh);
           transform: translateY(-150vh);
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 :root body .overlay3 {
@@ -85,16 +100,16 @@
   z-index: 4;
   -webkit-animation-name: masuk;
           animation-name: masuk;
-  -webkit-animation-duration: .9s;
-          animation-duration: .9s;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
   -webkit-transform: translateY(-150vh);
           transform: translateY(-150vh);
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 @-webkit-keyframes masuk {
@@ -157,12 +172,30 @@
   }
 }
 
+@-webkit-keyframes tunggu {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: auto;
+  }
+}
+
+@keyframes tunggu {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: auto;
+  }
+}
+
 :root body i {
   color: var(--semiwhite);
 }
 
 :root body .theme-toggle {
-  position: absolute;
+  position: fixed;
   right: 0.55em;
   bottom: 0.55em;
   font-size: 2.5em;
@@ -232,13 +265,14 @@
 }
 
 :root body .containerr .main ul li a {
-  font-size: .8em;
+  font-size: 0.8em;
   font-style: italic;
 }
 
 :root body .containerr .selections {
   width: 100%;
   margin-top: 1em;
+  white-space: nowrap;
 }
 
 :root body .containerr .selections a {
