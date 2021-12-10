@@ -3,7 +3,6 @@
   @media only screen and (max-device-width: 768px) {
     font-size: 3vw;
   }
-  html, body {margin: 0; height: 100%; overflow: hidden}
   .dark-mode {
     --semiwhite: #0a0a0a;
     --dark: #fefefe;
@@ -62,20 +61,26 @@
       animation-delay: .2s;
     }
     @keyframes masuk {
-      from {
+      0% {
         transform: translateY(-150vh);
       }
-      to {
+      99% {
         transform: translateY(100vh);  
       } 
+      100%{
+        transform: translateY(-100%);
+      }
     }
     @keyframes masuk2 {
-      from {
+      0% {
         transform: translateY(-100vh);
       }
-      to {
+      99% {
         transform: translateY(100vh);  
       } 
+      100%{
+        transform: translateY(-100%);
+      }
     }
     i {
       color: var(--semiwhite);
@@ -117,7 +122,7 @@
         }
         .desc {
           text-align: left;
-          font-style: italic;
+          font-weight: 100;
           letter-spacing: 0.1e m;
           font-size: 1.1em;
           line-height: 1.5em;
