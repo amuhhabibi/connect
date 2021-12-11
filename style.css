@@ -16,7 +16,7 @@
   overflow: hidden;
 }
 
-:root .dark-mode {
+:root .light-mode {
   --semiwhite: #0a0a0a;
   --dark: #fefefe;
 }
