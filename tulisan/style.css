@@ -2,8 +2,8 @@
 :root {
   --dark: #0a0a0a;
   --semiwhite: #fefefe;
-  --transparantwhite: #fefefe8a;
-  --transparantdark: #0a0a0a8a;
+  --transparantwhite: #fefefe2f;
+  --transparantdark: #0a0a0a48;
   --overlay1: #0e0e0e;
   --overlay2: #0f0f0f;
   --overlay3: #111111;
@@ -25,7 +25,7 @@
   --semiwhite: #0a0a0a;
   --dark: #fefefe;
   --transparantdark: #fefefe8a;
-  --transparantwhite: #0a0a0a8a;
+  --transparantwhite: #0a0a0a48;
   --overlay3: #dddddd;
   --overlay2: #ebebeb;
   --overlay1: #f7f4f4;
