@@ -4,12 +4,21 @@
     font-size: 2.5vw;
   }
 
-  .dark-mode {
+  .light-mode {
     --semiwhite: #0a0a0a;
     --dark: #fefefe;
+    --overlay3: #dddddd;
+    --overlay2: #ebebeb;
+    --overlay1: #f7f4f4;
+    .overlay-bg{
+      background-color: var(--dark);
+    }
   }
   --dark: #0a0a0a;
   --semiwhite: #fefefe;
+  --overlay1: #0e0e0e;
+  --overlay2: #0f0f0f;
+  --overlay3: #111111;
   body::-webkit-scrollbar {
     display: none;
   }
@@ -34,7 +43,7 @@
       animation-delay: 0.2s;
     }
     .overlay {
-      background-color: #161616;
+      background-color: var(--overlay1);
       width: 100vw;
       height: 150vh;
       position: absolute;
@@ -47,7 +56,7 @@
       animation-delay: 0.4s;
     }
     .overlay2 {
-      background-color: #1d1d1d;
+      background-color: var(--overlay2);
       width: 100vw;
       height: 150vh;
       position: absolute;
@@ -60,7 +69,7 @@
       animation-delay: 0.3s;
     }
     .overlay3 {
-      background-color: #1a1a1a;
+      background-color: var(--overlay3);
       width: 100vw;
       height: 150vh;
       position: absolute;
@@ -102,6 +111,20 @@
         overflow: auto;
       }
     }
+    @keyframes putar{
+      from{
+      }
+      to{
+        transform: rotate(180deg)
+      }
+    }
+    @keyframes putarBalik{
+      from{
+      }
+      to{
+        transform: rotate(-180deg)
+      }
+    }
     i {
       color: var(--semiwhite);
     }
@@ -119,6 +142,18 @@
       font: inherit;
       cursor: pointer;
       outline: inherit;
+    }
+    .toggledOff{
+      animation-name: putarBalik;
+      animation-duration: .5s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+    }
+    .toggled{
+      animation-name: putar;
+      animation-duration: .5s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
     }
     .containerr {
       margin: 0;

@@ -4,12 +4,21 @@
     font-size: 2.5vw;
   }
   html, body {margin: 0; height: 100%; overflow: hidden}
-  .dark-mode {
+  .light-mode {
     --semiwhite: #0a0a0a;
     --dark: #fefefe;
+    --overlay3: #dddddd;
+    --overlay2: #ebebeb;
+    --overlay1: #f7f4f4;
+    .overlay-bg{
+      background-color: var(--dark);
+    }
   }
   --dark: #0a0a0a;
   --semiwhite: #fefefe;
+  --overlay1: #0e0e0e;
+  --overlay2: #0f0f0f;
+  --overlay3: #111111;
   body {
     background-color: var(--dark);
     .overlay-bg{
@@ -25,7 +34,7 @@
       animation-delay: .2s;
     }
     .overlay{
-      background-color: #161616;
+      background-color: var(--overlay1);
       width: 100vw;
       height: 150vh;
       position: absolute;
@@ -37,7 +46,7 @@
       animation-fill-mode: forwards;
       animation-delay: .4s;
     }.overlay2{
-      background-color: #1d1d1d;
+      background-color: var(--overlay2);
       width: 100vw;
       height: 150vh;
       position: absolute;
@@ -49,7 +58,7 @@
       animation-fill-mode: forwards;
       animation-delay: .3s;
     }.overlay3{
-      background-color: #1a1a1a;
+      background-color: var(--overlay3);
       width: 100vw;
       height: 150vh;
       position: absolute;
@@ -83,6 +92,20 @@
         transform: translateY(-100%);
       }
     }
+    @keyframes putar{
+      from{
+      }
+      to{
+        transform: rotate(180deg)
+      }
+    }
+    @keyframes putarBalik{
+      from{
+      }
+      to{
+        transform: rotate(-180deg)
+      }
+    }
     i {
       color: var(--semiwhite);
     }
@@ -100,6 +123,18 @@
       font: inherit;
       cursor: pointer;
       outline: inherit;
+    }
+    .toggledOff{
+      animation-name: putarBalik;
+      animation-duration: .5s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+    }
+    .toggled{
+      animation-name: putar;
+      animation-duration: .5s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
     }
     .containerr {
       margin: 0;

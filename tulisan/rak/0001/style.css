@@ -2,6 +2,9 @@
 :root {
   --dark: #0a0a0a;
   --semiwhite: #fefefe;
+  --overlay1: #0e0e0e;
+  --overlay2: #0f0f0f;
+  --overlay3: #111111;
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -10,9 +13,16 @@
   }
 }
 
-:root .dark-mode {
+:root .light-mode {
   --semiwhite: #0a0a0a;
   --dark: #fefefe;
+  --overlay3: #dddddd;
+  --overlay2: #ebebeb;
+  --overlay1: #f7f4f4;
+}
+
+:root .light-mode .overlay-bg {
+  background-color: var(--dark);
 }
 
 :root body::-webkit-scrollbar {
@@ -53,7 +63,7 @@
 }
 
 :root body .overlay {
-  background-color: #161616;
+  background-color: var(--overlay1);
   width: 100vw;
   height: 150vh;
   position: absolute;
@@ -73,7 +83,7 @@
 }
 
 :root body .overlay2 {
-  background-color: #1d1d1d;
+  background-color: var(--overlay2);
   width: 100vw;
   height: 150vh;
   position: absolute;
@@ -93,7 +103,7 @@
 }
 
 :root body .overlay3 {
-  background-color: #1a1a1a;
+  background-color: var(--overlay3);
   width: 100vw;
   height: 150vh;
   position: absolute;
@@ -190,6 +200,42 @@
   }
 }
 
+@-webkit-keyframes putar {
+  from {
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes putar {
+  from {
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes putarBalik {
+  from {
+  }
+  to {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+}
+
+@keyframes putarBalik {
+  from {
+  }
+  to {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+}
+
 :root body i {
   color: var(--semiwhite);
 }
@@ -209,6 +255,28 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
+}
+
+:root body .toggledOff {
+  -webkit-animation-name: putarBalik;
+          animation-name: putarBalik;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+:root body .toggled {
+  -webkit-animation-name: putar;
+          animation-name: putar;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 :root body .containerr {

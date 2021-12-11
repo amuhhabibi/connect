@@ -26,19 +26,31 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  let user = getCookie("username");
-  if (user != "") {
-    alert("Welcome again " + user);
+  let currentTheme = getCookie("theme");
+  if (currentTheme != "") {
+        var element = document.body;
+        element.classList.toggle("light-mode");
   } else {
-    user = "dark-mode";
-    if (user != "" && user != null) {
-      setCookie("username", user, 365);
+          
     }
-  }
+}
+
+
+function cekcekduls(){
+        var x = document.getElementById('badan').className;
+        if (x == "light-mode"){
+                setCookie("theme", "light-mode", 365);
+        }else{
+                document.cookie = "theme=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }
 }
 
 
 function hello(){
         var element = document.body;
+        const button = document.querySelector(".fa-yin-yang");
         element.classList.toggle("light-mode");
+        button.classList.toggle("toggled");
+        button.classList.toggle("toggledOff");
+        cekcekduls();
 }
