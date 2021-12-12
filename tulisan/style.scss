@@ -3,7 +3,6 @@
   @media only screen and (max-device-width: 768px) {
     font-size: 2.5vw;
   }
-  html, body {margin: 0; height: 100%; overflow: hidden}
   .light-mode {
     --semiwhite: #0a0a0a;
     --dark: #fefefe;
@@ -23,9 +22,13 @@
   --overlay1: #0e0e0e;
   --overlay2: #0f0f0f;
   --overlay3: #111111;
+  body::-webkit-scrollbar {
+    display: none;
+  }
   body {
+    overflow-y: hidden;
     background-color: var(--dark);
-    animation-name: wait;
+    animation-name: tunggu;
     animation-duration: .9s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
@@ -129,6 +132,12 @@
     .theme-toggle {
       position: fixed;
       right: 0.55em;
+      bottom: 0.55em;
+      font-size: 2.5em;
+    }
+    .back-btn {
+      position: fixed;
+      left: 0.55em;
       bottom: 0.55em;
       font-size: 2.5em;
     }

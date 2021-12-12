@@ -54,3 +54,6 @@ function hello(){
         button.classList.toggle("toggledOff");
         cekcekduls();
 }
+function mundur(){
+  window.location.href = '../'; 
+}
