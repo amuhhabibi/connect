@@ -1,47 +1,382 @@
-SPIEGEL ONlINE: ErzählenSie mal.
-Hunger: Zur ersten Zugabe kehre ich zurück
-auf die Bühne, alleine.
-Das Publikum klatscht,
-ein klassischer Live-Moment. Da spüre ich viel
-Aufmerksamkeit - und
-viel Gunst. Die Leute erwarten, dass ich jetzt etwas mache, sie sind bereit, etwasanzunehmen.
-SPIEGEL ONlINE: ErzählenSie mal.
-Hunger: Zur ersten Zugabe kehre ich zurück
-auf die Bühne, alleine.
-Das Publikum klatscht,
-ein klassischer Live-Moment. Da spüre ich viel
-Aufmerksamkeit - und
-viel Gunst. Die Leute erwarten, dass ich jetzt etwas mache, sie sind bereit, etwasanzunehmen.
-Hunger: Auf Schweizerdeutsch mag ich sehr gerne
-.chumm", also "komm". Das drückt so eine Dringlichkeitaus. Manwill unbedingt, dass die Person kommt.
-SPIEGEL ONlINE: Im Französischen?
-Hunger: .Personne". Das Wort heißt "niemand" - und
-zugleich "Person". Wer "niemand" sagt, sagt zugleich
-.jernand". Das ist hervorragend!
-SPIEGEL ONlINE: Undim Hochdeutschen?
-Hunger: Ein hochdeutsches Wort, das ich mag? Ichweiß
-nicht ...
-SPIEGEL ONlINE : Ist es Zufall, dass Sie beim Hochdeutschen längerüberlegen?
-Hunger: Sie sind Deutscher, vielleicht deswegen. Aber
-das Wort "niemand" gefällt mir schon sehr. Das habe
-ich dann auch mal gebraucht für ein Stück, "Walzer für
-Niemand".
-SPIEGEL ONlINE: Ihr Album J983" war international
-erfolgreich, aber nirgends so sehr wie in der Schweiz:
-Platz eins der Charts. Ist die Schweiz als kleines Land
-besonders stolz, wenn Schweizer Erfolg in der großen,
-weiten Welt haben?
-Hunger: Die Schweizer können oft nur alsSchweizer in
-der Schweiz stolz auf sich sein. Denn wenn etwas die
-Schweiz verlässt, verlässt es meistens den Wahrnehmungsbereich der Schweiz.
-SPIEGEL ONlINE: Was bedeutet Ihnen dieSchweiz?
-Hunger: Die Schweiz ist meine geliebte Heimat. Geliebt,
-weil man ja das liebt, was zu einem gehört, abgesehen
-davon, ob man es mag oder nicht. Wenn ich die Alpen
-sehe, dann fühle ich sie in meinem Bauch. Diese Landschaft hat mich gezeichnet, sie ist immer bei mir. Ich
-wurdeaber ungefragt alsSchweizerin geboren.
-SPIEGEL ONlINE: Klingt ein wenig nach Schicksal ...
-Hunger: ... ja ...
-SPIEGEL ONlINE: ... und fast nach einer Last.
-Hunger: Nein! Die Schweiz ist eines der reichsten Länder derWelt, Schweizer zu sein, ist keine Last. DieFrage
-ist Was macht man daraus?
+Anggota         :Wanda
+NIK             :7308090309870002
+Anggota         :Bacotang
+NIK             :7308091402610001
+Anggota         :A.Risal Jufri
+NIK             :7308092512910001
+Anggota         :Anca
+NIK             :7308090210780000
+Anggota         :Anwar
+NIK             :7308092807870000
+Anggota         :Bakhtiar
+NIK             :7308212107810001
+Anggota         :Buhari
+NIK             :7308090107780106
+Anggota         :Herman
+NIK             :7308092811850001
+Anggota         :M.Yusuf
+NIK             :7308211407800001
+Anggota         :Makmur
+NIK             :7308210107940152
+Anggota         :Muh.Aris
+NIK             :7308092706920001
+Anggota         :Reka Risman
+NIK             :7308090107890065
+Anggota         :Rusdi
+NIK             :7308092805960002
+Anggota         :Satrudi Hakim
+NIK             :7308093007880001
+Anggota         :Sulaeman
+NIK             :7308092308830001
+Anggota         :Zaenal
+NIK             :7308080107830155
+Anggota         :Julhaedir
+NIK             :7308211608850006
+Anggota         :Suhardi
+NIK             :7308090706790002
+Anggota         :Syarifuddin
+NIK             :7308150506820002
+Anggota         :Tahang
+NIK             :7308211910800003
+Anggota         :Hamid
+NIK             :7308090411680001
+Anggota         :Edil Akbar
+NIK             :7308091004920001
+Anggota         :Hamzah
+NIK             :7308092108820001
+Anggota         :Idris
+NIK             :7308093112750028
+Anggota         :Ismail Marsuki
+NIK             :7308091909930002
+Anggota         :Muhammad Adam
+NIK             :5203011611790002
+Anggota         :Rustang
+NIK             :7308093012790002
+Anggota         :Tamrin
+NIK             :7308090106761001
+Anggota         :Wahyudi Asnur
+NIK             :7308090503870001
+Anggota         :Alimuddin
+NIK             :7308150107750027
+Anggota         :Ambo Sakka
+NIK             :7308090107610013
+Anggota         :Anca
+NIK             :7308090210780001
+Anggota         :Asnawi
+NIK             :7308150507790004
+Anggota         :Irfan
+NIK             :7308090107960015
+Anggota         :Muhtar
+NIK             :7308090107760074
+Anggota         :Rustang
+NIK             :7308093012790002
+Anggota         :A.Kasriadi
+NIK             :7308091201920001
+Anggota         :Ali
+NIK             :7324110107910006
+Anggota         :Alimuddin
+NIK             :7308091503880001
+Anggota         :Hamzah
+NIK             :7308092112830001
+Anggota         :Herlina
+NIK             :7308094203840002
+Anggota         :Hj.Asnidar
+NIK             :7308094107860072
+Anggota         :Muhammad Yunus
+NIK             :7308210107820165
+Anggota         :Muthar
+NIK             :7308090506790001
+Anggota         :Rustang
+NIK             :7308220511760002
+Anggota         :Samsir
+NIK             :7308090510970005
+Anggota         :Sultan Ali
+NIK             :7308090707810002
+Anggota         :Tamrin
+NIK             :7306090107840084
+Anggota         :Mursalim
+NIK             :7308090107740094
+Anggota         :A.Lirham Tri Putra
+NIK             :7308091312890001
+Anggota         :Agusnawang
+NIK             :7308092403860001
+Anggota         :Ahmad Alfiqral Aksa
+NIK             :7308090608010001
+Anggota         :Akkile
+NIK             :7308090107640069
+Anggota         :Asdar
+NIK             :7308090706890001
+Anggota         :Hasan
+NIK             :7308090107730122
+Anggota         :Herman
+NIK             :7308090107920025
+Anggota         :Iksan Haris
+NIK             :7308210909950003
+Anggota         :Mirwan
+NIK             :7308090107840029
+Anggota         :Muh.Aras
+NIK             :7308090107790097
+Anggota         :Sabri
+NIK             :7308093112970009
+Anggota         :Saharuddin
+NIK             :7308093112790027
+Anggota         :Sahuddin
+NIK             :7308091701880001
+Anggota         :Samsuddin
+NIK             :7308090107800019
+Anggota         :Syamsuddin
+NIK             :7308092410700001
+Anggota         :Syamsuddin
+NIK             :7308092803820001
+Anggota         :Takdir
+NIK             :7308091212890001
+Anggota         :Sultan
+NIK             :7308090306730001
+Anggota         :Adri
+NIK             :7308080107750149
+Anggota         :Ardi Ansyah
+NIK             :7308232712020003
+Anggota         :Bahtiar
+NIK             :7308090107700015
+Anggota         :Feby Heryanto
+NIK             :7308091902000002
+Anggota         :Herianto
+NIK             :7308090507900002
+Anggota         :Sudirman
+NIK             :7308091912830001
+Anggota         :Sulham
+NIK             :7308092809000001
+Anggota         :Syamsualang
+NIK             :7308090708810002
+Anggota         :Syamsurijal
+NIK             :7308090109950001
+Anggota         :Mursalim
+NIK             :7308090107740023
+Anggota         :Agustang
+NIK             :7308211410760002
+Anggota         :Alimuddin
+NIK             :7308090107700118
+Anggota         :Ambo Sakka
+NIK             :7308090107610013
+Anggota         :Amir
+NIK             :7308090107850023
+Anggota         :Arman
+NIK             :7308092707960002
+Anggota         :Asnawi
+NIK             :7308150507790004
+Anggota         :Harifuddin
+NIK             :7308150107820132
+Anggota         :Sahabu
+NIK             :7308151204850002
+Anggota         :Syamsuddin
+NIK             :7308090108870003
+Anggota         :A.Tamrin
+NIK             :7308090707870001
+Anggota         :Ali Muhtar
+NIK             :7308090410870001
+Anggota         :Ambo
+NIK             :7308090107520111
+Anggota         :Asrianto
+NIK             :7308101508910001
+Anggota         :Muh. Akbar
+NIK             :7308090611970001
+Anggota         :Syamsu Alam
+NIK             :7308090610840002
+Anggota         :Wandi
+NIK             :7308092012850001
+Anggota         :Yusuf
+NIK             :7308093112820023
+Anggota         :A.Tamrin
+NIK             :7308091911820003
+Anggota         :Ali Muhtar
+NIK             :7308090410870001
+Anggota         :Andi Abbas
+NIK             :7308092705860001
+Anggota         :Ardiansyah Rastin
+NIK             :7308096011900002
+Anggota         :Irwanda
+NIK             :7308082712910001
+Anggota         :Jumardin
+NIK             :7312051707900002
+Anggota         :Muslimin
+NIK             :7308090107870091
+Anggota         :Suardi
+NIK             :7308082108010001
+Anggota         :Sultang
+NIK             :7308090712820003
+Anggota         :Suni
+NIK             :7308190709780001
+Anggota         :Andi Arjuna
+NIK             :7308211105990001
+Anggota         :Arifin,L
+NIK             :7308210104730005
+Anggota         :Arifudddin
+NIK             :7308140302850001
+Anggota         :Arsyad
+NIK             :7308211505780002
+Anggota         :Asdar
+NIK             :7308210107870120
+Anggota         :Bahtiar Recca
+NIK             :7308090808900001
+Anggota         :Durusi
+NIK             :7308090107860024
+Anggota         :Rustang
+NIK             :7308091608830002
+Anggota         :Hasanuddin
+NIK             :7308090107850115
+Anggota         :Herman
+NIK             :7308092811850001
+Anggota         :Ishak
+NIK             :7308092206840001
+Anggota         :Yahya
+NIK             :7308211309830001
+Anggota         :A.Laju
+NIK             :7308091508760001
+Anggota         :Agus Salim
+NIK             :7406070110820001
+Anggota         :Ali Muhtar
+NIK             :7308090410870001
+Anggota         :Ali Muhtar
+NIK             :7308090410870001
+Anggota         :Andi Abbas
+NIK             :7308092705860001
+Anggota         :Andi Amir
+NIK             :7308090211870002
+Anggota         :Andi Amri
+NIK             :7308090204850003
+Anggota         :Andi Arjuna
+NIK             :7308211105990001
+Anggota         :Andi Wawo
+NIK             :7308090107600051
+Anggota         :Ardi Tang
+NIK             :7300809412790001
+Anggota         :Armin
+NIK             :7308092404870002
+Anggota         :Awaluddin
+NIK             :7308090906010001
+Anggota         :Ediar
+NIK             :7308090107790025
+Anggota         :Ilham
+NIK             :7308091504800001
+Anggota         :Irmawati
+NIK             :7308096207900001
+Anggota         :Kaharuddin
+NIK             :7308090107840024
+Anggota         :Mispahuddin
+NIK             :7308090210910001
+Anggota         :Muh. Amir
+NIK             :7308232512810001
+Anggota         :Muhammad Firdaus
+NIK             :7308211904980001
+Anggota         :Ridwan
+NIK             :7308091504930001
+Anggota         :Rusliadi
+NIK             :7308092706780001
+Anggota         :Rustang R
+NIK             :7308090107850031
+Anggota         :Supriadi
+NIK             :7308090107790203
+Anggota         :A.Takbir
+NIK             :7308090907840001
+Anggota         :Aryanto
+NIK             :7308212207730001
+Anggota         :Asdar
+NIK             :7308091303880001
+Anggota         :Asrul Sani
+NIK             :7308211912760001
+Anggota         :Harmadi
+NIK             :7308091107770000
+Anggota         :Jumriadi
+NIK             :7308092506870001
+Anggota         :Mirwan
+NIK             :7308090107840024
+Anggota         :Samsurijal
+NIK             :7308090109950001
+Anggota         :Supriadi
+NIK             :7308090609790001
+Anggota         :Syamsuddin
+NIK             :7308092410700001
+Anggota         :A.Abd.Wadu
+NIK             :7304031207610001
+Anggota         :Ali Muhtar
+NIK             :7308090410870001
+Anggota         :Alin Fachrin
+NIK             :7308212511920003
+Anggota         :Andi Zakaria
+NIK             :7308091706790002
+Anggota         :Ansar
+NIK             :7308090107790023
+Anggota         :Bahri
+NIK             :7308091005940002
+Anggota         :Fahruddin
+NIK             :7308230808750001
+Anggota         :Faizal
+NIK             :7308090305890002
+Anggota         :Fasmin
+NIK             :7308090304890001
+Anggota         :Majid
+NIK             :7317021203800002
+Anggota         :Nasaruddin
+NIK             :7308090412930001
+Anggota         :Rijal
+NIK             :7308090210830001
+Anggota         :Sahardi
+NIK             :7308091208890001
+Anggota         :Samsu Alam.S
+NIK             :7308091112870001
+Anggota         :Sultan
+NIK             :7308091009830001
+Anggota         :Abd. Azis
+NIK             :7308091205820001
+Anggota         :Ambo Asse
+NIK             :7308090107590057
+Anggota         :Andi Arjuna
+NIK             :7308211105990001
+Anggota         :Anwar
+NIK             :7308090107870092
+Anggota         :Bakri HT
+NIK             :7308091007800003
+Anggota         :Ekal Arisandi
+NIK             :7308090107940017
+Anggota         :Hajir
+NIK             :7308093009840001
+Anggota         :Hamsah
+NIK             :7308092112830001
+Anggota         :Irfan
+NIK             :7308090307640001
+Anggota         :Kahar
+NIK             :7308212312870002
+Anggota         :Lukman Mena
+NIK             :7308092303920001
+Anggota         :Randi Ashari
+NIK             :7308090809930001
+Anggota         :Sunardi
+NIK             :7308091404920002
+Anggota         :Adi Gunawan
+NIK             :7308090611940002
+Anggota         :Ashar
+NIK             :7308210905770001
+Anggota         :Idrus
+NIK             :7308090706870001
+Anggota         :Rahman.K
+NIK             :7306010107800098
+Anggota         :Syamsuddin
+NIK             :7308213001840001
+Anggota         :Tamrin
+NIK             :7308090106761001
+Anggota         :A.Muh.Syahrir
+NIK             :7308091902740001
+Anggota         :A.Muh.Syahrul
+NIK             :7308092906780001
+Anggota         :Ansar Talib
+NIK             :7308090111880002
+Anggota         :Kasriadi
+NIK             :7308093112820027
+Anggota         :M.Japar
+NIK             :7308090107770014
+Anggota         :Muh. Syarkawi
+NIK             :7308090805690001
+Anggota         :Nahar
+NIK             :7308090107950014
+Anggota         :Sukarma
+NIK             :7308092307850001n

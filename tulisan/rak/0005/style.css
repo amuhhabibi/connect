@@ -13,14 +13,7 @@
   }
 }
 
-:root html {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
 :root .light-mode {
-  --transparant:#00000000;
   --semiwhite: #0a0a0a;
   --dark: #fefefe;
   --overlay3: #dddddd;
@@ -32,9 +25,23 @@
   background-color: var(--dark);
 }
 
+:root body::-webkit-scrollbar {
+  display: none;
+}
+
 :root body {
+  overflow-y: hidden;
   background-color: var(--dark);
-  overflow: hidden;
+  -webkit-animation-name: tunggu;
+          animation-name: tunggu;
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
 }
 
 :root body .overlay-bg {
@@ -45,14 +52,14 @@
   z-index: 1;
   -webkit-animation-name: masuk2;
           animation-name: masuk2;
-  -webkit-animation-duration: .9s;
-          animation-duration: .9s;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 :root body .overlay {
@@ -63,16 +70,16 @@
   z-index: 2;
   -webkit-animation-name: masuk;
           animation-name: masuk;
-  -webkit-animation-duration: .9s;
-          animation-duration: .9s;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
   -webkit-transform: translateY(-150vh);
           transform: translateY(-150vh);
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 :root body .overlay2 {
@@ -83,16 +90,16 @@
   z-index: 3;
   -webkit-animation-name: masuk;
           animation-name: masuk;
-  -webkit-animation-duration: .9s;
-          animation-duration: .9s;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
   -webkit-transform: translateY(-150vh);
           transform: translateY(-150vh);
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 :root body .overlay3 {
@@ -103,16 +110,16 @@
   z-index: 4;
   -webkit-animation-name: masuk;
           animation-name: masuk;
-  -webkit-animation-duration: .9s;
-          animation-duration: .9s;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
   -webkit-transform: translateY(-150vh);
           transform: translateY(-150vh);
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 @-webkit-keyframes masuk {
@@ -175,6 +182,24 @@
   }
 }
 
+@-webkit-keyframes tunggu {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: auto;
+  }
+}
+
+@keyframes tunggu {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: auto;
+  }
+}
+
 @-webkit-keyframes putar {
   from {
   }
@@ -222,6 +247,13 @@
   font-size: 2.5em;
 }
 
+:root body .back-btn {
+  position: fixed;
+  left: 0.55em;
+  bottom: 0.55em;
+  font-size: 2.5em;
+}
+
 :root body .toggle-btn {
   background: none;
   color: inherit;
@@ -257,10 +289,10 @@
 :root body .containerr {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 1em;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   font-family: "Azeret Mono", monospace;
   font-weight: 300;
 }
@@ -272,17 +304,46 @@
 }
 
 :root body .containerr .main .title {
-  font-size: 3em;
+  font-size: 2.5em;
+  font-weight: 400;
+  margin-top: 0.2em;
   letter-spacing: 0.01em;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.2em;
 }
 
 :root body .containerr .main .desc {
-  font-style: italic;
+  text-align: left;
+  font-weight: 100;
   letter-spacing: 0.1e m;
   font-size: 1.1em;
-  line-height: 1em;
+  line-height: 1.5em;
   margin-bottom: 0.5em;
+}
+
+:root body .containerr .main ul {
+  margin-top: 1.4em;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+:root body .containerr .main ul .judul li {
+  color: var(--semiwhite) !important;
+}
+
+:root body .containerr .main ul li {
+  color: #fefefe8a;
+  text-align: left;
+  font-weight: 100;
+  letter-spacing: 0.1e m;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+:root body .containerr .main ul li a {
+  font-size: 0.8em;
+  font-style: italic;
 }
 
 :root body .containerr .selections {
@@ -300,18 +361,6 @@
   padding: 0.5em 1em;
   margin: 0 0.3em;
   border-radius: 5px;
-}
-
-:root body .containerr div {
-  cursor: pointer;
-}
-
-:root body .containerr div .countdown {
-  font-size: 3em;
-  letter-spacing: 0.01em;
-  margin-bottom: 0.1em;
-  color: var(--semiwhite);
-  text-align: center;
-  margin-bottom: 0;
+  font-weight: 100;
 }
 /*# sourceMappingURL=style.css.map */

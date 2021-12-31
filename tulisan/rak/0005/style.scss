@@ -4,13 +4,7 @@
     font-size: 2.5vw;
   }
 
-html{
-  margin: 0; 
-  height: 100%; 
-  overflow: hidden;
-}
   .light-mode {
-    --transparant:#00000000;
     --semiwhite: #0a0a0a;
     --dark: #fefefe;
     --overlay3: #dddddd;
@@ -25,57 +19,67 @@ html{
   --overlay1: #0e0e0e;
   --overlay2: #0f0f0f;
   --overlay3: #111111;
+  body::-webkit-scrollbar {
+    display: none;
+  }
   body {
+    overflow-y: hidden;
     background-color: var(--dark);
-    overflow: hidden;
-    .overlay-bg{
+    animation-name: tunggu;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: .4s;
+    .overlay-bg {
       background-color: var(--dark);
       width: 100vw;
       height: 200vh;
       position: absolute;
       z-index: 1;
       animation-name: masuk2;
-      animation-duration: .9s;
+      animation-duration: 0.9s;
       animation-timing-function: ease-in-out;
       animation-fill-mode: forwards;
-      animation-delay: .2s;
+      animation-delay: 0.2s;
     }
-    .overlay{
+    .overlay {
       background-color: var(--overlay1);
       width: 100vw;
       height: 150vh;
       position: absolute;
       z-index: 2;
       animation-name: masuk;
-      animation-duration: .9s;
+      animation-duration: 0.9s;
       transform: translateY(-150vh);
       animation-timing-function: ease-in-out;
       animation-fill-mode: forwards;
-      animation-delay: .4s;
-    }.overlay2{
+      animation-delay: 0.4s;
+    }
+    .overlay2 {
       background-color: var(--overlay2);
       width: 100vw;
       height: 150vh;
       position: absolute;
       z-index: 3;
       animation-name: masuk;
-      animation-duration: .9s;
+      animation-duration: 0.9s;
       transform: translateY(-150vh);
       animation-timing-function: ease-in-out;
       animation-fill-mode: forwards;
-      animation-delay: .3s;
-    }.overlay3{
+      animation-delay: 0.3s;
+    }
+    .overlay3 {
       background-color: var(--overlay3);
       width: 100vw;
       height: 150vh;
       position: absolute;
       z-index: 4;
       animation-name: masuk;
-      animation-duration: .9s;
+      animation-duration: 0.9s;
       transform: translateY(-150vh);
       animation-timing-function: ease-in-out;
       animation-fill-mode: forwards;
-      animation-delay: .2s;
+      animation-delay: 0.2s;
     }
     @keyframes masuk {
       0% {
@@ -99,6 +103,14 @@ html{
         transform: translateY(-100%);
       }
     }
+    @keyframes tunggu{
+      from{
+        overflow: hidden;
+      }
+      to{
+        overflow: auto;
+      }
+    }
     @keyframes putar{
       from{
       }
@@ -119,6 +131,11 @@ html{
     .theme-toggle {
       position: fixed;
       right: 0.55em;
+      bottom: 0.55em;
+      font-size: 2.5em;
+    }.back-btn {
+      position: fixed;
+      left: 0.55em;
       bottom: 0.55em;
       font-size: 2.5em;
     }
@@ -146,9 +163,9 @@ html{
     .containerr {
       margin: 0;
       position: absolute;
-      top: 50%;
+      top: 1em;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, 0);
       // background: wheat;
       font-family: "Azeret Mono", monospace;
       font-weight: 300;
@@ -159,16 +176,42 @@ html{
           margin-bottom: 0;
         }
         .title {
-          font-size: 3em;
+          font-size: 2.5em;
+          font-weight: 400;
+          margin-top: 0.2em;
           letter-spacing: 0.01em;
-          margin-bottom: 0.1em;
+          margin-bottom: 0.2em;
         }
         .desc {
-          font-style: italic;
+          text-align: left;
+          font-weight: 100;
           letter-spacing: 0.1e m;
           font-size: 1.1em;
-          line-height: 1em;
+          line-height: 1.5em;
           margin-bottom: 0.5em;
+        }
+        ul {
+          margin-top: 1.4em;
+          align-items: left;
+          .judul {
+            li {
+              color: var(--semiwhite) !important;
+            }
+          }
+          li {
+            color: #fefefe8a;
+            text-align: left;
+            // font-style: italic;
+            font-weight: 100;
+            letter-spacing: 0.1e m;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            margin-bottom: 0.5em;
+            a {
+              font-size: 0.8em;
+              font-style: italic;
+            }
+          }
         }
       }
       .selections {
@@ -185,18 +228,7 @@ html{
           padding: 0.5em 1em;
           margin: 0 0.3em;
           border-radius: 5px;
-          
-        }
-      }
-      div{
-        cursor: pointer;
-        .countdown{
-          font-size: 3em;
-          letter-spacing: 0.01em;
-          margin-bottom: 0.1em;
-          color: var(--semiwhite);
-          text-align: center;
-          margin-bottom: 0;
+          font-weight: 100;
         }
       }
     }
